@@ -1,0 +1,149 @@
+uuid: 1c1874ea-17ff-4856-9b26-076729388a54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card
+    - paragraphs.paragraphs_type.card_grid
+    - paragraphs.paragraphs_type.card_item
+    - paragraphs.paragraphs_type.card_item_blank
+    - paragraphs.paragraphs_type.icon_card_item
+  module:
+    - entity_reference_revisions
+id: paragraph.card_grid.field_card
+field_name: field_card
+entity_type: paragraph
+bundle: card_grid
+label: Card
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      card_item: card_item
+      icon_card_item: icon_card_item
+      card_item_blank: card_item_blank
+    target_bundles_drag_drop:
+      accordion_tabs:
+        enabled: false
+        weight: 2
+      block_embed:
+        enabled: false
+        weight: 3
+      block_embed_no_title:
+        enabled: false
+        weight: 4
+      button_grid:
+        enabled: false
+        weight: 34
+      button_item:
+        enabled: false
+        weight: 35
+      callout:
+        enabled: false
+        weight: 36
+      card_grid:
+        enabled: false
+        weight: 5
+      card_item:
+        enabled: true
+        weight: 6
+      card_item_blank:
+        enabled: true
+        weight: 39
+      cell:
+        enabled: false
+        weight: 7
+      collapsible_block:
+        enabled: false
+        weight: 8
+      content_video:
+        enabled: false
+        weight: 9
+      entity_list:
+        enabled: false
+        weight: 10
+      faq:
+        enabled: false
+        weight: 11
+      flipbook_grid:
+        enabled: false
+        weight: 12
+      flipbook_grid_item:
+        enabled: false
+        weight: 13
+      grid:
+        enabled: false
+        weight: 14
+      horizontal_single_tab:
+        enabled: false
+        weight: 60
+      horizontal_tabs:
+        enabled: false
+        weight: 15
+      icon_card_item:
+        enabled: true
+        weight: 16
+      image:
+        enabled: false
+        weight: 17
+      image_only:
+        enabled: false
+        weight: 18
+      looping_video:
+        enabled: false
+        weight: 19
+      modal_media_gallery:
+        enabled: false
+        weight: 20
+      multi_column_layout_text_:
+        enabled: false
+        weight: 61
+      section:
+        enabled: false
+        weight: 21
+      section_heading:
+        enabled: false
+        weight: 62
+      single_image_with_caption:
+        enabled: false
+        weight: 22
+      slideshow:
+        enabled: false
+        weight: 23
+      sticky_anchor_menu:
+        enabled: false
+        weight: 63
+      text:
+        enabled: false
+        weight: 24
+      thumbnail_slideshow:
+        enabled: false
+        weight: 64
+      time_slot:
+        enabled: false
+        weight: 25
+      two_column_grid:
+        enabled: false
+        weight: 28
+      two_columns:
+        enabled: false
+        weight: 59
+      two_columns_40_60:
+        enabled: false
+        weight: 26
+      two_columns_equal:
+        enabled: false
+        weight: 27
+      view_embed:
+        enabled: false
+        weight: 29
+      webcam_embed:
+        enabled: false
+        weight: 65
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

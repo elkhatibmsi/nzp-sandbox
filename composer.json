@@ -16,9 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
-        "drupal/core-composer-scaffold": "^9.1",
-        "drupal/core-project-message": "^9.1",
-        "drupal/core-recommended": "^9.1",
+        "cweagans/composer-patches": "^1.7",
         "drupal/address": "^1.7",
         "drupal/addtoany": "^1.10",
         "drupal/admin_toolbar": "^2.0",
@@ -29,6 +27,9 @@
         "drupal/chosen": "^2.9",
         "drupal/conditional_fields": "^4.0@alpha",
         "drupal/console": "~1.0",
+        "drupal/core-composer-scaffold": "^9.1",
+        "drupal/core-project-message": "^9.1",
+        "drupal/core-recommended": "^9.1",
         "drupal/devel": "^4.1",
         "drupal/devel_kint_extras": "^1.0",
         "drupal/entity_browser": "^2.1",
@@ -74,6 +75,11 @@
                 "web-root": "htdocs/"
             }
         },
+    "patches": {
+        "drupal/core": {
+            "Migration Lookup plugin does not return multiple values when matched": "https://www.drupal.org/files/issues/2020-02-02/2890844-65.drupal.patch"
+        }
+    },
         "installer-paths": {
             "htdocs/core": ["type:drupal-core"],
             "htdocs/libraries/{$name}": ["type:drupal-library"],

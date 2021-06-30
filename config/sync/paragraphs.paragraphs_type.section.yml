@@ -1,0 +1,10 @@
+uuid: c691a139-06ac-4213-9b4c-1d659e4b0ff9
+langcode: en
+status: true
+dependencies: {  }
+id: section
+label: Section
+icon_uuid: null
+icon_default: null
+description: 'Migrated from paragraph bundle Section'
+behavior_plugins: {  }

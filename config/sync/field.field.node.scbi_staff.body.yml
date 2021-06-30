@@ -1,0 +1,23 @@
+uuid: 8159f999-9bd8-4bfa-98f4-4f1cda562c67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.scbi_staff
+  module:
+    - text
+id: node.scbi_staff.body
+field_name: body
+entity_type: node
+bundle: scbi_staff
+label: 'What you currently do at the Zoo and your areas of expertise'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -22,11 +22,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_media_video_file:
+    type: file_generic
     weight: 0
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
     region: content
   path:
     type: path

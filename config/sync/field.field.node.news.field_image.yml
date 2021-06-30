@@ -1,0 +1,36 @@
+uuid: d7a3ee8d-6126-4ebd-98f6-88ac00c577a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.news
+  module:
+    - image
+id: node.news.field_image
+field_name: field_image
+entity_type: node
+bundle: news
+label: Image
+description: 'Multiple images will display as a slideshow with the title field as the caption'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: newsroom
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '10 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  title_field: true
+  default_image: 0
+  alt_field_required: true
+  title_field_required: false
+  handler_settings:
+    target_bundles:
+      image: image
+      image_http: image_http
+  handler: 'default:file'
+field_type: image

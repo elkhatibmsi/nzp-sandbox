@@ -1,0 +1,10 @@
+uuid: 804890df-2063-43e2-8f4b-f8d1f111f9f4
+langcode: en
+status: true
+dependencies: {  }
+id: menu_tabs
+label: 'Menu tabs'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_menu_tabs'
+behavior_plugins: {  }

@@ -1,0 +1,68 @@
+uuid: 459b73b3-1706-4717-9646-6571d013a7a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.coffee_purveyor.body
+    - field.field.node.coffee_purveyor.field_certification_expires
+    - field.field.node.coffee_purveyor.field_certifications
+    - field.field.node.coffee_purveyor.field_certifier
+    - field.field.node.coffee_purveyor.field_company_email
+    - field.field.node.coffee_purveyor.field_company_url
+    - field.field.node.coffee_purveyor.field_contact_fax
+    - field.field.node.coffee_purveyor.field_contact_name
+    - field.field.node.coffee_purveyor.field_editorial_access
+    - field.field.node.coffee_purveyor.field_elevation
+    - field.field.node.coffee_purveyor.field_featured_bird
+    - field.field.node.coffee_purveyor.field_harvest
+    - field.field.node.coffee_purveyor.field_hectares
+    - field.field.node.coffee_purveyor.field_number_of_growers
+    - field.field.node.coffee_purveyor.field_other_products
+    - field.field.node.coffee_purveyor.field_phone
+    - field.field.node.coffee_purveyor.field_pounds_of_coffee
+    - field.field.node.coffee_purveyor.field_related_coffee_products_
+    - field.field.node.coffee_purveyor.field_teaser_image
+    - field.field.node.coffee_purveyor.field_type
+    - field.field.node.coffee_purveyor.field_varietals
+    - node.type.coffee_purveyor
+  module:
+    - text
+    - user
+id: node.coffee_purveyor.default
+targetEntityType: node
+bundle: coffee_purveyor
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_certification_expires: true
+  field_certifications: true
+  field_certifier: true
+  field_company_email: true
+  field_company_url: true
+  field_contact_fax: true
+  field_contact_name: true
+  field_editorial_access: true
+  field_elevation: true
+  field_featured_bird: true
+  field_harvest: true
+  field_hectares: true
+  field_number_of_growers: true
+  field_other_products: true
+  field_phone: true
+  field_pounds_of_coffee: true
+  field_related_coffee_products_: true
+  field_teaser_image: true
+  field_type: true
+  field_varietals: true

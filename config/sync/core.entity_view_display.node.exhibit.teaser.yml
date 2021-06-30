@@ -1,0 +1,58 @@
+uuid: 0af5179f-a3e7-4bfd-97b6-cf17b3c02431
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.exhibit.body
+    - field.field.node.exhibit.field_card_position
+    - field.field.node.exhibit.field_conservation_efforts
+    - field.field.node.exhibit.field_daily_demonstrations
+    - field.field.node.exhibit.field_editorial_access
+    - field.field.node.exhibit.field_enrichment
+    - field.field.node.exhibit.field_hours
+    - field.field.node.exhibit.field_landing_image
+    - field.field.node.exhibit.field_map
+    - field.field.node.exhibit.field_marker
+    - field.field.node.exhibit.field_nearby
+    - field.field.node.exhibit.field_open
+    - field.field.node.exhibit.field_paragraph_component
+    - field.field.node.exhibit.field_slideshow
+    - field.field.node.exhibit.field_tags
+    - node.type.exhibit
+  module:
+    - text
+    - user
+id: node.exhibit.teaser
+targetEntityType: node
+bundle: exhibit
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_card_position: true
+  field_conservation_efforts: true
+  field_daily_demonstrations: true
+  field_editorial_access: true
+  field_enrichment: true
+  field_hours: true
+  field_landing_image: true
+  field_map: true
+  field_marker: true
+  field_nearby: true
+  field_open: true
+  field_paragraph_component: true
+  field_slideshow: true
+  field_tags: true

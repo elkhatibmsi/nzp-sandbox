@@ -1,0 +1,64 @@
+uuid: 20969b24-fadf-4934-8800-138523501fe9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.basic_page.body
+    - field.field.node.basic_page.field_card_position
+    - field.field.node.basic_page.field_card_subtitle
+    - field.field.node.basic_page.field_content_block
+    - field.field.node.basic_page.field_editorial_access
+    - field.field.node.basic_page.field_feature_one
+    - field.field.node.basic_page.field_feature_three
+    - field.field.node.basic_page.field_feature_two
+    - field.field.node.basic_page.field_has_promotions
+    - field.field.node.basic_page.field_landing_image
+    - field.field.node.basic_page.field_modal_gallery
+    - field.field.node.basic_page.field_page_type
+    - field.field.node.basic_page.field_promotion_one
+    - field.field.node.basic_page.field_promotion_three
+    - field.field.node.basic_page.field_promotion_two
+    - field.field.node.basic_page.field_slideshow
+    - field.field.node.basic_page.field_subtitle
+    - field.field.node.basic_page.field_tags
+    - field.field.node.basic_page.field_teaser_title
+    - node.type.basic_page
+  module:
+    - text
+    - user
+id: node.basic_page.default
+targetEntityType: node
+bundle: basic_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_card_position: true
+  field_card_subtitle: true
+  field_content_block: true
+  field_editorial_access: true
+  field_feature_one: true
+  field_feature_three: true
+  field_feature_two: true
+  field_has_promotions: true
+  field_landing_image: true
+  field_modal_gallery: true
+  field_page_type: true
+  field_promotion_one: true
+  field_promotion_three: true
+  field_promotion_two: true
+  field_slideshow: true
+  field_subtitle: true
+  field_tags: true
+  field_teaser_title: true

@@ -3,10 +3,18 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.ldap_user_current_dn
+    - field.field.user.user.ldap_user_last_checked
+    - field.field.user.user.ldap_user_ldap_exclude
+    - field.field.user.user.ldap_user_prov_entries
+    - field.field.user.user.ldap_user_puid
+    - field.field.user.user.ldap_user_puid_property
+    - field.field.user.user.ldap_user_puid_sid
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
     - image
+    - path
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -24,6 +32,12 @@ content:
   language:
     weight: 0
     region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   timezone:
     weight: 6
     region: content
@@ -35,4 +49,11 @@ content:
     third_party_settings: {  }
     weight: -1
     region: content
-hidden: {  }
+hidden:
+  ldap_user_current_dn: true
+  ldap_user_last_checked: true
+  ldap_user_ldap_exclude: true
+  ldap_user_prov_entries: true
+  ldap_user_puid: true
+  ldap_user_puid_property: true
+  ldap_user_puid_sid: true

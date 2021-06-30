@@ -1,0 +1,10 @@
+uuid: 30c930ee-86af-4e64-94bd-cd4e185932ae
+langcode: en
+status: true
+dependencies: {  }
+id: grid
+label: Grid
+icon_uuid: null
+icon_default: null
+description: 'Migrated from paragraph bundle Grid'
+behavior_plugins: {  }

@@ -6,7 +6,6 @@ dependencies:
     - field.field.media.remote_video.field_media_oembed_video
     - media.type.remote_video
   module:
-    - media
     - path
 _core:
   default_config_hash: DfbjvjtGEMGLvm-1Zm7-MCRZj3wpGokUWZOuaK5-1Po
@@ -22,7 +21,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_media_oembed_video:
-    type: oembed_textfield
+    type: string_textfield
     weight: 0
     settings:
       size: 60

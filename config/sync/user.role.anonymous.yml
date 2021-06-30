@@ -5,13 +5,29 @@ dependencies: {  }
 _core:
   default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
 id: anonymous
-label: 'Anonymous user'
+label: 'anonymous user'
 weight: 0
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
+  - 'access print'
+  - 'access protected node password form'
   - 'access site-wide contact form'
+  - 'access unpublished view hashkey'
+  - 'access unpublished view unpublished node'
+  - 'access unpublished view workbench moderation drafts'
+  - access_google_appliance_content
   - 'search content'
-  - 'use text format restricted_html'
-  - 'view media'
+  - 'view any basic_block bean'
+  - 'view any custom_block bean'
+  - 'view any disclaimer bean'
+  - 'view any event_comestibles bean'
+  - 'view any font_page_feature bean'
+  - 'view any landing_feature bean'
+  - 'view any mega_menu_feature_block bean'
+  - 'view any parameterized_promos bean'
+  - 'view any pop_up bean'
+  - 'view any temporary_content bean'
+  - 'view any webcam_ad bean'
+  - 'view files'
+  - 'vote on polls'

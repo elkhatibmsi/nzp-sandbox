@@ -1,0 +1,10 @@
+uuid: 3cf50e79-6132-4790-910f-9d68c22764a0
+langcode: en
+status: true
+dependencies: {  }
+id: promotion_one
+label: 'Promotion one'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_promotion_one'
+behavior_plugins: {  }

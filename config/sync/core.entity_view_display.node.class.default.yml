@@ -1,0 +1,50 @@
+uuid: b85390b7-e3ef-4e81-875f-f5527581b465
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.class.body
+    - field.field.node.class.field_age_range
+    - field.field.node.class.field_class_length
+    - field.field.node.class.field_class_session
+    - field.field.node.class.field_class_type
+    - field.field.node.class.field_editorial_access
+    - field.field.node.class.field_landing_image
+    - field.field.node.class.field_maximum_age
+    - field.field.node.class.field_member_cost
+    - field.field.node.class.field_minimum_age
+    - field.field.node.class.field_non_member_cost
+    - field.field.node.class.field_status
+    - node.type.class
+  module:
+    - text
+    - user
+id: node.class.default
+targetEntityType: node
+bundle: class
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_age_range: true
+  field_class_length: true
+  field_class_session: true
+  field_class_type: true
+  field_editorial_access: true
+  field_landing_image: true
+  field_maximum_age: true
+  field_member_cost: true
+  field_minimum_age: true
+  field_non_member_cost: true
+  field_status: true

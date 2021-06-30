@@ -1,0 +1,93 @@
+uuid: 96c2cf3a-5ca2-4b1c-9ef3-9dbe02d1ff0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_modal_gallery
+    - node.type.event
+  module:
+    - entity_reference_revisions
+id: node.event.field_modal_gallery
+field_name: field_modal_gallery
+entity_type: node
+bundle: event
+label: 'Modal Gallery'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      modal_media_gallery: modal_media_gallery
+    target_bundles_drag_drop:
+      accordion_tabs:
+        enabled: false
+        weight: 2
+      block_embed:
+        enabled: false
+        weight: 3
+      block_embed_no_title:
+        enabled: false
+        weight: 4
+      cell:
+        enabled: false
+        weight: 5
+      collapsible_block:
+        enabled: false
+        weight: 6
+      content_video:
+        enabled: false
+        weight: 7
+      entity_list:
+        enabled: false
+        weight: 8
+      faq:
+        enabled: false
+        weight: 9
+      grid:
+        enabled: false
+        weight: 10
+      image:
+        enabled: false
+        weight: 11
+      image_only:
+        enabled: false
+        weight: 12
+      looping_video:
+        enabled: false
+        weight: 13
+      modal_media_gallery:
+        enabled: true
+        weight: 14
+      section:
+        enabled: false
+        weight: 15
+      single_image_with_caption:
+        enabled: false
+        weight: 16
+      slideshow:
+        enabled: false
+        weight: 17
+      text:
+        enabled: false
+        weight: 18
+      time_slot:
+        enabled: false
+        weight: 19
+      two_column_grid:
+        enabled: false
+        weight: 22
+      two_columns_40_60:
+        enabled: false
+        weight: 20
+      two_columns_equal:
+        enabled: false
+        weight: 21
+      view_embed:
+        enabled: false
+        weight: 23
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

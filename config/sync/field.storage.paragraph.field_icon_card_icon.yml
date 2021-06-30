@@ -1,0 +1,48 @@
+uuid: 9dd3f9d1-20ca-4186-821a-f800f836b376
+langcode: und
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_icon_card_icon
+field_name: field_icon_card_icon
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: fa-bar-chart
+      label: 'bar chart'
+    -
+      value: fa-bell
+      label: bell
+    -
+      value: fa-exclamation
+      label: exclamation
+    -
+      value: fa-gamepad
+      label: game
+    -
+      value: fa-headphones
+      label: headphones
+    -
+      value: fa-info-circle
+      label: 'info circle'
+    -
+      value: fa-laptop
+      label: laptop
+    -
+      value: fa-list-alt
+      label: list
+    -
+      value: fa-video-camera
+      label: 'video camera'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

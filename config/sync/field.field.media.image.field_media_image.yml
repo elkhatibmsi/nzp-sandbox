@@ -24,8 +24,8 @@ default_value: {  }
 default_value_callback: ''
 settings:
   alt_field: true
+  title_field: true
   alt_field_required: true
-  title_field: false
   title_field_required: false
   max_resolution: ''
   min_resolution: ''
@@ -36,7 +36,7 @@ settings:
     width: null
     height: null
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg'
+  file_extensions: 'png gif jpg jpeg tif svg'
   max_filesize: ''
   handler: 'default:file'
   handler_settings: {  }

@@ -1,0 +1,155 @@
+uuid: 7384ada6-4594-4bfd-9993-f4d59d54440a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cell_content
+    - paragraphs.paragraphs_type.block_embed
+    - paragraphs.paragraphs_type.cell
+    - paragraphs.paragraphs_type.image_only
+    - paragraphs.paragraphs_type.single_image_with_caption
+    - paragraphs.paragraphs_type.slideshow
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.view_embed
+  module:
+    - entity_reference_revisions
+id: paragraph.cell.field_cell_content
+field_name: field_cell_content
+entity_type: paragraph
+bundle: cell
+label: 'Cell Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      block_embed: block_embed
+      image_only: image_only
+      single_image_with_caption: single_image_with_caption
+      slideshow: slideshow
+      text: text
+      view_embed: view_embed
+    target_bundles_drag_drop:
+      accordion_tabs:
+        enabled: false
+        weight: 2
+      block_embed:
+        enabled: true
+        weight: 3
+      block_embed_no_title:
+        enabled: false
+        weight: 34
+      button_grid:
+        enabled: false
+        weight: 48
+      button_item:
+        enabled: false
+        weight: 49
+      callout:
+        enabled: false
+        weight: 50
+      card_grid:
+        enabled: false
+        weight: 51
+      card_item:
+        enabled: false
+        weight: 52
+      card_item_blank:
+        enabled: false
+        weight: 53
+      cell:
+        enabled: false
+        weight: 4
+      collapsible_block:
+        enabled: false
+        weight: 5
+      content_video:
+        enabled: false
+        weight: 23
+      entity_list:
+        enabled: false
+        weight: 6
+      faq:
+        enabled: false
+        weight: 7
+      flipbook_grid:
+        enabled: false
+        weight: 40
+      flipbook_grid_item:
+        enabled: false
+        weight: 41
+      grid:
+        enabled: false
+        weight: 26
+      horizontal_single_tab:
+        enabled: false
+        weight: 54
+      horizontal_tabs:
+        enabled: false
+        weight: 43
+      icon_card_item:
+        enabled: false
+        weight: 55
+      image:
+        enabled: false
+        weight: 8
+      image_only:
+        enabled: true
+        weight: 9
+      looping_video:
+        enabled: false
+        weight: 46
+      modal_media_gallery:
+        enabled: false
+        weight: 47
+      multi_column_layout_text_:
+        enabled: false
+        weight: 56
+      section:
+        enabled: false
+        weight: 30
+      section_heading:
+        enabled: false
+        weight: 57
+      single_image_with_caption:
+        enabled: true
+        weight: 11
+      slideshow:
+        enabled: true
+        weight: 12
+      sticky_anchor_menu:
+        enabled: false
+        weight: 58
+      text:
+        enabled: true
+        weight: 13
+      thumbnail_slideshow:
+        enabled: false
+        weight: 59
+      time_slot:
+        enabled: false
+        weight: -50
+      two_column_grid:
+        enabled: false
+        weight: 16
+      two_columns:
+        enabled: false
+        weight: 60
+      two_columns_40_60:
+        enabled: false
+        weight: 14
+      two_columns_equal:
+        enabled: false
+        weight: 15
+      view_embed:
+        enabled: true
+        weight: 17
+      webcam_embed:
+        enabled: false
+        weight: 61
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

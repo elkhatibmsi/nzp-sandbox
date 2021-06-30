@@ -1,0 +1,52 @@
+uuid: 97bc0b18-6acd-40bb-90b6-adfa5162b708
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.membership_level.body
+    - field.field.node.membership_level.field_cost
+    - field.field.node.membership_level.field_editorial_access
+    - field.field.node.membership_level.field_landing_image
+    - field.field.node.membership_level.field_membership_length
+    - field.field.node.membership_level.field_membership_level
+    - field.field.node.membership_level.field_title_override
+    - field.field.node.membership_level.field_tnew_id
+    - field.field.node.membership_level.field_tnew_id_gift
+    - field.field.node.membership_level.field_tnew_id_join_senior
+    - field.field.node.membership_level.field_tnew_id_renew
+    - field.field.node.membership_level.field_tnew_id_renew_senior
+    - field.field.node.membership_level.field_upsell_level
+    - node.type.membership_level
+  module:
+    - text
+    - user
+id: node.membership_level.default
+targetEntityType: node
+bundle: membership_level
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_cost: true
+  field_editorial_access: true
+  field_landing_image: true
+  field_membership_length: true
+  field_membership_level: true
+  field_title_override: true
+  field_tnew_id: true
+  field_tnew_id_gift: true
+  field_tnew_id_join_senior: true
+  field_tnew_id_renew: true
+  field_tnew_id_renew_senior: true
+  field_upsell_level: true

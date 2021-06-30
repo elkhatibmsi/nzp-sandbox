@@ -1,0 +1,10 @@
+uuid: eee06225-a2bd-44f7-a984-581d112d7b2f
+langcode: en
+status: true
+dependencies: {  }
+id: hours
+label: Hours
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_hours'
+behavior_plugins: {  }

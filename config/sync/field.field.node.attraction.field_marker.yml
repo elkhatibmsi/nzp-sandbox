@@ -1,0 +1,23 @@
+uuid: e8a9ee99-9d56-4bda-b5c2-902c2b54c220
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_marker
+    - node.type.attraction
+id: node.attraction.field_marker
+field_name: field_marker
+entity_type: node
+bundle: attraction
+label: Marker
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

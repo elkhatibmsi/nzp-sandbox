@@ -1,0 +1,19 @@
+uuid: 9167b10b-cfd5-4035-956e-9799b3ba9d68
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph__paragraph_field_content_block
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Paragraphs
+  - 'Paragraphs Field'
+migration_group: nzp_paragraphs
+label: 'Field Migration into field_content_block'
+source: null
+process: null
+destination: null
+migration_dependencies:
+  required: {  }
+  optional: {  }

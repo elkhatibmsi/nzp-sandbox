@@ -1,0 +1,19 @@
+uuid: 9fd9f568-5435-48d5-b6f9-6945af08d979
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_significant_papers
+    - node.type.scbi_staff
+id: node.scbi_staff.field_significant_papers
+field_name: field_significant_papers
+entity_type: node
+bundle: scbi_staff
+label: 'Notable Publications'
+description: 'Enter the full citations of your three most significant papers'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

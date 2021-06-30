@@ -1,0 +1,23 @@
+uuid: f8b1b5d9-9ddd-4132-bfed-a3b5ace254aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editorial_access
+    - node.type.basic_page
+id: node.basic_page.field_editorial_access
+field_name: field_editorial_access
+entity_type: node
+bundle: basic_page
+label: 'Editorial Access'
+description: 'Assign this content to an editorial section of the website.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

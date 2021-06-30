@@ -1,0 +1,21 @@
+uuid: cbbb26f0-860d-4c88-a3de-df0a6ec9ab50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recent_papers
+    - node.type.scbi_staff
+  module:
+    - text
+id: node.scbi_staff.field_recent_papers
+field_name: field_recent_papers
+entity_type: node
+bundle: scbi_staff
+label: 'Recent Publications'
+description: 'This field is populated by the Zoo publications module. Anything you manually add here will be overwritten.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

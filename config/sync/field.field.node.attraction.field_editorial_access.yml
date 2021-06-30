@@ -1,0 +1,25 @@
+uuid: 0ae51c22-cddc-4505-a92a-bf2ddf2cebc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editorial_access
+    - node.type.attraction
+id: node.attraction.field_editorial_access
+field_name: field_editorial_access
+entity_type: node
+bundle: attraction
+label: 'Editorial Access'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    tid: '2'
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

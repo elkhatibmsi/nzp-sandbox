@@ -1,0 +1,44 @@
+uuid: a879f34e-db73-4176-8e4a-d300e2c26cb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.venue.body
+    - field.field.node.venue.field_combined_capacity
+    - field.field.node.venue.field_reception_capacity
+    - field.field.node.venue.field_seating_capacity
+    - field.field.node.venue.field_venue_availibility
+    - field.field.node.venue.field_venue_gallery
+    - field.field.node.venue.field_venue_media
+    - field.field.node.venue.field_venue_setting
+    - node.type.venue
+  module:
+    - text
+    - user
+id: node.venue.teaser
+targetEntityType: node
+bundle: venue
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_combined_capacity: true
+  field_reception_capacity: true
+  field_seating_capacity: true
+  field_venue_availibility: true
+  field_venue_gallery: true
+  field_venue_media: true
+  field_venue_setting: true

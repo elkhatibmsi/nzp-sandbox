@@ -1,0 +1,58 @@
+uuid: e40f8cfe-3335-4223-b0b1-7ac5b429e7d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.volunteer_opportunity.body
+    - field.field.node.volunteer_opportunity.field_additional_information
+    - field.field.node.volunteer_opportunity.field_application_live_range
+    - field.field.node.volunteer_opportunity.field_commitment
+    - field.field.node.volunteer_opportunity.field_editorial_access
+    - field.field.node.volunteer_opportunity.field_featured
+    - field.field.node.volunteer_opportunity.field_image
+    - field.field.node.volunteer_opportunity.field_maximum_age
+    - field.field.node.volunteer_opportunity.field_minimum_age
+    - field.field.node.volunteer_opportunity.field_nzp_location
+    - field.field.node.volunteer_opportunity.field_phone
+    - field.field.node.volunteer_opportunity.field_special_qualifications
+    - field.field.node.volunteer_opportunity.field_status
+    - field.field.node.volunteer_opportunity.field_training
+    - field.field.node.volunteer_opportunity.field_url
+    - field.field.node.volunteer_opportunity.field_volunteer_category
+    - node.type.volunteer_opportunity
+  module:
+    - text
+    - user
+id: node.volunteer_opportunity.default
+targetEntityType: node
+bundle: volunteer_opportunity
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_additional_information: true
+  field_application_live_range: true
+  field_commitment: true
+  field_editorial_access: true
+  field_featured: true
+  field_image: true
+  field_maximum_age: true
+  field_minimum_age: true
+  field_nzp_location: true
+  field_phone: true
+  field_special_qualifications: true
+  field_status: true
+  field_training: true
+  field_url: true
+  field_volunteer_category: true

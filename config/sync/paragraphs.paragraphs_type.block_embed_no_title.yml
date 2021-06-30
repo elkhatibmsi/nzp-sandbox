@@ -1,0 +1,10 @@
+uuid: 2ee368b3-3646-4593-9426-74b75fcc473c
+langcode: en
+status: true
+dependencies: {  }
+id: block_embed_no_title
+label: 'Block Embed (No Title)'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from paragraph bundle Block Embed (No Title)'
+behavior_plugins: {  }

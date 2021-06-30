@@ -1,0 +1,82 @@
+uuid: 04047740-49ea-4ef4-8645-f41f6ace4288
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.animal.body
+    - field.field.node.animal.field_animal_type
+    - field.field.node.animal.field_card_position
+    - field.field.node.animal.field_communication
+    - field.field.node.animal.field_conservation_efforts
+    - field.field.node.animal.field_editorial_access
+    - field.field.node.animal.field_exhibit
+    - field.field.node.animal.field_featured_video
+    - field.field.node.animal.field_feeding_time
+    - field.field.node.animal.field_food_eating_habits
+    - field.field.node.animal.field_fun_facts
+    - field.field.node.animal.field_genus_and_species
+    - field.field.node.animal.field_help_this_species
+    - field.field.node.animal.field_image
+    - field.field.node.animal.field_iucn_designation
+    - field.field.node.animal.field_lifespan
+    - field.field.node.animal.field_meet_the_animals
+    - field.field.node.animal.field_modal_gallery
+    - field.field.node.animal.field_native_habitat
+    - field.field.node.animal.field_nzp_location
+    - field.field.node.animal.field_physical_description
+    - field.field.node.animal.field_reproduction_developme
+    - field.field.node.animal.field_size
+    - field.field.node.animal.field_sleep_habits
+    - field.field.node.animal.field_social_structure
+    - field.field.node.animal.field_taxonomic_class
+    - field.field.node.animal.field_taxonomic_family
+    - field.field.node.animal.field_taxonomic_order
+    - node.type.animal
+  module:
+    - text
+    - user
+id: node.animal.default
+targetEntityType: node
+bundle: animal
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_animal_type: true
+  field_card_position: true
+  field_communication: true
+  field_conservation_efforts: true
+  field_editorial_access: true
+  field_exhibit: true
+  field_featured_video: true
+  field_feeding_time: true
+  field_food_eating_habits: true
+  field_fun_facts: true
+  field_genus_and_species: true
+  field_help_this_species: true
+  field_image: true
+  field_iucn_designation: true
+  field_lifespan: true
+  field_meet_the_animals: true
+  field_modal_gallery: true
+  field_native_habitat: true
+  field_nzp_location: true
+  field_physical_description: true
+  field_reproduction_developme: true
+  field_size: true
+  field_sleep_habits: true
+  field_social_structure: true
+  field_taxonomic_class: true
+  field_taxonomic_family: true
+  field_taxonomic_order: true

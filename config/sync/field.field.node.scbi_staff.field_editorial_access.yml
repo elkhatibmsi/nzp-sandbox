@@ -1,0 +1,25 @@
+uuid: 66da007a-8f89-4cc0-b786-24fa9df1194e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editorial_access
+    - node.type.scbi_staff
+id: node.scbi_staff.field_editorial_access
+field_name: field_editorial_access
+entity_type: node
+bundle: scbi_staff
+label: Center
+description: 'Assign this person to a Conservation Center'
+required: true
+translatable: false
+default_value:
+  -
+    tid: '4'
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

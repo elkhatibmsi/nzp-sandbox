@@ -1,0 +1,56 @@
+uuid: f991f5e1-a88d-4edc-a3fd-a935863b27aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.media_release.body
+    - field.field.node.media_release.field_content_block
+    - field.field.node.media_release.field_editorial_access
+    - field.field.node.media_release.field_image
+    - field.field.node.media_release.field_landing_image
+    - field.field.node.media_release.field_media_release_category
+    - field.field.node.media_release.field_obituary
+    - field.field.node.media_release.field_related_content
+    - field.field.node.media_release.field_subtitle
+    - field.field.node.media_release.field_tags
+    - field.field.node.media_release.field_teaser_title
+    - image.style.medium
+    - node.type.media_release
+  module:
+    - media
+    - text
+    - user
+id: node.media_release.teaser
+targetEntityType: node
+bundle: media_release
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_landing_image:
+    type: media_thumbnail
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+hidden:
+  field_content_block: true
+  field_editorial_access: true
+  field_image: true
+  field_media_release_category: true
+  field_obituary: true
+  field_related_content: true
+  field_subtitle: true
+  field_tags: true
+  field_teaser_title: true
+  links: true

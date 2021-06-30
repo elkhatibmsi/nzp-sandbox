@@ -4,7 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
+    - field.field.media.image.field_dams_number
+    - field.field.media.image.field_image_alt_text
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_tags
+    - field.field.media.image.field_notes
+    - field.field.media.image.field_photographer
+    - field.field.media.image.field_we_do_not_own
     - image.style.thumbnail
     - media.type.image
   module:
@@ -26,6 +32,12 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_dams_number: true
+  field_image_alt_text: true
+  field_media_tags: true
+  field_notes: true
+  field_photographer: true
+  field_we_do_not_own: true
   name: true
   path: true
   status: true

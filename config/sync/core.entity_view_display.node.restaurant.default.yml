@@ -1,0 +1,32 @@
+uuid: 36cdb900-30ef-4403-bd5e-332a052bcc8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.restaurant.body
+    - field.field.node.restaurant.field_editorial_access
+    - field.field.node.restaurant.field_landing_image
+    - node.type.restaurant
+  module:
+    - text
+    - user
+id: node.restaurant.default
+targetEntityType: node
+bundle: restaurant
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_editorial_access: true
+  field_landing_image: true

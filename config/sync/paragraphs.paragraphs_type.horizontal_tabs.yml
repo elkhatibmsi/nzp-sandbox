@@ -1,0 +1,10 @@
+uuid: b36979c8-18fb-466e-961e-7aed92bd6ca3
+langcode: en
+status: true
+dependencies: {  }
+id: horizontal_tabs
+label: 'Horizontal Tabs'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from paragraph bundle Horizontal Tabs'
+behavior_plugins: {  }

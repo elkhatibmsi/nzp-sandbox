@@ -1,0 +1,21 @@
+uuid: c651b7a0-9f56-4f99-ad2e-ec15355f279f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon_card_icon
+    - paragraphs.paragraphs_type.icon_card_item
+  module:
+    - options
+id: paragraph.icon_card_item.field_icon_card_icon
+field_name: field_icon_card_icon
+entity_type: paragraph
+bundle: icon_card_item
+label: Icon
+description: 'Select an Icon that will flank the title.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

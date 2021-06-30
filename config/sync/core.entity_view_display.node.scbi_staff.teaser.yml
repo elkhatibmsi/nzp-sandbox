@@ -1,0 +1,58 @@
+uuid: 56601d1d-b456-4b04-83e9-1b2910c99924
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.scbi_staff.body
+    - field.field.node.scbi_staff.field_degrees
+    - field.field.node.scbi_staff.field_editorial_access
+    - field.field.node.scbi_staff.field_education
+    - field.field.node.scbi_staff.field_educational_background
+    - field.field.node.scbi_staff.field_google_scholar_profile
+    - field.field.node.scbi_staff.field_image
+    - field.field.node.scbi_staff.field_more_background
+    - field.field.node.scbi_staff.field_noteworthy_work
+    - field.field.node.scbi_staff.field_official_title
+    - field.field.node.scbi_staff.field_recent_papers
+    - field.field.node.scbi_staff.field_si_profiles_id
+    - field.field.node.scbi_staff.field_significant_papers
+    - field.field.node.scbi_staff.field_staff_category
+    - field.field.node.scbi_staff.field_tags
+    - node.type.scbi_staff
+  module:
+    - text
+    - user
+id: node.scbi_staff.teaser
+targetEntityType: node
+bundle: scbi_staff
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_degrees: true
+  field_editorial_access: true
+  field_education: true
+  field_educational_background: true
+  field_google_scholar_profile: true
+  field_image: true
+  field_more_background: true
+  field_noteworthy_work: true
+  field_official_title: true
+  field_recent_papers: true
+  field_si_profiles_id: true
+  field_significant_papers: true
+  field_staff_category: true
+  field_tags: true

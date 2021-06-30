@@ -1,0 +1,160 @@
+uuid: e5d038ec-d522-445e-83bb-80078560c2c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_components
+    - node.type.event
+  module:
+    - entity_reference_revisions
+id: node.event.field_event_components
+field_name: field_event_components
+entity_type: node
+bundle: event
+label: 'Event Components'
+description: 'Create paragraph content! This will display under the overview field. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      thumbnail_slideshow: thumbnail_slideshow
+      accordion_tabs: accordion_tabs
+      block_embed: block_embed
+      button_grid: button_grid
+      callout: callout
+      card_grid: card_grid
+      card_item: card_item
+      card_item_blank: card_item_blank
+      faq: faq
+      flipbook_grid: flipbook_grid
+      flipbook_grid_item: flipbook_grid_item
+      grid: grid
+      icon_card_item: icon_card_item
+      image_only: image_only
+      looping_video: looping_video
+      modal_media_gallery: modal_media_gallery
+      multi_column_layout_text_: multi_column_layout_text_
+      section: section
+      single_image_with_caption: single_image_with_caption
+      text: text
+      two_columns: two_columns
+      section_heading: section_heading
+      sticky_anchor_menu: sticky_anchor_menu
+    target_bundles_drag_drop:
+      accordion_tabs:
+        enabled: true
+        weight: 2
+      block_embed:
+        enabled: true
+        weight: 3
+      block_embed_no_title:
+        enabled: false
+        weight: 4
+      button_grid:
+        enabled: true
+        weight: 5
+      button_item:
+        enabled: false
+        weight: 6
+      callout:
+        enabled: true
+        weight: 7
+      card_grid:
+        enabled: true
+        weight: 8
+      card_item:
+        enabled: true
+        weight: 9
+      card_item_blank:
+        enabled: true
+        weight: 10
+      cell:
+        enabled: false
+        weight: 11
+      collapsible_block:
+        enabled: false
+        weight: 12
+      content_video:
+        enabled: false
+        weight: 13
+      entity_list:
+        enabled: false
+        weight: 14
+      faq:
+        enabled: true
+        weight: 15
+      flipbook_grid:
+        enabled: true
+        weight: 16
+      flipbook_grid_item:
+        enabled: true
+        weight: 17
+      grid:
+        enabled: true
+        weight: 18
+      horizontal_tabs:
+        enabled: false
+        weight: 19
+      icon_card_item:
+        enabled: true
+        weight: 20
+      image:
+        enabled: false
+        weight: 21
+      image_only:
+        enabled: true
+        weight: 22
+      looping_video:
+        enabled: true
+        weight: 23
+      modal_media_gallery:
+        enabled: true
+        weight: 24
+      multi_column_layout_text_:
+        enabled: true
+        weight: 25
+      section:
+        enabled: true
+        weight: 26
+      section_heading:
+        enabled: true
+        weight: 62
+      single_image_with_caption:
+        enabled: true
+        weight: 27
+      slideshow:
+        enabled: false
+        weight: 28
+      sticky_anchor_menu:
+        enabled: true
+        weight: 65
+      text:
+        enabled: true
+        weight: 29
+      thumbnail_slideshow:
+        enabled: true
+        weight: -74
+      time_slot:
+        enabled: false
+        weight: 30
+      two_column_grid:
+        enabled: false
+        weight: 34
+      two_columns:
+        enabled: true
+        weight: 31
+      two_columns_40_60:
+        enabled: false
+        weight: 32
+      two_columns_equal:
+        enabled: false
+        weight: 33
+      view_embed:
+        enabled: false
+        weight: 35
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

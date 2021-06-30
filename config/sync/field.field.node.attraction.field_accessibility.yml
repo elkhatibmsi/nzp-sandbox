@@ -1,0 +1,23 @@
+uuid: 45b71454-8941-4f13-b603-5ae6e7286798
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accessibility
+    - node.type.attraction
+id: node.attraction.field_accessibility
+field_name: field_accessibility
+entity_type: node
+bundle: attraction
+label: Accessibility
+description: 'Choose the disabilities that this attraction can support. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

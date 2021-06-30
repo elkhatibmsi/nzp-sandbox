@@ -1,0 +1,48 @@
+uuid: 24bf192b-c8ef-4f54-a180-d99166c61dec
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.camp.body
+    - field.field.node.camp.field_camp_category
+    - field.field.node.camp.field_camp_dates
+    - field.field.node.camp.field_editorial_access
+    - field.field.node.camp.field_grades
+    - field.field.node.camp.field_landing_image
+    - field.field.node.camp.field_member_cost
+    - field.field.node.camp.field_non_member_cost
+    - field.field.node.camp.field_status
+    - field.field.node.camp.field_tessitura_id
+    - node.type.camp
+  module:
+    - text
+    - user
+id: node.camp.teaser
+targetEntityType: node
+bundle: camp
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_camp_category: true
+  field_camp_dates: true
+  field_editorial_access: true
+  field_grades: true
+  field_landing_image: true
+  field_member_cost: true
+  field_non_member_cost: true
+  field_status: true
+  field_tessitura_id: true

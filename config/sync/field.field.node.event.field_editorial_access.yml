@@ -1,0 +1,25 @@
+uuid: fd4b3e22-ddb7-4690-b565-2e8c436043df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editorial_access
+    - node.type.event
+id: node.event.field_editorial_access
+field_name: field_editorial_access
+entity_type: node
+bundle: event
+label: 'Editorial Access'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    tid: '2'
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

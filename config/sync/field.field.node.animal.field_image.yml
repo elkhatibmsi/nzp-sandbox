@@ -1,0 +1,36 @@
+uuid: 9d3c5bb1-1fd3-43e1-81aa-a5f74814379a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.animal
+  module:
+    - image
+id: node.animal.field_image
+field_name: field_image
+entity_type: node
+bundle: animal
+label: Image(s)
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: animals
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '15 MB'
+  max_resolution: 1400x700
+  min_resolution: 1400x700
+  alt_field: true
+  title_field: false
+  default_image: 0
+  alt_field_required: true
+  title_field_required: false
+  handler_settings:
+    target_bundles:
+      image: image
+      image_http: image_http
+  handler: 'default:file'
+field_type: image

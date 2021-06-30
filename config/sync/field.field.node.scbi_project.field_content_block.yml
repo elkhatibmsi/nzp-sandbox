@@ -1,0 +1,93 @@
+uuid: e72cb619-d764-4340-85bf-293c7539f90b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_block
+    - node.type.scbi_project
+  module:
+    - entity_reference_revisions
+id: node.scbi_project.field_content_block
+field_name: field_content_block
+entity_type: node
+bundle: scbi_project
+label: 'Other Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      accordion_tabs: accordion_tabs
+      collapsible_block: collapsible_block
+      entity_list: entity_list
+      faq: faq
+      image: image
+      image_only: image_only
+      text: text
+    target_bundles_drag_drop:
+      accordion_tabs:
+        enabled: true
+        weight: 2
+      animal_q_a:
+        enabled: false
+        weight: 3
+      collapsible_block:
+        enabled: true
+        weight: 4
+      entity_list:
+        enabled: true
+        weight: 5
+      faq:
+        enabled: true
+        weight: 6
+      hotel:
+        enabled: false
+        weight: 7
+      image:
+        enabled: true
+        weight: 8
+      image_only:
+        enabled: true
+        weight: 9
+      menu_tabs:
+        enabled: false
+        weight: 10
+      responsive_tab:
+        enabled: false
+        weight: 11
+      restaurant:
+        enabled: false
+        weight: 12
+      scrolling_content:
+        enabled: false
+        weight: 13
+      slideshow:
+        enabled: false
+        weight: 14
+      text:
+        enabled: true
+        weight: 15
+      three_column:
+        enabled: false
+        weight: 16
+      three_column_grid:
+        enabled: false
+        weight: 17
+      two_column_grid:
+        enabled: false
+        weight: 20
+      two_columns_40_60:
+        enabled: false
+        weight: 18
+      two_columns_equal:
+        enabled: false
+        weight: 19
+      video:
+        enabled: false
+        weight: 21
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

@@ -1,0 +1,25 @@
+uuid: 96fe6f74-ad2b-44dd-b571-767d85dd226e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zoo_fonz
+    - node.type.event
+id: node.event.field_zoo_fonz
+field_name: field_zoo_fonz
+entity_type: node
+bundle: event
+label: 'Social Media Menu: Zoo or Fonz?'
+description: 'Select which social media menu should appear in the right sidebar.'
+required: true
+translatable: false
+default_value:
+  -
+    tid: '164'
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

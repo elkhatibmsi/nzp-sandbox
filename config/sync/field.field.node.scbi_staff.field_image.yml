@@ -1,0 +1,36 @@
+uuid: 8484bcc1-29ba-4951-a0e7-d6f759e78087
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.scbi_staff
+  module:
+    - image
+id: node.scbi_staff.field_image
+field_name: field_image
+entity_type: node
+bundle: scbi_staff
+label: Headshot
+description: 'A recent headshot photo of you. (This will not be used on the website, for security reasons, but will be kept on file in OPA.)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: conservation/staff
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  title_field: false
+  default_image: 0
+  alt_field_required: true
+  title_field_required: false
+  handler_settings:
+    target_bundles:
+      image: image
+      image_http: image_http
+  handler: 'default:file'
+field_type: image
