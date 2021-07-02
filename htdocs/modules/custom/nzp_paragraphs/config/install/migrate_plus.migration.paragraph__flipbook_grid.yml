@@ -7,23 +7,32 @@ dependencies:
   enforced:
     module:
       - nzp_paragraphs
+field_plugin_method: null
+cck_plugin_method: null
 source:
   plugin: d7_paragraphs_item
   bundle: flipbook_grid
 process:
   id: item_id
   revision_id: revision_id
-  pseudo_flipbook_grid_item:
-    plugin: migration_lookup
-    migration: paragraph__flipbook_grid_item
-    source: value
   field_flipbook_grid_item : 
-    plugin: sub_process
-    source: 
-      - '@pseudo_flipbook_grid_item'
-    process:  
-      target_id: '0'  
-      target_revision_id: '1'      
+    - plugin: sub_process
+      source: field_flipbook_grid_item
+      process:
+        target_id:
+          - plugin: migration_lookup
+            migration: paragraph__flipbook_grid_item
+            source: value
+          - plugin: extract
+            index:
+              - 0
+        target_revision_id:
+          - plugin: migration_lookup
+            migration: paragraph__flipbook_grid_item
+            source: value
+          - plugin: extract
+            index:
+              - 1
   field_number_of_columns: field_number_of_columns
   field_overlay_background : field_overlay_background
 destination:

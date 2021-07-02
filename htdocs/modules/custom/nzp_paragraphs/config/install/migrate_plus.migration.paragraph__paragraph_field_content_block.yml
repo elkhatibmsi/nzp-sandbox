@@ -96,31 +96,27 @@ process:
     -
       plugin: media_wysiwyg_filter
   field_content_block:
-    plugin: sub_process
-    source: d7_paragraphs
-    process:
-      target_id:
-        -
-          plugin: migration_lookup
-          migration:
-            - paragraph__text
-            - paragraph__flipbook_grid
-          source: pid
-        -
-          plugin: extract
-          index:
-            - 0
-      target_revision_id:
-        -
-          plugin: migration_lookup
-          migration:
-              - paragraph__text
+    - plugin: sub_process
+      source: field_content_block
+      process:
+        target_id:
+          - plugin: migration_lookup
+            migration: 
               - paragraph__flipbook_grid
-          source: pid
-        -
-          plugin: extract
-          index:
-            - 1
+              - paragraph__text
+            source: value
+          - plugin: extract
+            index:
+              - 0
+        target_revision_id:
+          - plugin: migration_lookup
+            migration: 
+              - paragraph__flipbook_grid
+              - paragraph__text
+            source: value
+          - plugin: extract
+            index:
+              - 1
   field_landing_image:
     -
       plugin: media_migration_delta_sort
