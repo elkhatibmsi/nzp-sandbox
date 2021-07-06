@@ -1,0 +1,43 @@
+uuid: 9c5d922e-cd6d-453a-91aa-08f157cb14c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.single_image_with_caption.field_single_image_caption_body
+    - field.field.paragraph.single_image_with_caption.field_single_image_caption_image
+    - field.field.paragraph.single_image_with_caption.field_single_image_caption_title
+    - paragraphs.paragraphs_type.single_image_with_caption
+  module:
+    - media_library
+    - text
+id: paragraph.single_image_with_caption.default
+targetEntityType: paragraph
+bundle: single_image_with_caption
+mode: default
+content:
+  field_single_image_caption_body:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_single_image_caption_image:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_single_image_caption_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true

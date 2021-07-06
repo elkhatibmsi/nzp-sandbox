@@ -375,6 +375,7 @@ permissions:
   - 'unlock trumba_special_events_import feeds'
   - 'use advanced search'
   - 'use media wysiwyg'
+  - 'use text format ds_code'
   - 'use text format filtered_html'
   - 'use text format full_html'
   - 'use text format title_formatter'

@@ -1,4 +1,4 @@
-id: paragraph__flipbook_grid
+id: paragraph__card_grid
 label: 'flipbook grid paragraph'
 migration_group: nzp_paragraphs
 migration_tags:
@@ -11,37 +11,44 @@ field_plugin_method: null
 cck_plugin_method: null
 source:
   plugin: d7_paragraphs_item
-  bundle: flipbook_grid
+  bundle: card_grid
 process:
   id: item_id
   revision_id: revision_id
-  field_flipbook_grid_item : 
+  field_card : 
     - plugin: sub_process
-      source: field_flipbook_grid_item
+      source: field_card
       process:
         target_id:
           - plugin: migration_lookup
-            migration: paragraph__flipbook_grid_item
+            migration:
+              - paragraph__card_item
+              - paragraph__card_item_blank
+              - paragraph__card_icon_item
             source: value
           - plugin: extract
             index:
               - 0
         target_revision_id:
           - plugin: migration_lookup
-            migration: paragraph__flipbook_grid_item
+            migration:
+              - paragraph__card_item
+              - paragraph__card_item_blank
+              - paragraph__card_icon_item
             source: value
           - plugin: extract
             index:
               - 1
-  field_number_of_columns: field_number_of_columns
-  field_overlay_background : field_overlay_background
+  field_card_border_settings: field_number_of_columns
 destination:
   plugin: 'entity_reference_revisions:paragraph'
-  default_bundle: flipbook_grid
+  default_bundle: card_grid
 
 migration_dependencies:
   required: 
-     - paragraph__flipbook_grid_item
+    - paragraph__card_item
+    - paragraph__card_item_blank
+    - paragraph__card__icon_item
   optional: {  }
 
 

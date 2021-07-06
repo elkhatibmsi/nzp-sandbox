@@ -1,12 +1,12 @@
-uuid: b40c5a07-bc94-464d-bdd1-af4f5df618cd
-langcode: und
+uuid: 67136117-289a-4519-a4dc-d98b0fe444ff
+langcode: en
 status: true
 dependencies:
   module:
     - entity_reference_revisions
     - paragraphs
-id: paragraph.field_faq
-field_name: field_faq
+id: paragraph.field_slideshow_slide
+field_name: field_slideshow_slide
 entity_type: paragraph
 type: entity_reference_revisions
 settings:

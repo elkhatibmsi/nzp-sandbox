@@ -1,0 +1,10 @@
+uuid: b82cf697-3385-406a-bea0-525f71fabe5a
+langcode: en
+status: true
+dependencies: {  }
+id: faq_item
+label: 'Faq item'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_faq_item'
+behavior_plugins: {  }

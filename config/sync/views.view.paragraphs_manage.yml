@@ -76,6 +76,7 @@ display:
           description: ''
           columns:
             id: id
+            revision_id: revision_id
             type: type
             parent_type: parent_type
             parent_id: parent_id
@@ -83,6 +84,13 @@ display:
           info:
             id:
               sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            revision_id:
+              sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
@@ -110,7 +118,7 @@ display:
               empty_column: false
               responsive: ''
             rendered_entity:
-              sortable: true
+              sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
@@ -188,6 +196,72 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        revision_id:
+          id: revision_id
+          table: paragraphs_item_field_data
+          field: revision_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Revision ID'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: paragraph
+          entity_field: revision_id
+          plugin_id: field
         type:
           id: type
           table: paragraphs_item_field_data
@@ -388,7 +462,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Paragraph Item'
+          label: 'Rendered entity'
           exclude: false
           alter:
             alter_text: false
@@ -518,7 +592,21 @@ display:
         - url
         - url.query_args
       tags:
+        - 'config:core.entity_view_display.paragraph.accordion.default'
+        - 'config:core.entity_view_display.paragraph.class_session.default'
+        - 'config:core.entity_view_display.paragraph.faq.default'
+        - 'config:core.entity_view_display.paragraph.faq_item.default'
+        - 'config:core.entity_view_display.paragraph.flipbook_grid.default'
+        - 'config:core.entity_view_display.paragraph.flipbook_grid_item.default'
+        - 'config:core.entity_view_display.paragraph.icon_card_item.default'
+        - 'config:core.entity_view_display.paragraph.image_only.default'
+        - 'config:core.entity_view_display.paragraph.single_image_with_caption.default'
+        - 'config:core.entity_view_display.paragraph.slideshow.default'
+        - 'config:core.entity_view_display.paragraph.slideshow_container.default'
         - 'config:core.entity_view_display.paragraph.text.default'
+        - 'config:core.entity_view_display.paragraph.card_grid.default'
+        - 'config:core.entity_view_display.paragraph.card_item.default'
+        - 'config:core.entity_view_display.paragraph.card_item_blank.default'
   page_1:
     display_plugin: page
     id: page_1
@@ -544,4 +632,18 @@ display:
         - url
         - url.query_args
       tags:
+        - 'config:core.entity_view_display.paragraph.accordion.default'
+        - 'config:core.entity_view_display.paragraph.card_grid.default'
+        - 'config:core.entity_view_display.paragraph.card_item.default'
+        - 'config:core.entity_view_display.paragraph.card_item_blank.default'
+        - 'config:core.entity_view_display.paragraph.class_session.default'
+        - 'config:core.entity_view_display.paragraph.faq.default'
+        - 'config:core.entity_view_display.paragraph.faq_item.default'
+        - 'config:core.entity_view_display.paragraph.flipbook_grid.default'
+        - 'config:core.entity_view_display.paragraph.flipbook_grid_item.default'
+        - 'config:core.entity_view_display.paragraph.icon_card_item.default'
+        - 'config:core.entity_view_display.paragraph.image_only.default'
+        - 'config:core.entity_view_display.paragraph.single_image_with_caption.default'
+        - 'config:core.entity_view_display.paragraph.slideshow.default'
+        - 'config:core.entity_view_display.paragraph.slideshow_container.default'
         - 'config:core.entity_view_display.paragraph.text.default'

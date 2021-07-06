@@ -1,0 +1,23 @@
+uuid: b0670024-ddb5-4e81-ac47-6e1b1313c440
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordion.field_accordion_tab_title
+    - field.field.paragraph.accordion.field_tab_content
+    - paragraphs.paragraphs_type.accordion
+id: paragraph.accordion.default
+targetEntityType: paragraph
+bundle: accordion
+mode: default
+content:
+  field_accordion_tab_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_tab_content: true

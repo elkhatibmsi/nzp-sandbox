@@ -1,0 +1,77 @@
+uuid: 15ef1786-4f38-457f-8205-1e1cb2bb5f96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.class_session.field_company_url
+    - field.field.paragraph.class_session.field_dates
+    - field.field.paragraph.class_session.field_is_sold_out
+    - field.field.paragraph.class_session.field_schedule_description
+    - field.field.paragraph.class_session.field_starting_month
+    - field.field.paragraph.class_session.field_times
+    - paragraphs.paragraphs_type.class_session
+  module:
+    - datetime
+    - link
+    - options
+id: paragraph.class_session.default
+targetEntityType: paragraph
+bundle: class_session
+mode: default
+content:
+  field_company_url:
+    type: link
+    weight: 0
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_dates:
+    type: datetime_default
+    weight: 1
+    region: content
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_is_sold_out:
+    type: boolean
+    weight: 2
+    region: content
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+  field_schedule_description:
+    type: string
+    weight: 4
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_starting_month:
+    type: list_default
+    weight: 5
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_times:
+    type: datetime_default
+    weight: 3
+    region: content
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+hidden: {  }

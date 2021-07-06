@@ -24,6 +24,7 @@ dependencies:
     - field.field.node.basic_page.field_teaser_title
     - node.type.basic_page
   module:
+    - entity_reference_revisions
     - text
     - user
 id: node.basic_page.default
@@ -34,31 +35,83 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_content_block:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_landing_image:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_modal_gallery:
+    type: entity_reference_revisions_entity_view
+    weight: 8
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_page_type:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_slideshow:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_tags:
+    type: entity_reference_label
+    weight: 6
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_teaser_title:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_card_position: true
   field_card_subtitle: true
-  field_content_block: true
   field_editorial_access: true
   field_feature_one: true
   field_feature_three: true
   field_feature_two: true
   field_has_promotions: true
-  field_landing_image: true
-  field_modal_gallery: true
-  field_page_type: true
   field_promotion_one: true
   field_promotion_three: true
   field_promotion_two: true
-  field_slideshow: true
   field_subtitle: true
-  field_tags: true
-  field_teaser_title: true

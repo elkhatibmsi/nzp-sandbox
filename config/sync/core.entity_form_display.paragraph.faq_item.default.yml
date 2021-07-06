@@ -1,0 +1,43 @@
+uuid: 4f37fc4c-c628-4e97-8898-1f1fb705935d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.faq_item.field_faq_answer
+    - field.field.paragraph.faq_item.field_faq_question
+    - field.field.paragraph.faq_item.field_text
+    - paragraphs.paragraphs_type.faq_item
+  module:
+    - text
+id: paragraph.faq_item.default
+targetEntityType: paragraph
+bundle: faq_item
+mode: default
+content:
+  field_faq_answer:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_faq_question:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_text:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,40 @@
+uuid: e9fda59b-48d8-4e53-b159-574e3e5d440b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.single_image_with_caption.field_single_image_caption_body
+    - field.field.paragraph.single_image_with_caption.field_single_image_caption_image
+    - field.field.paragraph.single_image_with_caption.field_single_image_caption_title
+    - paragraphs.paragraphs_type.single_image_with_caption
+  module:
+    - text
+id: paragraph.single_image_with_caption.default
+targetEntityType: paragraph
+bundle: single_image_with_caption
+mode: default
+content:
+  field_single_image_caption_body:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_single_image_caption_image:
+    type: entity_reference_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_single_image_caption_title:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }
