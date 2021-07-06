@@ -113,6 +113,7 @@ process:
             migration: 
               - paragraph__flipbook_grid
               - paragraph__text
+              - paragraph__faq
             source: value
           - plugin: extract
             index:
