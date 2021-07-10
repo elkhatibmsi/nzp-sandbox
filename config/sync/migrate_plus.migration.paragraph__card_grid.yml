@@ -18,7 +18,6 @@ source:
   bundle: card_grid
 process:
   id: item_id
-  revision_id: revision_id
   field_card:
     -
       plugin: sub_process

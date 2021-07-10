@@ -15,7 +15,6 @@ migration_group: nzp_paragraphs
 label: 'FAQ Item'
 source:
   plugin: d7_field_collection_item
-  key: migrate
   field_name: field_faq
 process:
   id: item_id

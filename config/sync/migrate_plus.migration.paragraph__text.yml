@@ -18,7 +18,6 @@ source:
   bundle: text
 process:
   id: item_id
-  revision_id: revision_id
   field_text: field_text
 destination:
   plugin: 'entity_reference_revisions:paragraph'

@@ -18,7 +18,14 @@ source:
   bundle: flipbook_grid_item
 process:
   id: item_id
-  field_flipbook_media: field_flipbook_media
+  field_flipbook_media:
+    -
+      plugin: media_migration_delta_sort
+      source: field_flipbook_media
+    -
+      plugin: sub_process
+      process:
+        target_id: fid
   field_flipbook_overlay: field_flipbook_overlay
   field_flipbook_title: field_flipbook_title
 destination:
