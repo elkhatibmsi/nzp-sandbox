@@ -37,7 +37,8 @@ destination:
   default_bundle: slideshow_container
 
 migration_dependencies:
-  required: {  }
+  required: 
+    - paragraph__slide 
   optional: {  }
 
 

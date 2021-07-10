@@ -1,5 +1,5 @@
-id: paragraph__faq
-label: 'faq paragraph'
+id: paragraph__accordion
+label: 'Accordion item paragraph'
 migration_group: nzp_paragraphs
 field_plugin_method: null
 cck_plugin_method: null
@@ -9,39 +9,45 @@ dependencies:
   enforced:
     module:
       - nzp_paragraphs
-field_plugin_method: null
-cck_plugin_method: null
 source:
-  plugin: d7_paragraphs_item
-  bundle: faq
+  plugin: d7_field_collection_item
+  key: migrate
+  field_name: field_accordion
 process:
   id: item_id
-  field_faq_item: 
+  field_accordion_tab_title: field_title
+  field_tab_content : 
     - plugin: sub_process
-      source: field_faq
+      source: field_tab_content
       process:
         target_id:
           - plugin: migration_lookup
-            migration: paragraph__faq_item
+            migration: 
+              - paragraph__text
+              - paragraph__slide
+              - paragraph__slideshow_image_only
+              - paragraph__image
             source: value
           - plugin: extract
             index:
               - 0
         target_revision_id:
           - plugin: migration_lookup
-            migration: paragraph__faq_item
+            migration: 
+              - paragraph__text
+              - paragraph__slide
+              - paragraph__slideshow_image_only
+              - paragraph__image
             source: value
           - plugin: extract
             index:
               - 1
-
 destination:
   plugin: 'entity_reference_revisions:paragraph'
-  default_bundle: faq
+  default_bundle: accordion
 
 migration_dependencies:
-  required:
-    - paragraph__faq_item
+  required: {  }
   optional: {  }
 
 

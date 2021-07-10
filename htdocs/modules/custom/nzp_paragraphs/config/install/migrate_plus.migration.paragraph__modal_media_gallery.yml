@@ -1,5 +1,5 @@
-id: paragraph__flipbook_grid_item
-label: 'flipbook grid item paragraph'
+id: paragraph__modal_media_gallery
+label: 'modal media gallery paragraph'
 migration_group: nzp_paragraphs
 migration_tags:
   - Paragraphs
@@ -11,22 +11,23 @@ dependencies:
       - nzp_paragraphs
 source:
   plugin: d7_paragraphs_item
-  bundle: flipbook_grid_item
+  bundle: modal_media_gallery
 process:
   id: item_id
-  field_flipbook_media:
+  field_modal_gallery_media:
     -
       plugin: media_migration_delta_sort
-      source: field_flipbook_media
+      source: field_modal_gallery_media
     -
       plugin: sub_process
       process:
         target_id: fid
-  field_flipbook_overlay: field_flipbook_overlay
-  field_flipbook_title : field_flipbook_title
+  field_modal_gallery_title: field_modal_gallery_title
+  field_show_read_more_link_after : field_show_read_more_link_after
+  field_thumbnail_positioning: field_thumbnail_positioning
 destination:
   plugin: 'entity_reference_revisions:paragraph'
-  default_bundle: flipbook_grid_item
+  default_bundle: modal_media_gallery
 
 migration_dependencies:
   required: {  }

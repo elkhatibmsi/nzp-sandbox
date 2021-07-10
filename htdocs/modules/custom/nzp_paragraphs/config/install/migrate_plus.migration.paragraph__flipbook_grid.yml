@@ -7,14 +7,11 @@ dependencies:
   enforced:
     module:
       - nzp_paragraphs
-field_plugin_method: null
-cck_plugin_method: null
 source:
   plugin: d7_paragraphs_item
   bundle: flipbook_grid
 process:
   id: item_id
-  revision_id: revision_id
   field_flipbook_grid_item : 
     - plugin: sub_process
       source: field_flipbook_grid_item
