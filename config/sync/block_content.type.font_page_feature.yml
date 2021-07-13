@@ -1,0 +1,8 @@
+uuid: d0022907-9189-4d71-ad51-7e9b78317cc8
+langcode: en
+status: true
+dependencies: {  }
+id: font_page_feature
+label: 'Front page feature'
+revision: 1
+description: 'Creates the four major features on the front page'

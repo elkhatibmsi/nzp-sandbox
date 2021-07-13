@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d763f77299834d78a7a01e8ec3ca2f2",
+    "content-hash": "6476b70b066083af1741a52d8ab6d9ca",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2393,6 +2393,57 @@
                 "source": "https://git.drupalcode.org/project/backup_migrate",
                 "issues": "https://www.drupal.org/project/issues/backup_migrate",
                 "slack": "https://drupal.slack.com/messages/C7C4M4QJV/details/"
+            }
+        },
+        {
+            "name": "drupal/bean_migrate",
+            "version": "1.0.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bean_migrate.git",
+                "reference": "1.0.0-beta3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bean_migrate-1.0.0-beta3.zip",
+                "reference": "1.0.0-beta3",
+                "shasum": "7d383f5d9cd378ca0d205dee4e3c8078c27eb30f"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "suggest": {
+                "drupal/block_content_revision_ui": "Adds Revision UI to Block Content entities."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-beta3",
+                    "datestamp": "1616579531",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "huzooka",
+                    "homepage": "https://www.drupal.org/user/281301"
+                }
+            ],
+            "description": "Migrations from Drupal 7 Bean to Drupal 9 block content entities",
+            "homepage": "https://www.drupal.org/project/bean_migrate",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/bean_migrate",
+                "issues": "https://drupal.org/project/issues/bean_migrate"
             }
         },
         {
@@ -14180,6 +14231,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/bean_migrate": 10,
         "drupal/captcha": 10,
         "drupal/conditional_fields": 15,
         "drupal/inline_entity_form": 5,

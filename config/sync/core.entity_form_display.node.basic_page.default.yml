@@ -66,6 +66,36 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+  field_feature_one:
+    type: entity_reference_autocomplete
+    weight: 13
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_feature_three:
+    type: entity_reference_autocomplete
+    weight: 15
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_feature_two:
+    type: entity_reference_autocomplete
+    weight: 14
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_landing_image:
     type: entity_reference_autocomplete
     weight: 11
@@ -166,9 +196,6 @@ hidden:
   field_card_position: true
   field_card_subtitle: true
   field_editorial_access: true
-  field_feature_one: true
-  field_feature_three: true
-  field_feature_two: true
   field_has_promotions: true
   field_page_type: true
   field_promotion_one: true

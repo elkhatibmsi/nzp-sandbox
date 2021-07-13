@@ -1,0 +1,21 @@
+uuid: 700ee14b-216b-44bc-917a-8db9d4f36b73
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.entity_list.field_list_of_entities
+    - paragraphs.paragraphs_type.entity_list
+id: paragraph.entity_list.default
+targetEntityType: paragraph
+bundle: entity_list
+mode: default
+content:
+  field_list_of_entities:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden: {  }

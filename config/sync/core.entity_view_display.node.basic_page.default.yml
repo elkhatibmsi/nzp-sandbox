@@ -25,6 +25,7 @@ dependencies:
     - node.type.basic_page
   module:
     - entity_reference_revisions
+    - taxonomy
     - text
     - user
 id: node.basic_page.default
@@ -39,6 +40,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_card_position:
+    type: entity_reference_rss_category
+    weight: 17
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_content_block:
     type: entity_reference_revisions_entity_view
     weight: 7
@@ -48,13 +56,49 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-  field_landing_image:
+  field_editorial_access:
     type: entity_reference_label
+    weight: 15
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_feature_one:
+    type: entity_reference_entity_view
+    weight: 9
+    region: content
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+  field_feature_three:
+    type: entity_reference_entity_view
+    weight: 11
+    region: content
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+  field_feature_two:
+    type: entity_reference_entity_view
+    weight: 10
+    region: content
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+  field_landing_image:
+    type: entity_reference_entity_view
     weight: 1
     region: content
     label: above
     settings:
       link: true
+      view_mode: default
     third_party_settings: {  }
   field_modal_gallery:
     type: entity_reference_revisions_entity_view
@@ -73,6 +117,33 @@ content:
     settings:
       link: true
     third_party_settings: {  }
+  field_promotion_one:
+    type: entity_reference_revisions_entity_view
+    weight: 12
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_promotion_three:
+    type: entity_reference_revisions_entity_view
+    weight: 14
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_promotion_two:
+    type: entity_reference_revisions_entity_view
+    weight: 13
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
   field_slideshow:
     type: entity_reference_revisions_entity_view
     weight: 3
@@ -81,6 +152,14 @@ content:
     settings:
       view_mode: default
       link: ''
+    third_party_settings: {  }
+  field_subtitle:
+    type: string
+    weight: 16
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
   field_tags:
     type: entity_reference_label
@@ -104,14 +183,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_card_position: true
   field_card_subtitle: true
-  field_editorial_access: true
-  field_feature_one: true
-  field_feature_three: true
-  field_feature_two: true
   field_has_promotions: true
-  field_promotion_one: true
-  field_promotion_three: true
-  field_promotion_two: true
-  field_subtitle: true

@@ -14,7 +14,6 @@ source:
   field_name: field_faq
 process:
   id: item_id
-  revision_id: revision_id
   field_faq_question: field_title
   field_faq_answer: field_text
 destination:

@@ -1,0 +1,32 @@
+uuid: e8bf50df-f017-4c95-b8d6-9db58674e27d
+langcode: en
+status: true
+dependencies: {  }
+id: bean_type
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: nzp_paragraphs
+label: 'Bean type'
+source:
+  plugin: bean_type
+  entity_type: bean
+  constants:
+    revision: 1
+process:
+  id:
+    plugin: bean_unique_type
+    source: type
+  label:
+    plugin: null_coalesce
+    source:
+      - label
+      - type
+  description: description
+  revision: constants/revision
+destination:
+  plugin: 'entity:block_content_type'
+migration_dependencies: null

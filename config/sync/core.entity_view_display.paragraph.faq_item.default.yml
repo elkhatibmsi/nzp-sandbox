@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.paragraph.faq_item.field_faq_answer
     - field.field.paragraph.faq_item.field_faq_question
-    - field.field.paragraph.faq_item.field_text
     - paragraphs.paragraphs_type.faq_item
   module:
     - text
@@ -23,13 +22,6 @@ content:
     region: content
   field_faq_question:
     weight: 0
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_text:
-    weight: 2
     label: above
     settings: {  }
     third_party_settings: {  }

@@ -25,6 +25,7 @@ dependencies:
     - field.field.node.basic_page.field_teaser_title
     - node.type.basic_page
   module:
+    - media
     - text
     - user
 id: node.basic_page.teaser
@@ -35,16 +36,20 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 1
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
+  field_landing_image:
+    type: media_thumbnail
+    weight: 0
     region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
 hidden:
   field_card_position: true
   field_card_subtitle: true
@@ -54,7 +59,6 @@ hidden:
   field_feature_three: true
   field_feature_two: true
   field_has_promotions: true
-  field_landing_image: true
   field_modal_gallery: true
   field_page_type: true
   field_promotion_one: true
@@ -64,3 +68,4 @@ hidden:
   field_subtitle: true
   field_tags: true
   field_teaser_title: true
+  links: true

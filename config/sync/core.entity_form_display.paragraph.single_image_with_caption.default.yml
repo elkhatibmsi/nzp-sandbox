@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.single_image_with_caption.field_single_image_caption_body
     - field.field.paragraph.single_image_with_caption.field_single_image_caption_image
     - field.field.paragraph.single_image_with_caption.field_single_image_caption_title
+    - field.field.paragraph.single_image_with_caption.field_slide_image
     - paragraphs.paragraphs_type.single_image_with_caption
   module:
     - media_library
@@ -40,4 +41,5 @@ content:
     region: content
 hidden:
   created: true
+  field_slide_image: true
   status: true

@@ -21,6 +21,7 @@
         "drupal/addtoany": "^1.10",
         "drupal/admin_toolbar": "^2.0",
         "drupal/backup_migrate": "^5.0",
+        "drupal/bean_migrate": "^1.0@beta",
         "drupal/bg_image_formatter": "^1.5",
         "drupal/block_class": "^1.0",
         "drupal/captcha": "^1.0@beta",
