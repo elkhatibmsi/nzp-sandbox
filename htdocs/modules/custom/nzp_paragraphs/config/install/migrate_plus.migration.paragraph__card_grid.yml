@@ -1,5 +1,5 @@
 id: paragraph__card_grid
-label: 'flipbook grid paragraph'
+label: 'paragraph card grid paragraph'
 migration_group: nzp_paragraphs
 migration_tags:
   - Paragraphs

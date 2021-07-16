@@ -1,5 +1,5 @@
 id: paragraph__horizontal_tabs
-label: 'Collapsible Block Paragraph'
+label: 'Horizontal Tabs Paragraph'
 migration_group: nzp_paragraphs
 migration_tags:
   - Paragraphs
