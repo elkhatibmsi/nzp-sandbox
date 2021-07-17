@@ -25,7 +25,7 @@ process:
               - paragraph__slide
               - paragraph__slideshow_image_only
               - paragraph__image
-              - paragraph__sile_image_with_caption
+              - paragraph__single_image_with_caption
             source: value
           - plugin: extract
             index:
@@ -36,7 +36,7 @@ process:
               - paragraph__text
               - paragraph__slide
               - paragraph__slideshow_image_only
-              - paragraph__sile_image_with_caption
+              - paragraph__single_image_with_caption
             source: value
           - plugin: extract
             index:
@@ -51,7 +51,7 @@ migration_dependencies:
     - paragraph__slide
     - paragraph__slideshow_image_only
     - paragraph__image
-    - paragraph__sile_image_with_caption
+    - paragraph__single_image_with_caption
   optional: {  }
 
 

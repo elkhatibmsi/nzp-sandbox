@@ -1,8 +1,0 @@
-uuid: 3a1061a2-fb2b-4e5a-9849-62a1a4641631
-langcode: en
-status: true
-dependencies: {  }
-id: event_comestibles
-label: 'Event Comestibles'
-revision: 1
-description: 'A listing of restaurants and vintners for ZooFari, for example.'
