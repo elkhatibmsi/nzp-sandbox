@@ -1,0 +1,78 @@
+uuid: 9a1225dd-fb8f-4778-b9e0-691df680dd19
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.parameterized_promos
+    - field.field.block_content.parameterized_promos.field_promo_banner_body
+    - field.field.block_content.parameterized_promos.field_promo_banner_link
+    - field.field.block_content.parameterized_promos.field_promo_banner_make_default
+    - field.field.block_content.parameterized_promos.field_promo_banner_media
+    - field.field.block_content.parameterized_promos.field_promo_banner_parameter
+    - field.field.block_content.parameterized_promos.title
+  module:
+    - link
+    - text
+id: block_content.parameterized_promos.default
+targetEntityType: block_content
+bundle: parameterized_promos
+mode: default
+content:
+  field_promo_banner_body:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_promo_banner_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_promo_banner_make_default:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_promo_banner_media:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_promo_banner_parameter:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
