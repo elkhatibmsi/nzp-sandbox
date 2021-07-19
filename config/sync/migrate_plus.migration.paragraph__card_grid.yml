@@ -12,7 +12,7 @@ cck_plugin_method: null
 migration_tags:
   - Paragraphs
 migration_group: nzp_paragraphs
-label: 'flipbook grid paragraph'
+label: 'paragraph card grid paragraph'
 source:
   plugin: d7_paragraphs_item
   bundle: card_grid

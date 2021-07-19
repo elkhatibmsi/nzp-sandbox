@@ -1,0 +1,21 @@
+uuid: f9880eeb-6fbb-4a06-8859-7b7d804beb3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.disclaimer
+    - field.storage.block_content.field_disclaimer_text
+  module:
+    - text
+id: block_content.disclaimer.field_disclaimer_text
+field_name: field_disclaimer_text
+entity_type: block_content
+bundle: disclaimer
+label: 'Disclaimer Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

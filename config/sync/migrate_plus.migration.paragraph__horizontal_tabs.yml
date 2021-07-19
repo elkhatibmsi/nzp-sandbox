@@ -12,7 +12,7 @@ cck_plugin_method: null
 migration_tags:
   - Paragraphs
 migration_group: nzp_paragraphs
-label: 'Collapsible Block Paragraph'
+label: 'Horizontal Tabs Paragraph'
 source:
   plugin: d7_paragraphs_item
   bundle: horizontal_tabs

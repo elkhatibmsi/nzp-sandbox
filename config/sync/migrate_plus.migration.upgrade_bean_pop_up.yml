@@ -132,8 +132,27 @@ process:
       plugin: media_wysiwyg_filter
   field_pop_up_content:
     -
-      plugin: get
+      plugin: sub_process
       source: field_pop_up_content
+      process:
+        target_id:
+          -
+            plugin: migration_lookup
+            migration: paragraph__text
+            source: value
+          -
+            plugin: extract
+            index:
+              - 0
+        target_revision_id:
+          -
+            plugin: migration_lookup
+            migration: paragraph__text
+            source: value
+          -
+            plugin: extract
+            index:
+              - 1
   field_pop_up_frequency:
     -
       plugin: get
@@ -161,7 +180,6 @@ migration_dependencies:
   required:
     - upgrade_bean_type_pop_up
     - upgrade_bean_title_field_instance_pop_up
-    - upgrade_d7_file_entity_image_public
   optional:
     - upgrade_bean_title_field_formatter_pop_up
     - upgrade_bean_title_field_widget_pop_up

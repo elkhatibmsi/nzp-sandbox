@@ -140,8 +140,57 @@ process:
         target_id: fid
   field_content_block:
     -
-      plugin: get
+      plugin: sub_process
       source: field_content_block
+      process:
+        target_id:
+          -
+            plugin: migration_lookup
+            migration:
+              - paragraph__callout
+              - paragraph__content_video
+              - paragraph__flipbook_grid
+              - paragraph__faq
+              - paragraph__card_grid
+              - paragraph__horizontal_tabs
+              - paragraph__grid
+              - paragraph__modal_media_gallery
+              - paragraph__slide
+              - paragraph__slideshow_image_only
+              - paragraph__single_image_with_caption
+              - paragraph__sticky_anchor_menu
+              - paragraph__text
+              - paragraph__thumbnail_slideshow
+              - paragraph__webcam_embed
+            source: value
+          -
+            plugin: extract
+            index:
+              - 0
+        target_revision_id:
+          -
+            plugin: migration_lookup
+            migration:
+              - paragraph__callout
+              - paragraph__content_video
+              - paragraph__flipbook_grid
+              - paragraph__faq
+              - paragraph__card_grid
+              - paragraph__horizontal_tabs
+              - paragraph__grid
+              - paragraph__modal_media_gallery
+              - paragraph__slide
+              - paragraph__slideshow_image_only
+              - paragraph__single_image_with_caption
+              - paragraph__sticky_anchor_menu
+              - paragraph__text
+              - paragraph__thumbnail_slideshow
+              - paragraph__webcam_embed
+            source: value
+          -
+            plugin: extract
+            index:
+              - 1
 destination:
   plugin: 'entity_complete:node'
   translations: true

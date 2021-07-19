@@ -9,7 +9,7 @@ cck_plugin_method: null
 migration_tags:
   - Paragraphs
 migration_group: nzp_paragraphs
-label: 'Card Item'
+label: 'Card Icon Item'
 source:
   plugin: d7_paragraphs_item
   bundle: icon_card_item

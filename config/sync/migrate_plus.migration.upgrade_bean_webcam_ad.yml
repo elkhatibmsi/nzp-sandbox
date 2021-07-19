@@ -147,7 +147,6 @@ migration_dependencies:
   required:
     - upgrade_bean_type_webcam_ad
     - upgrade_bean_title_field_instance_webcam_ad
-    - upgrade_d7_file_entity_image_public
   optional:
     - upgrade_bean_title_field_formatter_webcam_ad
     - upgrade_bean_title_field_widget_webcam_ad

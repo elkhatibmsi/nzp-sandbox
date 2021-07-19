@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.faq.field_faq
     - field.field.paragraph.faq.field_faq_item
     - paragraphs.paragraphs_type.faq
   module:
@@ -33,4 +34,5 @@ content:
     region: content
 hidden:
   created: true
+  field_faq: true
   status: true

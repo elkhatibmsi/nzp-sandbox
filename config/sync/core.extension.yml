@@ -65,6 +65,7 @@ module:
   tour: 0
   update: 0
   user: 0
+  views_bulk_operations: 0
   views_ui: 0
   pathauto: 1
   views: 10

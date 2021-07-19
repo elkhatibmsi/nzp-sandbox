@@ -124,7 +124,7 @@ process:
       source:
         - title_field
         - title
-  field_text:
+  field_event_comestible_text:
     -
       plugin: get
       source: field_text
@@ -139,7 +139,6 @@ migration_dependencies:
   required:
     - upgrade_bean_type_event_comestibles
     - upgrade_bean_title_field_instance_event_comestibles
-    - upgrade_d7_file_entity_image_public
   optional:
     - upgrade_bean_title_field_formatter_event_comestibles
     - upgrade_bean_title_field_widget_event_comestibles

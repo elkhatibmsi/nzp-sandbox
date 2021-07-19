@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.faq.field_faq
     - field.field.paragraph.faq.field_faq_item
     - paragraphs.paragraphs_type.faq
   module:
@@ -21,4 +22,5 @@ content:
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
     region: content
-hidden: {  }
+hidden:
+  field_faq: true

@@ -1,0 +1,24 @@
+uuid: 5b3699d9-ba2c-40d3-8b94-efb5303adaad
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.event_comestibles
+    - field.field.block_content.event_comestibles.field_event_comestible_text
+    - field.field.block_content.event_comestibles.title
+  module:
+    - text
+id: block_content.event_comestibles.default
+targetEntityType: block_content
+bundle: event_comestibles
+mode: default
+content:
+  field_event_comestible_text:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  title: true
