@@ -1,22 +1,21 @@
-uuid: cc13df78-4329-4baa-9685-18f84d6bb431
+uuid: 48f3001f-2682-422c-af86-ee223ea536e9
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.font_page_feature
-    - field.field.block_content.font_page_feature.field_landing_image
-    - field.field.block_content.font_page_feature.field_modal_iframe
-    - field.field.block_content.font_page_feature.field_subtitle
-    - field.field.block_content.font_page_feature.field_url
-    - field.field.block_content.font_page_feature.title
+    - block_content.type.webcam_ad
+    - field.field.block_content.webcam_ad.field_ad_image
+    - field.field.block_content.webcam_ad.field_include_in_rotation
+    - field.field.block_content.webcam_ad.field_url
+    - field.field.block_content.webcam_ad.title
   module:
     - link
-id: block_content.font_page_feature.default
+id: block_content.webcam_ad.default
 targetEntityType: block_content
-bundle: font_page_feature
+bundle: webcam_ad
 mode: default
 content:
-  field_landing_image:
+  field_ad_image:
     type: entity_reference_autocomplete
     weight: 2
     region: content
@@ -26,24 +25,16 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_modal_iframe:
+  field_include_in_rotation:
     type: boolean_checkbox
-    weight: 3
+    weight: 1
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
-  field_subtitle:
-    type: string_textfield
-    weight: 4
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_url:
     type: link_default
-    weight: 5
+    weight: 3
     region: content
     settings:
       placeholder_url: ''
@@ -51,7 +42,7 @@ content:
     third_party_settings: {  }
   info:
     type: string_textfield
-    weight: 1
+    weight: 0
     region: content
     settings:
       size: 60
@@ -59,7 +50,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 4
     region: content
     settings:
       size: 60

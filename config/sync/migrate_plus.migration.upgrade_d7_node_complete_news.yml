@@ -145,6 +145,7 @@ process:
               - paragraph__horizontal_tabs
               - paragraph__grid
               - paragraph__modal_media_gallery
+              - paragraph__section_heading
               - paragraph__slide
               - paragraph__slideshow_image_only
               - paragraph__single_image_with_caption
@@ -169,6 +170,7 @@ process:
               - paragraph__horizontal_tabs
               - paragraph__grid
               - paragraph__modal_media_gallery
+              - paragraph__section_heading
               - paragraph__slide
               - paragraph__slideshow_image_only
               - paragraph__single_image_with_caption

@@ -145,6 +145,7 @@ destination:
   translations: true
 migration_dependencies:
   required:
+    - upgrade_bean_type_webcam_ad
     - upgrade_bean_title_field_instance_webcam_ad
   optional:
     - upgrade_bean_title_field_formatter_webcam_ad

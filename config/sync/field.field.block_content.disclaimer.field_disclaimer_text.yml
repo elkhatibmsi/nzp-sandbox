@@ -1,4 +1,4 @@
-uuid: 5199e9b6-aa3f-41ff-83f8-b02534589c20
+uuid: f9880eeb-6fbb-4a06-8859-7b7d804beb3d
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ id: block_content.disclaimer.field_disclaimer_text
 field_name: field_disclaimer_text
 entity_type: block_content
 bundle: disclaimer
-label: 'disclaimer text'
+label: 'Disclaimer Text'
 description: ''
 required: false
 translatable: false

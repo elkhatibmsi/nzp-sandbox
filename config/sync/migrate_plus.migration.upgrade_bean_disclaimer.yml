@@ -137,6 +137,7 @@ destination:
   translations: true
 migration_dependencies:
   required:
+    - upgrade_bean_type_disclaimer
     - upgrade_bean_title_field_instance_disclaimer
   optional:
     - upgrade_bean_title_field_formatter_disclaimer
@@ -146,3 +147,4 @@ migration_dependencies:
     - upgrade_d7_field_instance
     - upgrade_d7_user
     - upgrade_bean_disclaimer
+    - upgrade_bean_type_disclaimer

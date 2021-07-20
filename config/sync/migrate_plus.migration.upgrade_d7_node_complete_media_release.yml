@@ -155,12 +155,14 @@ process:
               - paragraph__horizontal_tabs
               - paragraph__grid
               - paragraph__modal_media_gallery
+              - paragraph__section_heading
               - paragraph__slide
               - paragraph__slideshow_image_only
               - paragraph__single_image_with_caption
               - paragraph__sticky_anchor_menu
               - paragraph__text
               - paragraph__thumbnail_slideshow
+              - paragraph__view_embed
               - paragraph__webcam_embed
             source: value
           -
@@ -180,11 +182,13 @@ process:
               - paragraph__grid
               - paragraph__modal_media_gallery
               - paragraph__slide
+              - paragraph__section_heading
               - paragraph__slideshow_image_only
               - paragraph__single_image_with_caption
               - paragraph__sticky_anchor_menu
               - paragraph__text
               - paragraph__thumbnail_slideshow
+              - paragraph__view_embed
               - paragraph__webcam_embed
             source: value
           -
@@ -199,6 +203,5 @@ migration_dependencies:
   required:
     - upgrade_d7_user
     - upgrade_d7_node_type
-    - upgrade_d7_file_entity_image_public
   optional:
     - upgrade_d7_field_instance
