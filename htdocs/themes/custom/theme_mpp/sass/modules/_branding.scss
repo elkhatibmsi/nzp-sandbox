@@ -1,0 +1,14 @@
+// Logo Styling
+
+.site-logo--inner {
+  @include flexify();
+  a.site-logo--image {
+    margin-right: 10px;
+  }
+  a.site-logo--name {
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing:2px;
+    font-family:$font-family--primary;
+  }
+}

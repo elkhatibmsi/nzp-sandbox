@@ -1,0 +1,168 @@
+layout_mpp_one_col:
+  label: 'mpp One Column'
+  path: templates
+  template: layout--mpp-one-col
+  category: 'Columns: 1'
+  default_region: content
+  class: '\Drupal\mpp_layouts\Plugin\Layout\mppOneColLayouts'
+  icon_map:
+    - [content]
+  regions:
+    content:
+      label: 'Main Content'
+
+layout_mpp_two_col:
+  label: 'mpp Two Column'
+  path: templates
+  template: layout--mpp-two-col
+  category: 'Columns: 2'
+  default_region: one_col
+  class: '\Drupal\mpp_layouts\Plugin\Layout\mppTwoColLayouts'
+  icon_map:
+    - [first, second]
+  regions:
+    one_col:
+      label: Column 1
+    two_col:
+      label: Column 2
+
+layout_accordion:
+  label: 'Accordion'
+  template: templates/layout--accordion
+  category: 'Components'
+  default_region: content
+  regions:
+    summary:
+      label: summary
+    content:
+      label: content
+  icon_map:
+    - [top]
+    - [bottom]
+
+layout_mpp_tab:
+  label: 'Tabbed Interface'
+  template: templates/layout--mpp-tab
+  class: '\Drupal\mpp_layouts\Plugin\Layout\mppTabLayouts'
+  library: mpp_layouts/mpp_tabs-library
+  category: 'Components'
+  default_region: content
+  icon_map:
+    - [top]
+    - [bottom]
+  regions:
+    tab_title:
+      label: Tab Title
+    tab_content_0:
+      label: Tab 1
+    tab_content_1:
+      label: Tab 2
+    tab_content_2:
+      label: Tab 3
+    tab_content_3:
+      label: Tab 4
+    tab_content_4:
+      label: Tab 5
+    tab_content_5:
+      label: Tab 6
+    
+
+layout_flyout:
+  label: 'mpp OffCanvas'
+  path: templates
+  template: layout--mpp-offcanvas
+  library: mpp_layouts/mpp_offcanvas-library
+  category: ''
+  default_region: content
+  class: '\Drupal\mpp_layouts\Plugin\Layout\mppOffCanvasLayout'
+  icon_map:
+    - [top]
+    - [bottom]
+  regions:
+    content:
+      label: Content
+
+layout_image_with_caption:  
+  label: 'Image w/ Caption'
+  template: templates/layout--mpp-image-with-caption
+  category: 'Components'
+  default_region: content
+  icon_map:
+   - [top] 
+   - [top]
+   - [top]
+   - [bottom]
+  regions:
+    image:
+      label: image
+    caption:
+      label: caption
+
+layout_grid:  
+  label: 'Grid'
+  template: templates/layout--mpp-grid
+  category: 'Components'
+  default_region: content
+  icon_map:
+   - [first_above, second_above, third_above]
+   - [first_middle, second_middle, third_middle]
+   - [first_below, second_below, third_below]
+  regions:
+    content:
+      label: content
+
+layout_definition:  
+  label: 'Definition'
+  template: templates/layout--mpp-definition
+  category: 'Components'
+  default_region: content
+  icon_map:
+   - [first_above, second_above, second_above]
+   - [first_middle, second_middle, second_middle]
+   - [first_below, second_below, second_below]   
+  regions:
+    term:
+      label: term
+    definition:
+      label: definition   
+      
+layout_blockquote:  
+  label: 'Blockquote'
+  template: templates/layout--mpp-blockquote
+  icon_map:
+    - [content]
+  category: 'Components'
+  default_region: content  
+  regions:
+    content:
+      label: content   
+
+layout_callout:  
+  label: 'Callout'
+  template: templates/layout--mpp-callout
+  category: 'Components'
+  default_region: content
+  icon_map:
+    - [content]
+  regions:
+    content:
+      label: content  
+
+layout_call_to_action:  
+  label: 'Call to Action'
+  template: templates/layout--mpp-call-to-action
+  category: 'Components'
+  default_region: content  
+  icon_map:
+    - [content]
+  regions:
+    content:
+      label: content
+
+layout_button:  
+  label: 'Button'
+  template: templates/layout--mpp-button
+  class: '\Drupal\mpp_layouts\Plugin\Layout\mppButton'
+  category: 'Components'
+  icon_map:
+    - [content]

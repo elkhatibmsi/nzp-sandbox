@@ -1,0 +1,12 @@
+{% if content %}
+  <div {{ attributes }} >
+    <details>
+    <summary class="accordion--summary">
+        {{ content.summary }}
+      </summary>
+      <div class="accordion--content">
+        {{ content.content }}
+      </div>
+    </details>
+  </div>
+{% endif %}
