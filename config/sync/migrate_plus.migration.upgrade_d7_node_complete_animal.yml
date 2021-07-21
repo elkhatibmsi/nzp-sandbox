@@ -234,8 +234,29 @@ process:
         target_id: fid
   field_modal_gallery:
     -
-      plugin: get
+      plugin: sub_process
       source: field_modal_gallery
+      process:
+        target_id:
+          -
+            plugin: migration_lookup
+            migration:
+              - paragraph__modal_media_gallery
+            source: value
+          -
+            plugin: extract
+            index:
+              - 0
+        target_revision_id:
+          -
+            plugin: migration_lookup
+            migration:
+              - paragraph__modal_media_gallery
+            source: value
+          -
+            plugin: extract
+            index:
+              - 1
 destination:
   plugin: 'entity_complete:node'
   translations: true
