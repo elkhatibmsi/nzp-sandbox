@@ -1,0 +1,23 @@
+uuid: c226ff0c-0e32-4681-af4f-29dae7529ed3
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - theme_nzp
+_core:
+  default_config_hash: WcXqPc7NoExO03VwGjmiiEkqTr7N2YqKzsq9Bz9Orh8
+id: theme_nzp_search_form_narrow
+theme: theme_nzp
+region: content
+weight: -2
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

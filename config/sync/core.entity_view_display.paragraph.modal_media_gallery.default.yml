@@ -10,8 +10,104 @@ dependencies:
     - image.style.medium
     - paragraphs.paragraphs_type.modal_media_gallery
   module:
+    - layout_builder
+    - layout_discovery
     - media
     - options
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          a3af5929-5b89-4c32-9ac8-042e1dc58c3e:
+            uuid: a3af5929-5b89-4c32-9ac8-042e1dc58c3e
+            region: content
+            configuration:
+              id: 'field_block:paragraph:modal_media_gallery:field_modal_gallery_title'
+              label: 'Gallery Title'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          b2477186-eed8-460c-8584-e00c8afed0b7:
+            uuid: b2477186-eed8-460c-8584-e00c8afed0b7
+            region: content
+            configuration:
+              id: 'field_block:paragraph:modal_media_gallery:field_modal_gallery_media'
+              label: 'Gallery Media'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: slick_media
+                settings:
+                  vanilla: false
+                  optionset: default
+                  style: grid
+                  skin: default
+                  background: false
+                  layout: bottom
+                  caption:
+                    alt: alt
+                    field_dams_number: '0'
+                    field_image_alt_text: '0'
+                    field_media_tags: '0'
+                    field_notes: '0'
+                    field_photographer: '0'
+                    field_we_do_not_own: '0'
+                    title: '0'
+                  view_mode: slick
+                  optionset_thumbnail: ''
+                  skin_thumbnail: ''
+                  use_theme_field: false
+                  thumbnail_position: ''
+                  thumbnail_caption: ''
+                  image_style: wide
+                  thumbnail_style: ''
+                  thumbnail_effect: ''
+                  media_switch: media
+                  ratio: ''
+                  grid: 6
+                  grid_medium: 3
+                  grid_small: 1
+                  visible_items: 3
+                  preserve_keys: false
+                  image: field_media_image
+                  title: title
+                  link: ''
+                  class: ''
+                  override: false
+                  overridables:
+                    arrows: '0'
+                    autoplay: '0'
+                    dots: '0'
+                    draggable: '0'
+                    infinite: '0'
+                    mouseWheel: '0'
+                    randomize: '0'
+                    variableWidth: '0'
+                  cache: 60
+                  current_view_mode: _custom
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 3
+        third_party_settings: {  }
 id: paragraph.modal_media_gallery.default
 targetEntityType: paragraph
 bundle: modal_media_gallery

@@ -1,0 +1,20 @@
+uuid: 7a0ae6a6-35d9-416b-8f0e-c4460ce8046b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - theme_nzp
+_core:
+  default_config_hash: sBMSSrWtP58IZaz1i3-MJ9yq_y32w1nc7N5DZJmt-4M
+id: theme_nzp_primary_admin_actions
+theme: theme_nzp
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

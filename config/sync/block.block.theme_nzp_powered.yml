@@ -1,0 +1,22 @@
+uuid: 8413bb40-dfb8-4613-911a-723e1bccc47f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - theme_nzp
+_core:
+  default_config_hash: 5kL_iZM_xia3Z8bgsyiZgQphxMGhI8gt2HYo8r5Z7OE
+id: theme_nzp_powered
+theme: theme_nzp
+region: offcanvas
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

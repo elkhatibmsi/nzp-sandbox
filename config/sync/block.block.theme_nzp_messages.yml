@@ -1,0 +1,22 @@
+uuid: 554bc9e4-c834-459a-877d-39231a07a18d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - theme_nzp
+_core:
+  default_config_hash: KfyaTPRJEcAyy2e5AxEfWQnuHcn4WrfvcWek7lSmHZQ
+id: theme_nzp_messages
+theme: theme_nzp
+region: content
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 1990add5-3895-4b27-958b-5ef3ffe89886
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - theme_nzp
+_core:
+  default_config_hash: XMsRP1YhWAcorbrFWZglMYJ_SgWHyF3fyCh5vDXaUN4
+id: theme_nzp_breadcrumbs
+theme: theme_nzp
+region: content
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

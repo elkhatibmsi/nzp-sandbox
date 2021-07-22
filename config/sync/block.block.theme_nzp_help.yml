@@ -1,0 +1,22 @@
+uuid: 306beb9f-c7ea-4322-a94f-d50abf9e3c25
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - theme_nzp
+_core:
+  default_config_hash: VV9kqYMqLSoPSMw-XVpo0auKK0RfnbQTkqYPVQxqaV0
+id: theme_nzp_help
+theme: theme_nzp
+region: offcanvas
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

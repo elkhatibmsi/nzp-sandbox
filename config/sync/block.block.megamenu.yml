@@ -1,0 +1,25 @@
+uuid: 2110dc4a-1a29-49d4-af97-b9476b09dd53
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-mega-menu
+  module:
+    - system
+  theme:
+    - theme_nzp
+id: megamenu
+theme: theme_nzp
+region: navigation
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-mega-menu'
+settings:
+  id: 'system_menu_block:menu-mega-menu'
+  label: 'Mega menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

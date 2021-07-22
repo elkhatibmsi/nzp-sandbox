@@ -1,0 +1,52 @@
+// Styling Overrides for all Menus
+
+//Social Media Links
+
+
+.menu--menu-follow-us-on-social-media {
+.menu {
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        @include flexify();
+        padding:0.5em;
+        li {
+            margin:0 0.5em;
+        }
+    }
+    .icon-label {
+        display:none;
+    }
+}
+
+
+
+
+
+
+
+
+//Main Nav
+
+    ul.main-menu--level-0 {
+        @include flexify();
+      li {
+          padding:1em 0.5em;
+          a {
+              font-weight: bold;
+              font-size: 1.2em;
+              color: $nzp-slate;
+              font-family: $font-family--primary;
+              text-transform: uppercase;
+              letter-spacing: 1.5px;
+              &:hover {
+                  color: $nzp-green;
+              }
+              .micon {
+                  padding-right:0.5em;
+              }
+            }
+      }
+        
+      }
+  

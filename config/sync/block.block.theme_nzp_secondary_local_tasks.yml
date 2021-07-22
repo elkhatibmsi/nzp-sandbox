@@ -1,0 +1,22 @@
+uuid: 75136797-89bd-47b7-9b95-2a65372a1675
+langcode: en
+status: false
+dependencies:
+  theme:
+    - theme_nzp
+_core:
+  default_config_hash: V7GM1m6Qh500cQE7LWZV8lRuwLqXdjR0S2kSk8pEv6g
+id: theme_nzp_secondary_local_tasks
+theme: theme_nzp
+region: offcanvas
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  provider: core
+  label_display: '0'
+  primary: false
+  secondary: true
+visibility: {  }

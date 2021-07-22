@@ -1,0 +1,25 @@
+uuid: ef440157-e1fc-419e-a202-0048fcb33d11
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - theme_nzp
+_core:
+  default_config_hash: sYjScJ6uW1UvGZ-G3AtTcZmPoOiQJtndHqamm8FAFgU
+id: theme_nzp_site_branding
+theme: theme_nzp
+region: branding
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

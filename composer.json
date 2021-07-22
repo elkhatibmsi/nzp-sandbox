@@ -79,7 +79,8 @@
         },
     "patches": {
         "drupal/core": {
-            "Migration Lookup plugin does not return multiple values when matched": "https://www.drupal.org/files/issues/2020-02-02/2890844-65.drupal.patch"
+            "Migration Lookup plugin does not return multiple values when matched": "https://www.drupal.org/files/issues/2020-02-02/2890844-65.drupal.patch",
+            "Workaround for field_label error in layout_builder": "https://www.drupal.org/files/issues/2020-04-08/2985882-field-85.patch"
         }
     },
         "installer-paths": {
