@@ -22,10 +22,12 @@ dependencies:
     - field.field.node.basic_page.field_subtitle
     - field.field.node.basic_page.field_tags
     - field.field.node.basic_page.field_teaser_title
+    - field.field.node.basic_page.layout_builder__layout
     - node.type.basic_page
   module:
     - entity_reference_revisions
     - layout_builder
+    - layout_discovery
     - taxonomy
     - text
     - user
@@ -92,17 +94,34 @@ third_party_settings:
             uuid: d464cde0-c8d3-4bef-ac1a-56e4bd714f52
             region: content
             configuration:
+              id: 'field_block:node:basic_page:field_slideshow'
+              label: Slideshow
+              provider: layout_builder
               label_display: '0'
+              formatter:
+                label: above
+                type: slick_entityreference_vanilla
+                settings:
+                  optionset: default
+                  skin: classic
+                  view_mode: default
+                  use_theme_field: false
+                  override: false
+                  overridables:
+                    arrows: '0'
+                    autoplay: '0'
+                    dots: '0'
+                    draggable: '0'
+                    infinite: '0'
+                    mouseWheel: '0'
+                    randomize: '0'
+                    variableWidth: '0'
+                  cache: 0
+                  current_view_mode: _custom
+                third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:basic_page:field_slideshow'
-              formatter:
-                type: entity_reference_revisions_entity_view
-                label: above
-                settings:
-                  view_mode: default
-                  link: ''
-                third_party_settings: {  }
+                view_mode: view_mode
             additional: {  }
             weight: 3
           42ef9ee0-4e2a-4485-a703-e656e1d1f8d1:
@@ -487,3 +506,4 @@ content:
 hidden:
   field_card_subtitle: true
   field_has_promotions: true
+  layout_builder__layout: true

@@ -8,69 +8,135 @@ dependencies:
     - field.field.paragraph.slideshow.field_modal_content
     - field.field.paragraph.slideshow.field_slide_caption
     - field.field.paragraph.slideshow.field_slide_image
-    - field.field.paragraph.slideshow.field_slideshow
     - field.field.paragraph.slideshow.field_url
     - paragraphs.paragraphs_type.slideshow
   module:
-    - link
-    - options
-    - text
+    - blazy
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          2abe7582-afdd-4c33-abbe-dbb90d55bbd8:
+            uuid: 2abe7582-afdd-4c33-abbe-dbb90d55bbd8
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:slideshow:field_slide_image'
+              formatter:
+                type: blazy_media
+                label: hidden
+                settings:
+                  image_style: ''
+                  media_switch: ''
+                  thumbnail_style: ''
+                  ratio: ''
+                  view_mode: slick
+                  current_view_mode: default
+                  background: false
+                  caption:
+                    field_dams_number: '0'
+                    field_image_alt_text: '0'
+                    field_media_tags: '0'
+                    field_notes: '0'
+                    field_photographer: '0'
+                    field_we_do_not_own: '0'
+                    title: '0'
+                    alt: '0'
+                  class: ''
+                  id: ''
+                  image: ''
+                  link: ''
+                  overlay: ''
+                  title: ''
+                  vanilla: false
+                  icon: ''
+                  layout: ''
+                  cache: 0
+                  skin: ''
+                  fx: ''
+                  style: ''
+                  box_caption: ''
+                  box_caption_custom: ''
+                  box_media_style: ''
+                  responsive_image_style: ''
+                  box_style: ''
+                  _uri: ''
+                  breakpoints: {  }
+                  sizes: ''
+                  grid_header: ''
+                  grid: 0
+                  grid_medium: 0
+                  grid_small: 0
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
 id: paragraph.slideshow.default
 targetEntityType: paragraph
 bundle: slideshow
 mode: default
 content:
-  field_caption_position:
-    type: list_default
-    weight: 2
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  field_link_slide_to_modal:
-    type: boolean
-    weight: 5
-    region: content
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-  field_modal_content:
-    type: text_default
-    weight: 3
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  field_slide_caption:
-    weight: 0
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   field_slide_image:
-    type: entity_reference_entity_view
-    weight: 1
+    type: blazy_media
+    weight: 0
     region: content
-    label: above
+    label: hidden
     settings:
-      link: true
-      view_mode: default
-    third_party_settings: {  }
-  field_url:
-    type: link
-    weight: 4
-    region: content
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+      image_style: ''
+      media_switch: ''
+      thumbnail_style: ''
+      ratio: ''
+      view_mode: slick
+      current_view_mode: default
+      background: false
+      caption:
+        field_dams_number: '0'
+        field_image_alt_text: '0'
+        field_media_tags: '0'
+        field_notes: '0'
+        field_photographer: '0'
+        field_we_do_not_own: '0'
+        title: '0'
+        alt: '0'
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      cache: 0
+      skin: ''
+      fx: ''
+      style: ''
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      responsive_image_style: ''
+      box_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: 0
+      grid_medium: 0
+      grid_small: 0
     third_party_settings: {  }
 hidden:
-  field_slideshow: true
+  field_caption_position: true
+  field_link_slide_to_modal: true
+  field_modal_content: true
+  field_slide_caption: true
+  field_url: true

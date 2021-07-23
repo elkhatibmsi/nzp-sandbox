@@ -635,6 +635,62 @@ display:
           entity_type: paragraph
           entity_field: parent_type
           plugin_id: string
+        parent_id:
+          id: parent_id
+          table: paragraphs_item_field_data
+          field: parent_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: parent_id_op
+            label: 'Entity ID'
+            description: ''
+            use_operator: false
+            operator: parent_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: parent_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              emergency_message_only: '0'
+              author_animals: '0'
+              author_bios: '0'
+              author_visit: '0'
+              author_event: '0'
+              author_support: '0'
+              author_internships: '0'
+              author_membership: '0'
+              author_education: '0'
+              sitewide_publisher: '0'
+              website_administrator: '0'
+              ocio_administrator: '0'
+              author_bird_friendly_coffee: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: paragraph
+          entity_field: parent_id
+          plugin_id: string
       sorts: {  }
       title: 'Paragraphs: Manage'
       header:
@@ -661,39 +717,41 @@ display:
         - url
         - url.query_args
       tags:
-        - 'config:core.entity_view_display.paragraph.cell.default'
-        - 'config:core.entity_view_display.paragraph.faq.default'
-        - 'config:core.entity_view_display.paragraph.faq_item.default'
-        - 'config:core.entity_view_display.paragraph.flipbook_grid.default'
-        - 'config:core.entity_view_display.paragraph.flipbook_grid_item.default'
-        - 'config:core.entity_view_display.paragraph.grid.default'
-        - 'config:core.entity_view_display.paragraph.image_only.default'
-        - 'config:core.entity_view_display.paragraph.modal_media_gallery.default'
-        - 'config:core.entity_view_display.paragraph.single_image_with_caption.default'
-        - 'config:core.entity_view_display.paragraph.text.default'
         - 'config:core.entity_view_display.paragraph.accordion.default'
+        - 'config:core.entity_view_display.paragraph.text.default'
         - 'config:core.entity_view_display.paragraph.accordion_tabs.default'
         - 'config:core.entity_view_display.paragraph.callout.default'
         - 'config:core.entity_view_display.paragraph.card_grid.default'
         - 'config:core.entity_view_display.paragraph.card_item.default'
         - 'config:core.entity_view_display.paragraph.card_item_blank.default'
+        - 'config:core.entity_view_display.paragraph.cell.default'
         - 'config:core.entity_view_display.paragraph.class_session.default'
         - 'config:core.entity_view_display.paragraph.collapsible_block.default'
         - 'config:core.entity_view_display.paragraph.content_video.default'
         - 'config:core.entity_view_display.paragraph.entity_list.default'
+        - 'config:core.entity_view_display.paragraph.faq.default'
+        - 'config:core.entity_view_display.paragraph.faq_item.default'
+        - 'config:core.entity_view_display.paragraph.flipbook_grid.default'
+        - 'config:core.entity_view_display.paragraph.flipbook_grid_item.default'
+        - 'config:core.entity_view_display.paragraph.grid.default'
         - 'config:core.entity_view_display.paragraph.horizontal_single_tab.default'
         - 'config:core.entity_view_display.paragraph.horizontal_tabs.default'
         - 'config:core.entity_view_display.paragraph.icon_card_item.default'
         - 'config:core.entity_view_display.paragraph.image.default'
         - 'config:core.entity_view_display.paragraph.image_collection.default'
+        - 'config:core.entity_view_display.paragraph.image_only.default'
         - 'config:core.entity_view_display.paragraph.looping_video.default'
+        - 'config:core.entity_view_display.paragraph.modal_media_gallery.default'
         - 'config:core.entity_view_display.paragraph.section.default'
+        - 'config:core.entity_view_display.paragraph.section_heading.default'
+        - 'config:core.entity_view_display.paragraph.single_image_with_caption.default'
         - 'config:core.entity_view_display.paragraph.slideshow.default'
         - 'config:core.entity_view_display.paragraph.slideshow_container.default'
         - 'config:core.entity_view_display.paragraph.sponsors.default'
         - 'config:core.entity_view_display.paragraph.sticky_anchor_menu.default'
         - 'config:core.entity_view_display.paragraph.thumbnail_slideshow.default'
         - 'config:core.entity_view_display.paragraph.two_columns.default'
+        - 'config:core.entity_view_display.paragraph.view_embed.default'
   page_1:
     display_plugin: page
     id: page_1
@@ -744,6 +802,7 @@ display:
         - 'config:core.entity_view_display.paragraph.looping_video.default'
         - 'config:core.entity_view_display.paragraph.modal_media_gallery.default'
         - 'config:core.entity_view_display.paragraph.section.default'
+        - 'config:core.entity_view_display.paragraph.section_heading.default'
         - 'config:core.entity_view_display.paragraph.single_image_with_caption.default'
         - 'config:core.entity_view_display.paragraph.slideshow.default'
         - 'config:core.entity_view_display.paragraph.slideshow_container.default'
@@ -752,3 +811,4 @@ display:
         - 'config:core.entity_view_display.paragraph.text.default'
         - 'config:core.entity_view_display.paragraph.thumbnail_slideshow.default'
         - 'config:core.entity_view_display.paragraph.two_columns.default'
+        - 'config:core.entity_view_display.paragraph.view_embed.default'

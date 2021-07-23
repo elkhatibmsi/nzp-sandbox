@@ -167,8 +167,29 @@ process:
         target_id: tid
   field_slideshow:
     -
-      plugin: get
+      plugin: sub_process
       source: field_slideshow
+      process:
+        target_id:
+          -
+            plugin: migration_lookup
+            migration:
+              - paragraph__slide
+            source: value
+          -
+            plugin: extract
+            index:
+              - 0
+        target_revision_id:
+          -
+            plugin: migration_lookup
+            migration:
+              - paragraph__slide
+            source: value
+          -
+            plugin: extract
+            index:
+              - 1
   field_page_type:
     -
       plugin: sub_process
