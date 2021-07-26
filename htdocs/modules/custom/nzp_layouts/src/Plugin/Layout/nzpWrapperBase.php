@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\mpp_layouts\Plugin\Layout;
+namespace Drupal\nzp_layouts\Plugin\Layout;
 
 use Drupal\Core\Layout\LayoutDefault;
 use Drupal\Core\Form\FormStateInterface;
@@ -17,7 +17,7 @@ use Drupal\Core\Plugin\PluginFormInterface;
  * @internal
  *   Plugin classes are internal.
  */
-abstract class mppWrapperBase extends LayoutDefault implements PluginFormInterface {
+abstract class nzpWrapperBase extends LayoutDefault implements PluginFormInterface {
 
   /**
    * {@inheritdoc}
@@ -33,7 +33,7 @@ abstract class mppWrapperBase extends LayoutDefault implements PluginFormInterfa
   public function defaultConfiguration() {
 
     // Each of the variables below corresponds to custom arrays for each layout.
-    // These values are defined in the layout plugins for each layout (example: mppTwoColLayouts.php).
+    // These values are defined in the layout plugins for each layout (example: nzpTwoColLayouts.php).
     $region_classes = array_keys($this->getRegionClasses());
     $container_classes = array_keys($this->getContainerClasses());
     $html_elements = array_keys($this->getHtmlElements());

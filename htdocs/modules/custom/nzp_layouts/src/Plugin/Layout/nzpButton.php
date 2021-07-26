@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\mpp_layouts\Plugin\Layout;
+namespace Drupal\nzp_layouts\Plugin\Layout;
 
 use Drupal\Core\Layout\LayoutDefault;
 use Drupal\Core\Form\FormStateInterface;
@@ -9,7 +9,7 @@ use Drupal\Core\Plugin\PluginFormInterface;
 /**
  * Credit goes to npinos at https://github.com/npinos/drupal8-layouts.
  */
-class mppButton extends LayoutDefault implements PluginFormInterface {
+class nzpButton extends LayoutDefault implements PluginFormInterface {
 
   /**
    * {@inheritdoc}

@@ -1,22 +1,22 @@
-mpp_layouts-library:
+nzp_layouts-library:
   js:
     js/script.js: {}
   dependencies:
     - core/drupal.ajax
 
-mpp_tabs-library:
+nzp_tabs-library:
   js: 
     js/tabby/dist/js/tabby.js: {}    
-    js/mpp_tabs.js: {}
+    js/nzp_tabs.js: {}
   css:
      theme:
       js/tabby/dist/css/tabby-ui.css: {}
 
 
-mpp_offcanvas-library:
+nzp_offcanvas-library:
   js:
     js/js-offcanvas/dist/js/js-offcanvas.pkgd.min.js: {}
-    js/mpp_offcanvas.js: {}
+    js/nzp_offcanvas.js: {}
 
   css:
       theme:

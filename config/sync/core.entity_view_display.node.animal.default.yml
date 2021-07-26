@@ -485,6 +485,449 @@ third_party_settings:
                 third_party_settings: {  }
             additional: {  }
             weight: 5
+          9a347e12-7c47-4d60-8788-e14ff912a351:
+            uuid: 9a347e12-7c47-4d60-8788-e14ff912a351
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:animal:links'
+            additional: {  }
+            weight: 30
+          420adfcf-2679-4a73-be9a-e2f9c1564daa:
+            uuid: 420adfcf-2679-4a73-be9a-e2f9c1564daa
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 31
+          2e758a0c-e2ce-44fe-bf3b-1cc76a3d47c5:
+            uuid: 2e758a0c-e2ce-44fe-bf3b-1cc76a3d47c5
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_animal_type'
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 32
+          eff74b73-62c1-4ed9-8d52-44c24bbf5937:
+            uuid: eff74b73-62c1-4ed9-8d52-44c24bbf5937
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_lifespan'
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 33
+          6d3734e9-379c-4f0a-8863-44fa65aef0fe:
+            uuid: 6d3734e9-379c-4f0a-8863-44fa65aef0fe
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_taxonomic_family'
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 34
+          0c112137-78c3-438a-803c-63d0470b083b:
+            uuid: 0c112137-78c3-438a-803c-63d0470b083b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_communication'
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 35
+          a733d3a4-fe45-4aa6-a882-e3e343d5ad57:
+            uuid: a733d3a4-fe45-4aa6-a882-e3e343d5ad57
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_taxonomic_class'
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 36
+          1f4c022e-ae4f-4cdc-9402-2a7982b476d4:
+            uuid: 1f4c022e-ae4f-4cdc-9402-2a7982b476d4
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_social_structure'
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 37
+          eaf14b8c-3c9f-4cda-8ab9-4a456d94a109:
+            uuid: eaf14b8c-3c9f-4cda-8ab9-4a456d94a109
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_sleep_habits'
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 38
+          70f7bd17-d82d-49ed-a54c-9ba2a3764734:
+            uuid: 70f7bd17-d82d-49ed-a54c-9ba2a3764734
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_size'
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 39
+          15856b8b-7f66-4b1d-a5b6-42fcbdcc9ec6:
+            uuid: 15856b8b-7f66-4b1d-a5b6-42fcbdcc9ec6
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_reproduction_developme'
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 40
+          b171b8e5-c983-4ddf-a272-dd1bf15e6094:
+            uuid: b171b8e5-c983-4ddf-a272-dd1bf15e6094
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_physical_description'
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 41
+          41ca90af-601a-4752-87cf-333b16a502a4:
+            uuid: 41ca90af-601a-4752-87cf-333b16a502a4
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_nzp_location'
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 42
+          972b6456-e5d9-4701-bcaa-5d5b4406ed0d:
+            uuid: 972b6456-e5d9-4701-bcaa-5d5b4406ed0d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_native_habitat'
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 43
+          ecccfba0-c058-414d-a1a9-93cfb7b9294d:
+            uuid: ecccfba0-c058-414d-a1a9-93cfb7b9294d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_modal_gallery'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 44
+          4790b0d1-4825-43c1-a6e2-6384b58ab427:
+            uuid: 4790b0d1-4825-43c1-a6e2-6384b58ab427
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_meet_the_animals'
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 45
+          0a42b349-d78b-4610-9a78-a017b5eeca9a:
+            uuid: 0a42b349-d78b-4610-9a78-a017b5eeca9a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_iucn_designation'
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 46
+          0a950405-b43c-464a-9ec5-2c4e11c4f90b:
+            uuid: 0a950405-b43c-464a-9ec5-2c4e11c4f90b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_card_position'
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 47
+          0ab261ab-9c8b-44fc-8c16-3979349720a0:
+            uuid: 0ab261ab-9c8b-44fc-8c16-3979349720a0
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_image'
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 48
+          0e296380-4255-4689-859b-63b18246a8fa:
+            uuid: 0e296380-4255-4689-859b-63b18246a8fa
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_help_this_species'
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 49
+          d0cac6e5-284b-4221-b5aa-2f7850e9e25b:
+            uuid: d0cac6e5-284b-4221-b5aa-2f7850e9e25b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_genus_and_species'
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 50
+          eef96356-bcfe-4b1e-9145-820f169edd61:
+            uuid: eef96356-bcfe-4b1e-9145-820f169edd61
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_fun_facts'
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 51
+          75f65e04-5419-4f3d-b0f0-f2305cc41081:
+            uuid: 75f65e04-5419-4f3d-b0f0-f2305cc41081
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_food_eating_habits'
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 52
+          d6de63bc-7425-47e0-b050-ace6e2e01215:
+            uuid: d6de63bc-7425-47e0-b050-ace6e2e01215
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_feeding_time'
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 53
+          ded89827-ee75-41cd-aeff-815ec1f20d12:
+            uuid: ded89827-ee75-41cd-aeff-815ec1f20d12
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_featured_video'
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  link: true
+                  view_mode: default
+                third_party_settings: {  }
+            additional: {  }
+            weight: 54
+          029533ab-9bd4-459a-8313-f0bd3861ab18:
+            uuid: 029533ab-9bd4-459a-8313-f0bd3861ab18
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_exhibit'
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 55
+          fd7fc486-dea8-44e6-aedc-4cb7562faf53:
+            uuid: fd7fc486-dea8-44e6-aedc-4cb7562faf53
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_editorial_access'
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 56
+          98305529-3d45-478a-bad1-8370adbc296b:
+            uuid: 98305529-3d45-478a-bad1-8370adbc296b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_conservation_efforts'
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 57
+          25854177-9d12-410c-889a-31384ede2d4b:
+            uuid: 25854177-9d12-410c-889a-31384ede2d4b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:animal:field_taxonomic_order'
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 58
         third_party_settings: {  }
 id: node.animal.default
 targetEntityType: node

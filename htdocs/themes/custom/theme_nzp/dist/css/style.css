@@ -8,7 +8,7 @@
  */
 /* Document
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&family=Poppins:wght@400;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -1677,7 +1677,7 @@ html, body {
 body {
   -webkit-font-smoothing: antialiased;
   color: #000;
-  font-family: "mulish", "Arial", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   line-height: 2em; }
 
@@ -1696,7 +1696,7 @@ ul, ol {
   list-style: none; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", "Arial", sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #5c5d5d; }
 
 h1 {
@@ -1800,7 +1800,7 @@ ul.main-menu--level-0 {
       font-weight: bold;
       font-size: 1.2em;
       color: #5c5d5d;
-      font-family: "Poppins", "Arial", sans-serif;
+      font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
       text-transform: uppercase;
       letter-spacing: 1.5px; }
       ul.main-menu--level-0 li a:hover {
@@ -1821,7 +1821,7 @@ ul.main-menu--level-0 {
       color: #C8DC65;
       font-size: 0.75em;
       text-transform: uppercase;
-      font-family: "Poppins", "Arial", sans-serif;
+      font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
       letter-spacing: 4px;
       font-weight: bold; }
 
@@ -1854,10 +1854,9 @@ header {
     font-size: 1em;
     font-weight: 300;
     letter-spacing: 2px;
-    font-family: "Poppins", "Arial", sans-serif; }
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1.page-title {
-  font-size: 2.7em;
   margin: 1em 0 2em;
   position: relative; }
   h1.page-title:before {
@@ -1978,7 +1977,7 @@ h1.page-title {
     box-shadow: none !important;
     text-shadow: none !important; }
   body {
-    font: 12pt "mulish", "Arial", sans-serif;
+    font: 12pt "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.3; }
   a,
   a:visited {

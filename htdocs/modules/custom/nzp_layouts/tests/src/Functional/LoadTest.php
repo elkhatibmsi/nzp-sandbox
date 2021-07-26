@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\mpp_layouts\Functional;
+namespace Drupal\Tests\nzp_layouts\Functional;
 
 use Drupal\Core\Url;
 use Drupal\Tests\BrowserTestBase;
@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Simple test to ensure that main page loads with module enabled.
  *
- * @group mpp_layouts
+ * @group nzp_layouts
  */
 class LoadTest extends BrowserTestBase {
 
@@ -17,7 +17,7 @@ class LoadTest extends BrowserTestBase {
    *
    * @var array
    */
-  public static $modules = ['mpp_layouts'];
+  public static $modules = ['nzp_layouts'];
 
   /**
    * A user with permission to administer site configuration.

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\mpp_layouts\Plugin\Layout;
+namespace Drupal\nzp_layouts\Plugin\Layout;
 
 /**
  * Configurable twocol layout plugin class.
@@ -8,7 +8,7 @@ namespace Drupal\mpp_layouts\Plugin\Layout;
  * @internal
  *   Plugin classes are internal.
  */
-class mppTwoColLayouts extends mppWrapperBase {
+class nzpTwoColLayouts extends nzpWrapperBase {
 
   /**
    * {@inheritdoc}

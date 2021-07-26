@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains mpp_layouts.module.
+ * Contains nzp_layouts.module.
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
@@ -10,13 +10,13 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_help().
  */
-function mpp_layouts_help($route_name, RouteMatchInterface $route_match) {
+function nzp_layouts_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
-    // Main module help for the mpp_layouts module.
-    case 'help.page.mpp_layouts':
+    // Main module help for the nzp_layouts module.
+    case 'help.page.nzp_layouts':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('mpp Layouts') . '</p>';
+      $output .= '<p>' . t('nzp Layouts') . '</p>';
       return $output;
 
     default:
@@ -26,9 +26,9 @@ function mpp_layouts_help($route_name, RouteMatchInterface $route_match) {
 /**
  * Implements hook_theme().
  */
-function mpp_layouts_theme() {
+function nzp_layouts_theme() {
   return [
-    'mpp_layouts' => [
+    'nzp_layouts' => [
       'render element' => 'children',
     ],
   ];

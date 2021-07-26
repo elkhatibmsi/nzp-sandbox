@@ -14,6 +14,7 @@ module:
   comment: 0
   config: 0
   contact: 0
+  content_moderation: 0
   contextual: 0
   ctools: 0
   datetime: 0
@@ -48,7 +49,9 @@ module:
   migrate_plus: 0
   migrate_tools: 0
   migrate_upgrade: 0
+  moderation_sidebar: 0
   node: 0
+  nzp_layouts: 0
   nzp_paragraphs: 0
   options: 0
   page_cache: 0
@@ -73,6 +76,7 @@ module:
   user: 0
   views_bulk_operations: 0
   views_ui: 0
+  workflows: 0
   pathauto: 1
   views: 10
   paragraphs: 11

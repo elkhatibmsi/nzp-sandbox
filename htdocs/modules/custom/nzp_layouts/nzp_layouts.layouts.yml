@@ -1,23 +1,23 @@
-layout_mpp_one_col:
-  label: 'mpp One Column'
+layout_nzp_one_col:
+  label: 'nzp One Column'
   path: templates
-  template: layout--mpp-one-col
+  template: layout--nzp-one-col
   category: 'Columns: 1'
   default_region: content
-  class: '\Drupal\mpp_layouts\Plugin\Layout\mppOneColLayouts'
+  class: '\Drupal\nzp_layouts\Plugin\Layout\nzpOneColLayouts'
   icon_map:
     - [content]
   regions:
     content:
       label: 'Main Content'
 
-layout_mpp_two_col:
-  label: 'mpp Two Column'
+layout_nzp_two_col:
+  label: 'nzp Two Column'
   path: templates
-  template: layout--mpp-two-col
+  template: layout--nzp-two-col
   category: 'Columns: 2'
   default_region: one_col
-  class: '\Drupal\mpp_layouts\Plugin\Layout\mppTwoColLayouts'
+  class: '\Drupal\nzp_layouts\Plugin\Layout\nzpTwoColLayouts'
   icon_map:
     - [first, second]
   regions:
@@ -40,11 +40,11 @@ layout_accordion:
     - [top]
     - [bottom]
 
-layout_mpp_tab:
+layout_nzp_tab:
   label: 'Tabbed Interface'
-  template: templates/layout--mpp-tab
-  class: '\Drupal\mpp_layouts\Plugin\Layout\mppTabLayouts'
-  library: mpp_layouts/mpp_tabs-library
+  template: templates/layout--nzp-tab
+  class: '\Drupal\nzp_layouts\Plugin\Layout\nzpTabLayouts'
+  library: nzp_layouts/nzp_tabs-library
   category: 'Components'
   default_region: content
   icon_map:
@@ -68,13 +68,13 @@ layout_mpp_tab:
     
 
 layout_flyout:
-  label: 'mpp OffCanvas'
+  label: 'nzp OffCanvas'
   path: templates
-  template: layout--mpp-offcanvas
-  library: mpp_layouts/mpp_offcanvas-library
+  template: layout--nzp-offcanvas
+  library: nzp_layouts/nzp_offcanvas-library
   category: ''
   default_region: content
-  class: '\Drupal\mpp_layouts\Plugin\Layout\mppOffCanvasLayout'
+  class: '\Drupal\nzp_layouts\Plugin\Layout\nzpOffCanvasLayout'
   icon_map:
     - [top]
     - [bottom]
@@ -84,7 +84,7 @@ layout_flyout:
 
 layout_image_with_caption:  
   label: 'Image w/ Caption'
-  template: templates/layout--mpp-image-with-caption
+  template: templates/layout--nzp-image-with-caption
   category: 'Components'
   default_region: content
   icon_map:
@@ -100,7 +100,7 @@ layout_image_with_caption:
 
 layout_grid:  
   label: 'Grid'
-  template: templates/layout--mpp-grid
+  template: templates/layout--nzp-grid
   category: 'Components'
   default_region: content
   icon_map:
@@ -113,7 +113,7 @@ layout_grid:
 
 layout_definition:  
   label: 'Definition'
-  template: templates/layout--mpp-definition
+  template: templates/layout--nzp-definition
   category: 'Components'
   default_region: content
   icon_map:
@@ -128,7 +128,7 @@ layout_definition:
       
 layout_blockquote:  
   label: 'Blockquote'
-  template: templates/layout--mpp-blockquote
+  template: templates/layout--nzp-blockquote
   icon_map:
     - [content]
   category: 'Components'
@@ -139,7 +139,7 @@ layout_blockquote:
 
 layout_callout:  
   label: 'Callout'
-  template: templates/layout--mpp-callout
+  template: templates/layout--nzp-callout
   category: 'Components'
   default_region: content
   icon_map:
@@ -150,7 +150,7 @@ layout_callout:
 
 layout_call_to_action:  
   label: 'Call to Action'
-  template: templates/layout--mpp-call-to-action
+  template: templates/layout--nzp-call-to-action
   category: 'Components'
   default_region: content  
   icon_map:
@@ -161,8 +161,8 @@ layout_call_to_action:
 
 layout_button:  
   label: 'Button'
-  template: templates/layout--mpp-button
-  class: '\Drupal\mpp_layouts\Plugin\Layout\mppButton'
+  template: templates/layout--nzp-button
+  class: '\Drupal\nzp_layouts\Plugin\Layout\nzpButton'
   category: 'Components'
   icon_map:
     - [content]

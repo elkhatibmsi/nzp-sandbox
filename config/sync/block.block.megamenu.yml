@@ -11,7 +11,7 @@ dependencies:
 id: megamenu
 theme: theme_nzp
 region: navigation
-weight: 0
+weight: -5
 provider: null
 plugin: 'system_menu_block:menu-mega-menu'
 settings:

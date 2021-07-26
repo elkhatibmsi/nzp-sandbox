@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\mpp_layouts\Plugin\Layout;
+namespace Drupal\nzp_layouts\Plugin\Layout;
 
 use Drupal\Core\Layout\LayoutDefault;
 use Drupal\Component\Uuid\UuidInterface;
@@ -14,7 +14,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 /**
  * Dynamic layout.
  */
-class mppDynamicLayout extends LayoutDefault implements PluginFormInterface, ContainerFactoryPluginInterface, DynamicRegionsProviderInterface {
+class nzpDynamicLayout extends LayoutDefault implements PluginFormInterface, ContainerFactoryPluginInterface, DynamicRegionsProviderInterface {
 
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
     return new static(
