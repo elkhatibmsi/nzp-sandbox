@@ -19,10 +19,6 @@ process:
     -
       plugin: get
       source: tnid
-  vid:
-    -
-      plugin: get
-      source: vid
   langcode:
     -
       plugin: default_value
@@ -56,18 +52,6 @@ process:
     -
       plugin: get
       source: sticky
-  revision_uid:
-    -
-      plugin: get
-      source: revision_uid
-  revision_log:
-    -
-      plugin: get
-      source: log
-  revision_timestamp:
-    -
-      plugin: get
-      source: timestamp
   content_translation_source:
     -
       plugin: get
@@ -120,7 +104,10 @@ process:
               - paragraph__sticky_anchor_menu
               - paragraph__text
               - paragraph__thumbnail_slideshow
+              - paragraph__block_embed
+              - paragraph__block_embed_no_title
               - paragraph__webcam_embed
+              - paragraph__view_embed
             source: value
           -
             plugin: extract
@@ -145,7 +132,10 @@ process:
               - paragraph__sticky_anchor_menu
               - paragraph__text
               - paragraph__thumbnail_slideshow
+              - paragraph__block_embed
+              - paragraph__block_embed_no_title
               - paragraph__webcam_embed
+              - paragraph__view_embed
             source: value
           -
             plugin: extract
@@ -300,6 +290,9 @@ migration_dependencies:
     - paragraph__sticky_anchor_menu
     - paragraph__text
     - paragraph__thumbnail_slideshow
+    - paragraph__block_embed
+    - paragraph__block_embed_no_title
     - paragraph__webcam_embed
+    - paragraph__view_embed
   optional:
     - upgrade_d7_field_instance

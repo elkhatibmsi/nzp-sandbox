@@ -24,6 +24,7 @@ dependencies:
     - field.field.node.basic_page.field_tags
     - field.field.node.basic_page.field_teaser_title
     - field.field.node.basic_page.layout_builder__layout
+    - image.style.large
     - node.type.basic_page
   module:
     - media
@@ -48,7 +49,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: ''
+      image_style: large
       image_link: ''
     third_party_settings: {  }
 hidden:
