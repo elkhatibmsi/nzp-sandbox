@@ -18,7 +18,6 @@ source:
   bundle: faq
 process:
   id: item_id
-  revision_id: revision_id
   field_faq_item:
     -
       plugin: sub_process
