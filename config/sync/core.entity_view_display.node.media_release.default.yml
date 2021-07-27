@@ -16,8 +16,135 @@ dependencies:
     - field.field.node.media_release.field_teaser_title
     - node.type.media_release
   module:
+    - layout_builder
+    - nzp_layouts
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_nzp_two_col
+        layout_settings:
+          custom_classes: ''
+          region_classes:
+            one_col: col-md-6
+            two_col: col-md-6
+          container_classes: container
+          html_container_elements: div
+          html_region_elements:
+            one_col: div
+            two_col: div
+          context_mapping: {  }
+        components:
+          795bc261-abab-4a50-aa5a-eabebbbca78c:
+            uuid: 795bc261-abab-4a50-aa5a-eabebbbca78c
+            region: two_col
+            configuration:
+              id: 'field_block:node:media_release:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          1f8a36a4-1d0a-48ba-8fe5-29e22c395579:
+            uuid: 1f8a36a4-1d0a-48ba-8fe5-29e22c395579
+            region: one_col
+            configuration:
+              id: 'field_block:node:media_release:field_image'
+              label: Image
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: image
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_nzp_one_col
+        layout_settings:
+          custom_classes: ''
+          region_classes:
+            content: col-md-12
+          container_classes: container
+          html_container_elements: div
+          html_region_elements:
+            content: div
+          context_mapping: {  }
+        components:
+          bc7cc5cc-5cad-49bf-8a2a-0c5ecdb28320:
+            uuid: bc7cc5cc-5cad-49bf-8a2a-0c5ecdb28320
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:media_release:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          53c79980-78d4-437d-b1de-758eb9955b57:
+            uuid: 53c79980-78d4-437d-b1de-758eb9955b57
+            region: content
+            configuration:
+              id: 'field_block:node:media_release:field_subtitle'
+              label: Subtitle
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 3
+          67c4141a-4551-41f3-9407-021e1d8aaa27:
+            uuid: 67c4141a-4551-41f3-9407-021e1d8aaa27
+            region: content
+            configuration:
+              id: 'field_block:node:media_release:field_content_block'
+              label: 'Paragraph Components'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 4
+        third_party_settings: {  }
 id: node.media_release.default
 targetEntityType: node
 bundle: media_release
