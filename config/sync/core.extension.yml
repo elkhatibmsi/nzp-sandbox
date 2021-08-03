@@ -30,6 +30,7 @@ module:
   history: 0
   image: 0
   layout_builder: 0
+  layout_builder_modal: 0
   layout_builder_restrictions: 0
   layout_discovery: 0
   link: 0
@@ -64,6 +65,7 @@ module:
   shortcut: 0
   slick: 0
   slick_entityreference: 0
+  slick_extras: 0
   slick_ui: 0
   smart_sql_idmap: 0
   system: 0

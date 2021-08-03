@@ -1,18 +1,24 @@
-uuid: ad29ddce-0b90-45e3-9c5b-e5e01df1cdf0
+uuid: ff1e6bc2-4612-4eb1-b54b-9613ad200374
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.slick
     - field.field.media.remote_video.field_media_oembed_video
     - media.type.remote_video
   module:
     - blazy
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
 _core:
   default_config_hash: gUaDZKMQD3lmLKWPn727X3JHVdKJ525g4EJCCcDVAqk
-id: media.remote_video.default
+id: media.remote_video.slick
 targetEntityType: media
 bundle: remote_video
-mode: default
+mode: slick
 content:
   field_media_oembed_video:
     type: blazy_oembed

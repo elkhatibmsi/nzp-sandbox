@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.media_release.field_image
     - field.field.node.media_release.field_landing_image
     - field.field.node.media_release.field_media_release_category
+    - field.field.node.media_release.field_media_release_image
     - field.field.node.media_release.field_obituary
     - field.field.node.media_release.field_related_content
     - field.field.node.media_release.field_subtitle
@@ -92,6 +93,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_media_release_image:
+    type: media_library_widget
+    weight: 26
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   field_related_content:
     type: entity_reference_autocomplete
     weight: 15

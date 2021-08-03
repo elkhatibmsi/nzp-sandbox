@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.media_release.field_image
     - field.field.node.media_release.field_landing_image
     - field.field.node.media_release.field_media_release_category
+    - field.field.node.media_release.field_media_release_image
     - field.field.node.media_release.field_obituary
     - field.field.node.media_release.field_related_content
     - field.field.node.media_release.field_subtitle
@@ -58,20 +59,108 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
-          1f8a36a4-1d0a-48ba-8fe5-29e22c395579:
-            uuid: 1f8a36a4-1d0a-48ba-8fe5-29e22c395579
+          529add63-8adc-4103-8aef-22ca43e6639e:
+            uuid: 529add63-8adc-4103-8aef-22ca43e6639e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:media_release:links'
+            additional: {  }
+            weight: 0
+          b5ea0a85-c8ad-4144-96e8-00ca257e3ae5:
+            uuid: b5ea0a85-c8ad-4144-96e8-00ca257e3ae5
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:media_release:field_landing_image'
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: teaser
+                  link: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          37ce5fb4-0879-4704-96e2-0138de481f69:
+            uuid: 37ce5fb4-0879-4704-96e2-0138de481f69
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:media_release:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          674ebd82-0739-4718-a615-29cc87ee4fef:
+            uuid: 674ebd82-0739-4718-a615-29cc87ee4fef
             region: one_col
             configuration:
-              id: 'field_block:node:media_release:field_image'
-              label: Image
+              id: 'field_block:node:media_release:field_media_release_image'
+              label: 'Media Release Image'
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
-                type: image
+                label: hidden
+                type: slick_media
                 settings:
-                  image_style: ''
-                  image_link: ''
+                  vanilla: false
+                  optionset: default
+                  style: ''
+                  skin: classic
+                  background: false
+                  layout: ''
+                  caption:
+                    field_dams_number: '0'
+                    field_image_alt_text: '0'
+                    field_media_tags: '0'
+                    field_notes: '0'
+                    field_photographer: '0'
+                    field_we_do_not_own: '0'
+                    field_media_image_http: '0'
+                    title: '0'
+                    alt: '0'
+                  view_mode: teaser
+                  optionset_thumbnail: ''
+                  skin_thumbnail: ''
+                  use_theme_field: false
+                  thumbnail_position: ''
+                  thumbnail_caption: ''
+                  image_style: slick_media
+                  thumbnail_style: ''
+                  thumbnail_effect: ''
+                  media_switch: ''
+                  ratio: ''
+                  grid: null
+                  grid_medium: null
+                  grid_small: null
+                  visible_items: null
+                  preserve_keys: false
+                  image: ''
+                  title: ''
+                  link: ''
+                  class: ''
+                  override: false
+                  overridables:
+                    arrows: '0'
+                    autoplay: '0'
+                    dots: '0'
+                    draggable: '0'
+                    infinite: '0'
+                    mouseWheel: '0'
+                    randomize: '0'
+                    variableWidth: '0'
+                  cache: 0
+                  current_view_mode: _custom
                 third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
@@ -166,6 +255,15 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
+  field_media_release_image:
+    type: entity_reference_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: one_col
   links:
     weight: 0
     region: content

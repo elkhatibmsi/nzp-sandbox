@@ -54,10 +54,10 @@ third_party_settings:
                 label: hidden
                 type: slick_media
                 settings:
-                  vanilla: true
-                  optionset: default
+                  vanilla: false
+                  optionset: modal_media_gallery
                   style: column
-                  skin: default
+                  skin: classic
                   background: false
                   layout: bottom
                   caption:
@@ -71,35 +71,35 @@ third_party_settings:
                     title: '0'
                   view_mode: slick
                   optionset_thumbnail: ''
-                  skin_thumbnail: ''
+                  skin_thumbnail: asnavfor
                   use_theme_field: false
-                  thumbnail_position: ''
+                  thumbnail_position: left
                   thumbnail_caption: ''
-                  image_style: wide
+                  image_style: slick_media
                   thumbnail_style: thumbnail
-                  thumbnail_effect: ''
+                  thumbnail_effect: grid
                   media_switch: media
-                  ratio: '1:1'
-                  grid: 6
-                  grid_medium: 6
-                  grid_small: 6
-                  visible_items: 3
+                  ratio: ''
+                  grid: null
+                  grid_medium: 2
+                  grid_small: 2
+                  visible_items: 1
                   preserve_keys: false
-                  image: field_media_image
-                  title: title
+                  image: ''
+                  title: ''
                   link: ''
                   class: ''
-                  override: false
+                  override: true
                   overridables:
+                    dots: dots
+                    draggable: draggable
                     arrows: '0'
                     autoplay: '0'
-                    dots: '0'
-                    draggable: '0'
                     infinite: '0'
                     mouseWheel: '0'
                     randomize: '0'
                     variableWidth: '0'
-                  cache: 60
+                  cache: 0
                   current_view_mode: _custom
                 third_party_settings: {  }
               context_mapping:

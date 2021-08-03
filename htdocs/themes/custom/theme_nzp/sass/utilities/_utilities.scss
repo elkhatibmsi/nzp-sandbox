@@ -104,7 +104,7 @@
 // $modifier  - Just the modifier name for the parent block or element
 // @usage     - `.Nav {@include e(item) {@include m(active) {...}}}`
 @mixin m($modifier){
-  &--#{$modifier}{
+  &-#{$modifier}{
     @content;
   }
 }

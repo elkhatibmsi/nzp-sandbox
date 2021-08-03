@@ -22,12 +22,11 @@ bundle: image
 mode: default
 content:
   field_media_image:
-    type: image
+    type: image_url
     weight: 0
     label: visually_hidden
     settings:
       image_style: large
-      image_link: ''
     third_party_settings: {  }
     region: content
 hidden:

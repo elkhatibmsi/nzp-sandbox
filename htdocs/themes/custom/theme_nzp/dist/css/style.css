@@ -1738,20 +1738,36 @@ option {
   color: #5c5d5d; }
 
 .btn, input[type="submit"] {
-  padding: 0.5em 0.75em;
+  padding: 1em 0.75em;
   border: 2px solid;
   border-radius: 3px;
+  background: #5c5d5d;
   color: #fff;
   cursor: pointer;
   position: relative; }
+  .btn:hover, input:hover[type="submit"] {
+    color: #fff;
+    padding-right: 30px;
+    transition: all 0.4s ease-in; }
   .btn:after, input[type="submit"]:after {
-    content: "\ea3c";
-    padding-left: 5px;
-    font-family: 'nzp-icons';
-    transition: all 0.4s ease-in-out; }
+    content: "\f054";
+    font-family: 'fa';
+    width: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-out;
+    top: 0;
+    right: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 15px;
+    text-align: center; }
   .btn:hover:after, input[type="submit"]:hover:after {
-    margin-left: 15px;
-    transition: all 0.4s ease-in-out; }
+    transition: all 0.4s ease-out;
+    width: 20px;
+    background-color: rgba(255, 255, 255, 0.3); }
   .btn:before, input[type="submit"]:before {
     content: "";
     position: absolute;
@@ -1763,16 +1779,14 @@ option {
     width: 100%;
     transition: all 0.3s ease-in-out;
     transition-delay: 0.2s; }
-  .btn--primary, input[type="submit"] {
-    border-color: #C8DC65;
-    color: #C8DC65; }
-    .btn--primary:before, input[type="submit"]:before {
-      background: #C8DC65; }
-  .btn--secondary {
-    border-color: #5c5d5d;
-    color: #5c5d5d; }
-    .btn--secondary:before {
-      background: #5c5d5d; }
+  .btn-primary, input[type="submit"] {
+    background: #C44D58; }
+    .btn-primary:before, input[type="submit"]:before {
+      background: #C44D58; }
+  .btn-secondary {
+    border-color: #627E9C; }
+    .btn-secondary:before {
+      background: #627E9C; }
 
 .menu--menu-follow-us-on-social-media .menu {
   bottom: 0;
@@ -1953,6 +1967,16 @@ h1.page-title {
   background: #5c5d5d; }
   .topbar * {
     color: #fff; }
+
+.moderation-sidebar-toolbar-tab a.toolbar-item {
+  display: flex;
+  align-items: center;
+  background: #000; }
+  .moderation-sidebar-toolbar-tab a.toolbar-item:after {
+    padding: 0px; }
+
+.entity-view-display-layout-builder-form {
+  padding: 2em; }
 
 @media (min-width: 576px) {
   .is-collapsed-mobile {

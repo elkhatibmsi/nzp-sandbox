@@ -11,7 +11,7 @@ dependencies:
     - field.field.media.image.field_notes
     - field.field.media.image.field_photographer
     - field.field.media.image.field_we_do_not_own
-    - image.style.large
+    - image.style.media_library
     - media.type.image
   module:
     - image
@@ -32,7 +32,7 @@ content:
     weight: 0
     label: visually_hidden
     settings:
-      image_style: large
+      image_style: media_library
       image_link: ''
     third_party_settings: {  }
     region: content
