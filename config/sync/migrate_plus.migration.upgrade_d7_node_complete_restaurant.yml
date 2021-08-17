@@ -116,6 +116,5 @@ migration_dependencies:
   required:
     - upgrade_d7_user
     - upgrade_d7_node_type
-    - upgrade_d7_file_entity_image_public
   optional:
     - upgrade_d7_field_instance

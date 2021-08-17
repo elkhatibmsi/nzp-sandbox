@@ -1,0 +1,65 @@
+uuid: a2aad767-0969-4581-9c2f-b3c714654a10
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.preview
+    - field.field.media.image.field_dams_number
+    - field.field.media.image.field_image_alt_text
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_tags
+    - field.field.media.image.field_notes
+    - field.field.media.image.field_photographer
+    - field.field.media.image.field_we_do_not_own
+    - image.style.thumbnail
+    - media.type.image
+  module:
+    - image
+    - user
+id: media.image.preview
+targetEntityType: media
+bundle: image
+mode: preview
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_image_alt_text:
+    label: above
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  thumbnail:
+    type: image
+    weight: 5
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    region: content
+    third_party_settings: {  }
+  uid:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_dams_number: true
+  field_media_image: true
+  field_media_tags: true
+  field_notes: true
+  field_photographer: true
+  field_we_do_not_own: true
+  name: true

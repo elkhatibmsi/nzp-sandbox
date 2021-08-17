@@ -1,0 +1,41 @@
+uuid: 43f5d420-1a2d-4efe-b505-10fdb589eeac
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.token
+    - field.field.node.document.body
+    - field.field.node.document.field_editorial_access
+    - field.field.node.document.field_file
+    - node.type.document
+  module:
+    - user
+id: node.document.token
+targetEntityType: node
+bundle: document
+mode: token
+content:
+  field_editorial_access:
+    label: above
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_file:
+    label: above
+    weight: 1
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true

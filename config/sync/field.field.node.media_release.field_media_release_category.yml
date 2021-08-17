@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_media_release_category
     - node.type.media_release
-    - taxonomy.vocabulary.media_release_categories
 id: node.media_release.field_media_release_category
 field_name: field_media_release_category
 entity_type: node
@@ -17,13 +16,8 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      media_release_categories: media_release_categories
     sort:
       field: _none
-      direction: asc
-    auto_create: false
-    auto_create_bundle: ''
+  handler: 'default:taxonomy_term'
 field_type: entity_reference

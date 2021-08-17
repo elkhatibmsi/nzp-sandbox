@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.scbi_staff.field_tags
     - node.type.scbi_staff
   module:
+    - link
     - text
     - user
 id: node.scbi_staff.default
@@ -34,6 +35,78 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_editorial_access:
+    label: hidden
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_education:
+    label: hidden
+    weight: 3
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_educational_background:
+    label: hidden
+    weight: 7
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_google_scholar_profile:
+    label: hidden
+    weight: 4
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_more_background:
+    label: hidden
+    weight: 8
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_noteworthy_work:
+    label: hidden
+    weight: 6
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_official_title:
+    label: hidden
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_recent_papers:
+    label: above
+    weight: 9
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_staff_category:
+    label: above
+    weight: 14
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -41,16 +114,7 @@ content:
     region: content
 hidden:
   field_degrees: true
-  field_editorial_access: true
-  field_education: true
-  field_educational_background: true
-  field_google_scholar_profile: true
   field_image: true
-  field_more_background: true
-  field_noteworthy_work: true
-  field_official_title: true
-  field_recent_papers: true
   field_si_profiles_id: true
   field_significant_papers: true
-  field_staff_category: true
   field_tags: true

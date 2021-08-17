@@ -1,0 +1,116 @@
+uuid: ef40589a-7d6e-4db1-a6ae-0ad34d99e43c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.internship.field_application_date
+    - field.field.node.internship.field_duties_and_responsibilitie
+    - field.field.node.internship.field_editorial_access
+    - field.field.node.internship.field_housing
+    - field.field.node.internship.field_how_to_apply
+    - field.field.node.internship.field_internship_category
+    - field.field.node.internship.field_nzp_location
+    - field.field.node.internship.field_parking
+    - field.field.node.internship.field_qualifications
+    - field.field.node.internship.field_status
+    - field.field.node.internship.field_stipend
+    - field.field.node.internship.field_term_of_appointment
+    - node.type.internship
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: node.internship.default
+targetEntityType: node
+bundle: internship
+mode: default
+content:
+  field_application_date:
+    label: above
+    weight: 8
+    type: datetime_default
+    settings:
+      format_type: long_date
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_duties_and_responsibilitie:
+    label: above
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_housing:
+    label: above
+    weight: 5
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_how_to_apply:
+    label: above
+    weight: 11
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_internship_category:
+    label: inline
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_nzp_location:
+    label: inline
+    weight: 4
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_parking:
+    label: above
+    weight: 6
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_qualifications:
+    label: above
+    weight: 2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_status:
+    label: inline
+    weight: 9
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_stipend:
+    label: above
+    weight: 3
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_term_of_appointment:
+    label: above
+    weight: 7
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_editorial_access: true

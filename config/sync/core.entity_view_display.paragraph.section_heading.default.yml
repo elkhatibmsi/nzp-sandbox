@@ -6,26 +6,18 @@ dependencies:
     - field.field.paragraph.section_heading.field_heading_properties
     - field.field.paragraph.section_heading.field_heading_text_
     - paragraphs.paragraphs_type.section_heading
-  module:
-    - options
 id: paragraph.section_heading.default
 targetEntityType: paragraph
 bundle: section_heading
 mode: default
 content:
-  field_heading_properties:
-    type: list_default
-    weight: 1
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
   field_heading_text_:
-    type: string
+    label: hidden
     weight: 0
-    region: content
-    label: above
+    type: string
     settings:
       link_to_entity: false
     third_party_settings: {  }
-hidden: {  }
+    region: content
+hidden:
+  field_heading_properties: true

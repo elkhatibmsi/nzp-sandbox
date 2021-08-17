@@ -13,12 +13,12 @@ bundle: grid
 mode: default
 content:
   field_cells:
+    label: hidden
+    weight: 1
     type: entity_reference_revisions_entity_view
-    weight: 0
-    region: content
-    label: above
     settings:
-      view_mode: default
+      view_mode: full
       link: ''
     third_party_settings: {  }
+    region: content
 hidden: {  }

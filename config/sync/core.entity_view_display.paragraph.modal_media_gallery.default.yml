@@ -7,13 +7,10 @@ dependencies:
     - field.field.paragraph.modal_media_gallery.field_modal_gallery_title
     - field.field.paragraph.modal_media_gallery.field_show_read_more_link_after
     - field.field.paragraph.modal_media_gallery.field_thumbnail_positioning
-    - image.style.medium
     - paragraphs.paragraphs_type.modal_media_gallery
   module:
     - layout_builder
     - layout_discovery
-    - media
-    - options
 third_party_settings:
   layout_builder:
     allow_custom: false
@@ -107,6 +104,39 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 2
+          89e2cd28-f609-4851-a426-c71e2abd2ab0:
+            uuid: 89e2cd28-f609-4851-a426-c71e2abd2ab0
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:modal_media_gallery:field_modal_gallery_title'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 3
+          ac4fa237-dd54-4cd9-96c8-79618b880dc9:
+            uuid: ac4fa237-dd54-4cd9-96c8-79618b880dc9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:modal_media_gallery:field_modal_gallery_media'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: gallery_thumbnail
+                  link: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 4
         third_party_settings: {  }
 id: paragraph.modal_media_gallery.default
 targetEntityType: paragraph
@@ -114,36 +144,22 @@ bundle: modal_media_gallery
 mode: default
 content:
   field_modal_gallery_media:
-    type: media_thumbnail
+    label: hidden
     weight: 1
-    region: content
-    label: above
+    type: entity_reference_entity_view
     settings:
-      image_style: medium
-      image_link: ''
+      view_mode: gallery_thumbnail
+      link: false
     third_party_settings: {  }
-  field_modal_gallery_title:
-    type: string
-    weight: 0
     region: content
-    label: above
+  field_modal_gallery_title:
+    label: hidden
+    weight: 0
+    type: string
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  field_show_read_more_link_after:
-    type: number_integer
-    weight: 2
     region: content
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-  field_thumbnail_positioning:
-    type: list_default
-    weight: 3
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_show_read_more_link_after: true
+  field_thumbnail_positioning: true

@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.exhibit.field_tags
     - node.type.exhibit
   module:
+    - entity_reference_revisions
     - text
     - user
 id: node.exhibit.default
@@ -32,6 +33,15 @@ content:
     type: text_default
     weight: 101
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_paragraph_component:
+    label: hidden
+    weight: 1
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
     third_party_settings: {  }
     region: content
   links:
@@ -51,6 +61,5 @@ hidden:
   field_marker: true
   field_nearby: true
   field_open: true
-  field_paragraph_component: true
   field_slideshow: true
   field_tags: true

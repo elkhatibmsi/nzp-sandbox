@@ -31,6 +31,5 @@ settings:
   handler_settings:
     target_bundles:
       image: image
-      image_http: image_http
   handler: 'default:file'
 field_type: image

@@ -5,6 +5,38 @@ dependencies:
   config:
     - field.storage.node.field_content_block
     - node.type.basic_page
+    - paragraphs.paragraphs_type.accordion_tabs
+    - paragraphs.paragraphs_type.block_embed
+    - paragraphs.paragraphs_type.block_embed_no_title
+    - paragraphs.paragraphs_type.button_grid
+    - paragraphs.paragraphs_type.callout
+    - paragraphs.paragraphs_type.card_grid
+    - paragraphs.paragraphs_type.card_item
+    - paragraphs.paragraphs_type.cell
+    - paragraphs.paragraphs_type.collapsible_block
+    - paragraphs.paragraphs_type.content_video
+    - paragraphs.paragraphs_type.entity_list
+    - paragraphs.paragraphs_type.faq
+    - paragraphs.paragraphs_type.flipbook_grid
+    - paragraphs.paragraphs_type.flipbook_grid_item
+    - paragraphs.paragraphs_type.grid
+    - paragraphs.paragraphs_type.horizontal_tabs
+    - paragraphs.paragraphs_type.icon_card_item
+    - paragraphs.paragraphs_type.image_only
+    - paragraphs.paragraphs_type.looping_video
+    - paragraphs.paragraphs_type.modal_media_gallery
+    - paragraphs.paragraphs_type.multi_column_layout_text_
+    - paragraphs.paragraphs_type.section
+    - paragraphs.paragraphs_type.section_heading
+    - paragraphs.paragraphs_type.single_image_with_caption
+    - paragraphs.paragraphs_type.sticky_anchor_menu
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.thumbnail_slideshow
+    - paragraphs.paragraphs_type.two_columns
+    - paragraphs.paragraphs_type.two_columns_40_60
+    - paragraphs.paragraphs_type.two_columns_equal
+    - paragraphs.paragraphs_type.view_embed
+    - paragraphs.paragraphs_type.webcam_embed
   module:
     - entity_reference_revisions
 id: node.basic_page.field_content_block
@@ -54,6 +86,9 @@ settings:
       button_grid: button_grid
       webcam_embed: webcam_embed
     target_bundles_drag_drop:
+      accordion:
+        enabled: false
+        weight: 101
       accordion_tabs:
         enabled: true
         weight: 2
@@ -84,6 +119,9 @@ settings:
       cell:
         enabled: true
         weight: 30
+      class_session:
+        enabled: false
+        weight: 102
       collapsible_block:
         enabled: true
         weight: 3
@@ -96,6 +134,9 @@ settings:
       faq:
         enabled: true
         weight: 23
+      faq_item:
+        enabled: false
+        weight: 103
       flipbook_grid:
         enabled: true
         weight: -48
@@ -111,24 +152,42 @@ settings:
       horizontal_tabs:
         enabled: true
         weight: 54
+      hours:
+        enabled: false
+        weight: 104
       icon_card_item:
         enabled: true
         weight: 55
       image:
         enabled: false
         weight: 6
+      image_collection:
+        enabled: false
+        weight: 105
       image_only:
         enabled: true
         weight: 7
       looping_video:
         enabled: true
         weight: -44
+      menu_tabs:
+        enabled: false
+        weight: 106
       modal_media_gallery:
         enabled: true
         weight: -44
       multi_column_layout_text_:
         enabled: true
         weight: -68
+      promotion_one:
+        enabled: false
+        weight: 107
+      promotion_three:
+        enabled: false
+        weight: 108
+      promotion_two:
+        enabled: false
+        weight: 109
       section:
         enabled: true
         weight: -38
@@ -141,6 +200,12 @@ settings:
       slideshow:
         enabled: false
         weight: 11
+      slideshow_container:
+        enabled: false
+        weight: 110
+      sponsors:
+        enabled: false
+        weight: 111
       sticky_anchor_menu:
         enabled: true
         weight: -72

@@ -28,6 +28,7 @@ dependencies:
     - field.field.node.event.field_zoo_fonz
     - node.type.event
   module:
+    - entity_reference_revisions
     - text
     - user
 id: node.event.default
@@ -42,6 +43,23 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_event_components:
+    label: hidden
+    weight: 2
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_subtitle:
+    label: hidden
+    weight: 0
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -52,7 +70,6 @@ hidden:
   field_custom_contact_block: true
   field_dates: true
   field_editorial_access: true
-  field_event_components: true
   field_event_date_override: true
   field_exclude_from_next_event: true
   field_featured_video: true
@@ -64,7 +81,6 @@ hidden:
   field_modal_iframe: true
   field_promotion: true
   field_sponsors: true
-  field_subtitle: true
   field_tags: true
   field_template_options: true
   field_times: true

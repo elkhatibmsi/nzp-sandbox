@@ -1,0 +1,29 @@
+uuid: f7046bd3-44c3-497b-a86a-756ffbc84706
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.time_slot.field_hours_category
+    - field.field.paragraph.time_slot.field_hours_description
+    - paragraphs.paragraphs_type.time_slot
+id: paragraph.time_slot.default
+targetEntityType: paragraph
+bundle: time_slot
+mode: default
+content:
+  field_hours_category:
+    label: hidden
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_hours_description:
+    label: hidden
+    weight: 2
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -18,7 +18,7 @@ source:
   key: migrate
   field_name: field_sponsors
 process:
-  id: item_id
+  revision_id: revision_id
   field_sponsor_title: field_text
   field_sponsors_content: field_sponsors_content
 destination:

@@ -14,22 +14,13 @@ bundle: card_grid
 mode: default
 content:
   field_card:
-    type: entity_reference_revisions_entity_view
+    label: hidden
     weight: 0
-    region: content
-    label: above
+    type: entity_reference_revisions_entity_view
     settings:
-      view_mode: default
+      view_mode: full
       link: ''
     third_party_settings: {  }
-  field_card_border_settings:
-    type: boolean
-    weight: 1
     region: content
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_card_border_settings: true

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_time_slot
     - node.type.zoo_hours
+    - paragraphs.paragraphs_type.time_slot
   module:
     - entity_reference_revisions
 id: node.zoo_hours.field_time_slot
@@ -23,15 +24,42 @@ settings:
     target_bundles:
       time_slot: time_slot
     target_bundles_drag_drop:
+      accordion:
+        enabled: false
+        weight: 22
       accordion_tabs:
         enabled: false
         weight: 2
       block_embed:
         enabled: false
         weight: 3
+      block_embed_no_title:
+        enabled: false
+        weight: 23
+      button_grid:
+        enabled: false
+        weight: 24
+      button_item:
+        enabled: false
+        weight: 25
+      callout:
+        enabled: false
+        weight: 26
+      card_grid:
+        enabled: false
+        weight: 27
+      card_item:
+        enabled: false
+        weight: 28
+      card_item_blank:
+        enabled: false
+        weight: 29
       cell:
         enabled: false
         weight: 4
+      class_session:
+        enabled: false
+        weight: 30
       collapsible_block:
         enabled: false
         weight: 5
@@ -44,36 +72,96 @@ settings:
       faq:
         enabled: false
         weight: 8
+      faq_item:
+        enabled: false
+        weight: 31
+      flipbook_grid:
+        enabled: false
+        weight: 32
+      flipbook_grid_item:
+        enabled: false
+        weight: 33
       grid:
         enabled: false
         weight: 9
+      horizontal_single_tab:
+        enabled: false
+        weight: 34
+      horizontal_tabs:
+        enabled: false
+        weight: 35
+      hours:
+        enabled: false
+        weight: 36
+      icon_card_item:
+        enabled: false
+        weight: 37
       image:
         enabled: false
         weight: 10
+      image_collection:
+        enabled: false
+        weight: 38
       image_only:
         enabled: false
         weight: 11
       looping_video:
         enabled: false
         weight: 12
+      menu_tabs:
+        enabled: false
+        weight: 39
+      modal_media_gallery:
+        enabled: false
+        weight: 40
+      multi_column_layout_text_:
+        enabled: false
+        weight: 41
+      promotion_one:
+        enabled: false
+        weight: 42
+      promotion_three:
+        enabled: false
+        weight: 43
+      promotion_two:
+        enabled: false
+        weight: 44
       section:
         enabled: false
         weight: 13
+      section_heading:
+        enabled: false
+        weight: 45
       single_image_with_caption:
         enabled: false
         weight: 14
       slideshow:
         enabled: false
         weight: 15
+      slideshow_container:
+        enabled: false
+        weight: 46
+      sponsors:
+        enabled: false
+        weight: 47
+      sticky_anchor_menu:
+        enabled: false
+        weight: 48
       text:
         enabled: false
         weight: 16
+      thumbnail_slideshow:
+        enabled: false
+        weight: 49
       time_slot:
         enabled: true
         weight: 17
       two_column_grid:
         enabled: false
         weight: 20
+      two_columns:
+        enabled: false
+        weight: 50
       two_columns_40_60:
         enabled: false
         weight: 18
@@ -83,5 +171,8 @@ settings:
       view_embed:
         enabled: false
         weight: 21
+      webcam_embed:
+        enabled: false
+        weight: 51
   handler: 'default:paragraph'
 field_type: entity_reference_revisions

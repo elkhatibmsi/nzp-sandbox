@@ -14,19 +14,19 @@ bundle: card_item
 mode: default
 content:
   field_card_item_image:
-    type: entity_reference_entity_view
+    label: hidden
     weight: 0
-    region: content
-    label: above
+    type: entity_reference_entity_view
     settings:
-      link: true
       view_mode: default
+      link: false
     third_party_settings: {  }
-  field_card_item_text:
-    type: text_default
-    weight: 1
     region: content
-    label: above
+  field_card_item_text:
+    label: hidden
+    weight: 1
+    type: text_default
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden: {  }

@@ -18,6 +18,8 @@ dependencies:
     - field.field.node.coffee_product.field_product_wholesale
     - node.type.coffee_product
   module:
+    - link
+    - options
     - text
     - user
 id: node.coffee_product.default
@@ -32,21 +34,112 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_product_amazon_link:
+    label: above
+    weight: 4
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_product_flavor_notes:
+    label: above
+    weight: 15
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_product_image:
+    label: above
+    weight: 3
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_product_price:
+    label: above
+    weight: 12
+    type: number_decimal
+    settings:
+      decimal_separator: .
+      prefix_suffix: true
+      scale: 2
+      thousand_separator: ''
+    third_party_settings: {  }
+    region: content
+  field_product_properties:
+    label: above
+    weight: 17
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_product_region:
+    label: above
+    weight: 11
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_product_roast:
+    label: above
+    weight: 6
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_product_roaster:
+    label: above
+    weight: 18
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_product_roaster_descriptio:
+    label: above
+    weight: 2
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_product_roaster_link:
+    label: above
+    weight: 1
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_product_unit:
+    label: above
+    weight: 13
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_product_wholesale:
+    label: above
+    weight: 14
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden:
-  field_product_amazon_link: true
-  field_product_flavor_notes: true
-  field_product_image: true
-  field_product_price: true
-  field_product_properties: true
-  field_product_region: true
-  field_product_roast: true
-  field_product_roaster: true
-  field_product_roaster_descriptio: true
-  field_product_roaster_link: true
-  field_product_unit: true
-  field_product_wholesale: true
+hidden: {  }

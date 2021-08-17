@@ -14,20 +14,20 @@ bundle: horizontal_single_tab
 mode: default
 content:
   field_h_tab_content:
-    type: entity_reference_revisions_entity_view
+    label: hidden
     weight: 1
-    region: content
-    label: above
+    type: entity_reference_revisions_entity_view
     settings:
-      view_mode: default
+      view_mode: full
       link: ''
     third_party_settings: {  }
-  field_h_tab_label:
-    type: string
-    weight: 0
     region: content
-    label: above
+  field_h_tab_label:
+    label: hidden
+    weight: 0
+    type: string
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
 hidden: {  }

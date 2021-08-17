@@ -1,0 +1,27 @@
+uuid: 8f9f224b-d65c-43c8-b640-d8b043ec4976
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraphs_editor_preview
+    - field.field.paragraph.collapsible_block.field_collapsible_block_content
+    - field.field.paragraph.collapsible_block.field_collapsible_block_title
+    - field.field.paragraph.collapsible_block.field_teaser
+    - paragraphs.paragraphs_type.collapsible_block
+  module:
+    - text
+id: paragraph.collapsible_block.paragraphs_editor_preview
+targetEntityType: paragraph
+bundle: collapsible_block
+mode: paragraphs_editor_preview
+content:
+  field_teaser:
+    label: above
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_collapsible_block_content: true
+  field_collapsible_block_title: true

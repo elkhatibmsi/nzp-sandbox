@@ -30,6 +30,9 @@ settings:
       single_image_with_caption: single_image_with_caption
       text: text
     target_bundles_drag_drop:
+      accordion:
+        enabled: false
+        weight: 74
       accordion_tabs:
         enabled: false
         weight: 2
@@ -60,6 +63,9 @@ settings:
       cell:
         enabled: false
         weight: 10
+      class_session:
+        enabled: false
+        weight: 75
       collapsible_block:
         enabled: false
         weight: 11
@@ -72,6 +78,9 @@ settings:
       faq:
         enabled: false
         weight: 14
+      faq_item:
+        enabled: false
+        weight: 76
       flipbook_grid:
         enabled: false
         weight: 15
@@ -87,24 +96,42 @@ settings:
       horizontal_tabs:
         enabled: false
         weight: 18
+      hours:
+        enabled: false
+        weight: 77
       icon_card_item:
         enabled: false
         weight: 19
       image:
         enabled: false
         weight: 20
+      image_collection:
+        enabled: false
+        weight: 78
       image_only:
         enabled: false
         weight: 21
       looping_video:
         enabled: false
         weight: 22
+      menu_tabs:
+        enabled: false
+        weight: 79
       modal_media_gallery:
         enabled: false
         weight: 23
       multi_column_layout_text_:
         enabled: false
         weight: 59
+      promotion_one:
+        enabled: false
+        weight: 80
+      promotion_three:
+        enabled: false
+        weight: 81
+      promotion_two:
+        enabled: false
+        weight: 82
       section:
         enabled: false
         weight: 24
@@ -117,6 +144,12 @@ settings:
       slideshow:
         enabled: false
         weight: 26
+      slideshow_container:
+        enabled: false
+        weight: 83
+      sponsors:
+        enabled: false
+        weight: 84
       sticky_anchor_menu:
         enabled: false
         weight: 64

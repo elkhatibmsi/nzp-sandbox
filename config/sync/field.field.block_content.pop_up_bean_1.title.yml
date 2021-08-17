@@ -1,14 +1,14 @@
-uuid: af140cc3-3341-4a9d-bda9-7e257aa00255
+uuid: 1d723211-e54a-4d51-9f32-0341c925946c
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.basic_block
+    - block_content.type.pop_up_bean_1
     - field.storage.block_content.title
-id: block_content.basic_block.title
+id: block_content.pop_up_bean_1.title
 field_name: title
 entity_type: block_content
-bundle: basic_block
+bundle: pop_up_bean_1
 label: Title
 description: 'The Title of the block.'
 required: false

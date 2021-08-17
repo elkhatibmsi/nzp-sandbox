@@ -26,6 +26,8 @@ dependencies:
     - field.field.node.coffee_purveyor.field_varietals
     - node.type.coffee_purveyor
   module:
+    - entity_reference_revisions
+    - link
     - text
     - user
 id: node.coffee_purveyor.default
@@ -40,6 +42,45 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_company_url:
+    label: hidden
+    weight: 3
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_featured_bird:
+    label: hidden
+    weight: 2
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_related_coffee_products_:
+    label: above
+    weight: 4
+    type: entity_reference_entity_view
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_teaser_image:
+    label: hidden
+    weight: 0
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -50,19 +91,15 @@ hidden:
   field_certifications: true
   field_certifier: true
   field_company_email: true
-  field_company_url: true
   field_contact_fax: true
   field_contact_name: true
   field_editorial_access: true
   field_elevation: true
-  field_featured_bird: true
   field_harvest: true
   field_hectares: true
   field_number_of_growers: true
   field_other_products: true
   field_phone: true
   field_pounds_of_coffee: true
-  field_related_coffee_products_: true
-  field_teaser_image: true
   field_type: true
   field_varietals: true

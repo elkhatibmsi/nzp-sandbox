@@ -13,10 +13,9 @@ bundle: sticky_anchor_menu
 mode: default
 content:
   field_sticky_anchor_menu_link:
-    type: link
+    label: hidden
     weight: 0
-    region: content
-    label: above
+    type: link
     settings:
       trim_length: 80
       url_only: false
@@ -24,4 +23,5 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    region: content
 hidden: {  }

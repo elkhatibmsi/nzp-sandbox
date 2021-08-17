@@ -13,12 +13,12 @@ bundle: horizontal_tabs
 mode: default
 content:
   field_h_tabs:
-    type: entity_reference_revisions_entity_view
-    weight: 0
-    region: content
     label: above
+    weight: 0
+    type: entity_reference_revisions_entity_view
     settings:
-      view_mode: default
+      view_mode: full
       link: ''
     third_party_settings: {  }
+    region: content
 hidden: {  }

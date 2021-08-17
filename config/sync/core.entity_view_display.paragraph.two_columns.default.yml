@@ -9,35 +9,28 @@ dependencies:
     - paragraphs.paragraphs_type.two_columns
   module:
     - entity_reference_revisions
-    - options
 id: paragraph.two_columns.default
 targetEntityType: paragraph
 bundle: two_columns
 mode: default
 content:
   field_two_columns_column_1:
-    type: entity_reference_revisions_entity_view
+    label: hidden
     weight: 1
-    region: content
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-  field_two_columns_column_2:
     type: entity_reference_revisions_entity_view
-    weight: 2
-    region: content
-    label: above
     settings:
-      view_mode: default
+      view_mode: full
       link: ''
     third_party_settings: {  }
-  field_two_columns_column_ratios:
-    type: list_default
-    weight: 0
     region: content
-    label: above
-    settings: {  }
+  field_two_columns_column_2:
+    label: hidden
+    weight: 2
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
     third_party_settings: {  }
-hidden: {  }
+    region: content
+hidden:
+  field_two_columns_column_ratios: true

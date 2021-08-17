@@ -30,6 +30,15 @@ content:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  field_landing_image:
+    label: above
+    weight: 0
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -40,7 +49,6 @@ hidden:
   field_cost_text2: true
   field_editorial_access: true
   field_grades: true
-  field_landing_image: true
   field_number_of_students: true
   field_program_length: true
   field_site: true

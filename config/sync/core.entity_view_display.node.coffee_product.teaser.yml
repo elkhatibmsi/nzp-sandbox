@@ -34,6 +34,13 @@ content:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  field_product_roaster_descriptio:
+    label: hidden
+    weight: 2
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -48,7 +55,6 @@ hidden:
   field_product_region: true
   field_product_roast: true
   field_product_roaster: true
-  field_product_roaster_descriptio: true
   field_product_roaster_link: true
   field_product_unit: true
   field_product_wholesale: true

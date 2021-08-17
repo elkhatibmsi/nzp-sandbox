@@ -24,6 +24,9 @@ settings:
     target_bundles:
       cell: cell
     target_bundles_drag_drop:
+      accordion:
+        enabled: false
+        weight: 32
       accordion_tabs:
         enabled: false
         weight: 2
@@ -32,28 +35,31 @@ settings:
         weight: 3
       block_embed_no_title:
         enabled: false
-        weight: 32
+        weight: 33
       button_grid:
         enabled: false
-        weight: 33
+        weight: 34
       button_item:
         enabled: false
-        weight: 34
+        weight: 35
       callout:
         enabled: false
-        weight: 35
+        weight: 36
       card_grid:
         enabled: false
-        weight: 36
+        weight: 37
       card_item:
         enabled: false
-        weight: 37
+        weight: 38
       card_item_blank:
         enabled: false
-        weight: 38
+        weight: 39
       cell:
         enabled: true
         weight: 4
+      class_session:
+        enabled: false
+        weight: 40
       collapsible_block:
         enabled: false
         weight: 5
@@ -66,39 +72,60 @@ settings:
       faq:
         enabled: false
         weight: 7
+      faq_item:
+        enabled: false
+        weight: 41
       flipbook_grid:
         enabled: false
-        weight: 39
+        weight: 42
       flipbook_grid_item:
         enabled: false
-        weight: 40
+        weight: 43
       grid:
         enabled: false
         weight: 8
       horizontal_single_tab:
         enabled: false
-        weight: 41
+        weight: 44
       horizontal_tabs:
         enabled: false
-        weight: 42
+        weight: 45
+      hours:
+        enabled: false
+        weight: 46
       icon_card_item:
         enabled: false
-        weight: 43
+        weight: 47
       image:
         enabled: false
         weight: 9
+      image_collection:
+        enabled: false
+        weight: 48
       image_only:
         enabled: false
         weight: 10
       looping_video:
         enabled: false
-        weight: 44
+        weight: 49
+      menu_tabs:
+        enabled: false
+        weight: 50
       modal_media_gallery:
         enabled: false
-        weight: 45
+        weight: 51
       multi_column_layout_text_:
         enabled: false
-        weight: 46
+        weight: 52
+      promotion_one:
+        enabled: false
+        weight: 53
+      promotion_three:
+        enabled: false
+        weight: 54
+      promotion_two:
+        enabled: false
+        weight: 55
       restaurant:
         enabled: false
         weight: 11
@@ -107,31 +134,37 @@ settings:
         weight: 31
       section_heading:
         enabled: false
-        weight: 47
+        weight: 56
       single_image_with_caption:
         enabled: false
         weight: 12
       slideshow:
         enabled: false
         weight: 13
+      slideshow_container:
+        enabled: false
+        weight: 57
+      sponsors:
+        enabled: false
+        weight: 58
       sticky_anchor_menu:
         enabled: false
-        weight: 48
+        weight: 59
       text:
         enabled: false
         weight: 14
       thumbnail_slideshow:
         enabled: false
-        weight: 49
+        weight: 60
       time_slot:
         enabled: false
-        weight: 50
+        weight: 61
       two_column_grid:
         enabled: false
         weight: 17
       two_columns:
         enabled: false
-        weight: 51
+        weight: 62
       two_columns_40_60:
         enabled: false
         weight: 15
@@ -143,6 +176,6 @@ settings:
         weight: 18
       webcam_embed:
         enabled: false
-        weight: 52
+        weight: 63
   handler: 'default:paragraph'
 field_type: entity_reference_revisions

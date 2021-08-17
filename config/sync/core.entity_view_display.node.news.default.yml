@@ -19,7 +19,6 @@ dependencies:
     - image
     - layout_builder
     - layout_discovery
-    - slick_entityreference
     - text
     - user
 third_party_settings:
@@ -364,6 +363,55 @@ third_party_settings:
                 third_party_settings: {  }
             additional: {  }
             weight: 19
+          99918205-30d6-4184-9e2f-0627babb9c35:
+            uuid: 99918205-30d6-4184-9e2f-0627babb9c35
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:news:field_subtitle'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 20
+          7eb920a7-5f91-4ea9-b571-6a84a84c436d:
+            uuid: 7eb920a7-5f91-4ea9-b571-6a84a84c436d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:news:field_byline'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 21
+          08cb2ff8-6fe3-499a-ac49-117d3ba5dc7a:
+            uuid: 08cb2ff8-6fe3-499a-ac49-117d3ba5dc7a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:news:field_content_block'
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: full
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 22
         third_party_settings: {  }
 id: node.news.default
 targetEntityType: node
@@ -378,30 +426,22 @@ content:
     third_party_settings: {  }
     region: content
   field_byline:
+    label: hidden
+    weight: 1
     type: string
-    weight: 5
-    region: content
-    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  field_content_block:
-    type: entity_reference_revisions_entity_view
-    weight: 7
     region: content
-    label: above
+  field_content_block:
+    label: hidden
+    weight: 4
+    type: entity_reference_revisions_entity_view
     settings:
-      view_mode: default
+      view_mode: full
       link: ''
     third_party_settings: {  }
-  field_editorial_access:
-    type: entity_reference_label
-    weight: 3
     region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_image:
     type: image
     weight: 8
@@ -411,53 +451,22 @@ content:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
-  field_landing_image:
-    type: entity_reference_label
-    weight: 2
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  field_related_content:
-    type: slick_entityreference_vanilla
-    weight: 9
-    region: content
-    label: above
-    settings:
-      view_mode: ''
-      optionset: default
-      override: false
-      overridables: {  }
-      skin: ''
-      skin_arrows: ''
-      skin_dots: ''
-      use_theme_field: false
-      cache: 0
-      current_view_mode: ''
-      fx: ''
-      style: ''
-    third_party_settings: {  }
   field_subtitle:
-    type: string
-    weight: 1
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_teaser_title:
-    type: string
+    label: hidden
     weight: 0
-    region: content
-    label: above
+    type: string
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
   links:
     weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_editorial_access: true
+  field_landing_image: true
+  field_related_content: true
   field_tags: true
+  field_teaser_title: true

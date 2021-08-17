@@ -1,0 +1,20 @@
+uuid: 135c2bd1-077a-40c5-af61-86d06ba912d1
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_drupal_8
+label: 'Import from Drupal 8'
+description: 'Migrations originally generated from drush migrate-upgrade --configure-only'
+source_type: 'Drupal 8'
+module: null
+shared_configuration:
+  source:
+    key: drupal_8
+    database:
+      driver: mysql
+      username: db
+      password: db
+      host: db
+      port: ''
+      database: db
+      prefix: null

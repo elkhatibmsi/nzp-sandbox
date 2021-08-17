@@ -27,6 +27,14 @@ content:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  field_official_title:
+    label: hidden
+    weight: 0
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -36,5 +44,4 @@ hidden:
   field_editorial_access: true
   field_fonz_board_title: true
   field_image: true
-  field_official_title: true
   field_zoo_fonz: true

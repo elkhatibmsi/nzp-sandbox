@@ -13,12 +13,12 @@ bundle: section
 mode: default
 content:
   field_content_block:
-    type: entity_reference_revisions_entity_view
+    label: hidden
     weight: 0
-    region: content
-    label: above
+    type: entity_reference_revisions_entity_view
     settings:
-      view_mode: default
+      view_mode: full
       link: ''
     third_party_settings: {  }
+    region: content
 hidden: {  }

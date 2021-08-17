@@ -86,8 +86,41 @@ process:
         target_id: fid
   field_content_block:
     -
-      plugin: get
+      plugin: sub_process
       source: field_content_block
+      process:
+        target_id:
+          -
+            plugin: migration_lookup
+            migration:
+              - paragraph__section
+              - paragraph__grid
+              - paragraph__text
+              - paragraph__single_image_with_caption
+              - paragraph__video
+              - paragraph__slide
+              - paragraph__card_grid
+            source: value
+          -
+            plugin: extract
+            index:
+              - 0
+        target_revision_id:
+          -
+            plugin: migration_lookup
+            migration:
+              - paragraph__section
+              - paragraph__grid
+              - paragraph__text
+              - paragraph__single_image_with_caption
+              - paragraph__video
+              - paragraph__slide
+              - paragraph__card_grid
+            source: value
+          -
+            plugin: extract
+            index:
+              - 1
   field_editorial_access:
     -
       plugin: sub_process
@@ -142,6 +175,12 @@ migration_dependencies:
   required:
     - upgrade_d7_user
     - upgrade_d7_node_type
-    - upgrade_d7_file_entity_image_public
+    - paragraph__section
+    - paragraph__grid
+    - paragraph__text
+    - paragraph__single_image_with_caption
+    - paragraph__video
+    - paragraph__slide
+    - paragraph__card_grid
   optional:
     - upgrade_d7_field_instance

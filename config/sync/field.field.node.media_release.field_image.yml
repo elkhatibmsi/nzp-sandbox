@@ -23,16 +23,13 @@ settings:
   max_filesize: '50 MB'
   max_resolution: ''
   min_resolution: ''
-  alt_field: false
+  alt_field: true
+  title_field: true
+  default_image: 0
   alt_field_required: true
-  title_field: false
   title_field_required: false
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
+  handler_settings:
+    target_bundles:
+      image: image
   handler: 'default:file'
-  handler_settings: {  }
 field_type: image

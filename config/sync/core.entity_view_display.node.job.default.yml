@@ -1,0 +1,44 @@
+uuid: 27e89f6b-8357-43a8-a365-74c75f057a17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.job.field_application_date
+    - field.field.node.job.field_url
+    - node.type.job
+  module:
+    - datetime
+    - link
+    - user
+id: node.job.default
+targetEntityType: node
+bundle: job
+mode: default
+content:
+  field_application_date:
+    label: above
+    weight: 2
+    type: datetime_default
+    settings:
+      format_type: long
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_url:
+    label: above
+    weight: 3
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

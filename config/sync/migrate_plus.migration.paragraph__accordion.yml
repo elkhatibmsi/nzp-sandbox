@@ -15,10 +15,9 @@ migration_group: nzp_paragraphs
 label: 'Accordion item paragraph'
 source:
   plugin: d7_field_collection_item
-  key: migrate
   field_name: field_accordion
 process:
-  id: item_id
+  revision_id: revision_id
   field_accordion_tab_title: field_title
   field_tab_content:
     -
@@ -30,7 +29,7 @@ process:
             plugin: migration_lookup
             migration:
               - paragraph__text
-              - paragraph__slide
+              - paragraph__slideshow
               - paragraph__slideshow_image_only
               - paragraph__image
             source: value
@@ -43,7 +42,7 @@ process:
             plugin: migration_lookup
             migration:
               - paragraph__text
-              - paragraph__slide
+              - paragraph__slideshow
               - paragraph__slideshow_image_only
               - paragraph__image
             source: value
@@ -55,5 +54,9 @@ destination:
   plugin: 'entity_reference_revisions:paragraph'
   default_bundle: accordion
 migration_dependencies:
-  required: {  }
+  required:
+    - paragraph__text
+    - paragraph__slideshow
+    - paragraph__slideshow_image_only
+    - paragraph__image
   optional: {  }

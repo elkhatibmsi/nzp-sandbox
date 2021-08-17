@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.blank_page.field_tags
     - node.type.blank_page
   module:
+    - entity_reference_revisions
     - text
     - user
 id: node.blank_page.default
@@ -28,17 +29,40 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_content_block:
+    label: hidden
+    weight: 0
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_hero_image:
+    label: above
+    weight: 11
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_parent_project:
+    label: above
+    weight: 12
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
-  field_content_block: true
   field_editorial_access: true
-  field_hero_image: true
   field_hero_video: true
   field_landing_image: true
-  field_parent_project: true
   field_story_type: true
   field_tags: true

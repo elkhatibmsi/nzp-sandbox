@@ -1,0 +1,66 @@
+uuid: af0dedb9-4440-40dc-8807-af7e274dae41
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.parameterized_promos
+    - field.field.block_content.parameterized_promos.field_promo_banner_body
+    - field.field.block_content.parameterized_promos.field_promo_banner_link
+    - field.field.block_content.parameterized_promos.field_promo_banner_make_default
+    - field.field.block_content.parameterized_promos.field_promo_banner_media
+    - field.field.block_content.parameterized_promos.field_promo_banner_parameter
+    - field.field.block_content.parameterized_promos.title
+  module:
+    - link
+    - options
+    - text
+id: block_content.parameterized_promos.default
+targetEntityType: block_content
+bundle: parameterized_promos
+mode: default
+content:
+  field_promo_banner_body:
+    label: above
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_promo_banner_link:
+    label: above
+    weight: 2
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_promo_banner_make_default:
+    label: above
+    weight: 4
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_promo_banner_media:
+    label: above
+    weight: 0
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_promo_banner_parameter:
+    label: above
+    weight: 3
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  title: true

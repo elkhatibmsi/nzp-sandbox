@@ -11,11 +11,12 @@ bundle: entity_list
 mode: default
 content:
   field_list_of_entities:
-    type: entity_reference_label
+    label: hidden
     weight: 0
-    region: content
-    label: above
+    type: entity_reference_entity_view
     settings:
-      link: true
+      view_mode: teaser
+      link: false
     third_party_settings: {  }
+    region: content
 hidden: {  }

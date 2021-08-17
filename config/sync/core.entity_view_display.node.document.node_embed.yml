@@ -1,0 +1,33 @@
+uuid: b798308e-25b5-41d3-9653-0642a3790d3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.node_embed
+    - field.field.node.document.body
+    - field.field.node.document.field_editorial_access
+    - field.field.node.document.field_file
+    - node.type.document
+  module:
+    - user
+id: node.document.node_embed
+targetEntityType: node
+bundle: document
+mode: node_embed
+content:
+  field_file:
+    label: hidden
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  field_editorial_access: true

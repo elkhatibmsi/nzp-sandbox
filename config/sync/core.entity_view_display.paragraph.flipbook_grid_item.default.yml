@@ -23,18 +23,18 @@ content:
       link: true
     third_party_settings: {  }
   field_flipbook_overlay:
-    type: text_default
+    label: hidden
     weight: 2
-    region: content
-    label: above
+    type: text_default
     settings: {  }
     third_party_settings: {  }
-  field_flipbook_title:
-    type: string
-    weight: 0
     region: content
-    label: above
+  field_flipbook_title:
+    label: hidden
+    weight: 0
+    type: string
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
 hidden: {  }

@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.slideshow.field_modal_content
     - field.field.paragraph.slideshow.field_slide_caption
     - field.field.paragraph.slideshow.field_slide_image
+    - field.field.paragraph.slideshow.field_slideshow
     - field.field.paragraph.slideshow.field_url
     - paragraphs.paragraphs_type.slideshow
   module:
@@ -139,4 +140,5 @@ hidden:
   field_link_slide_to_modal: true
   field_modal_content: true
   field_slide_caption: true
+  field_slideshow: true
   field_url: true

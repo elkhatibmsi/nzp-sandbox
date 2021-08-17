@@ -22,11 +22,26 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_editorial_access:
+    label: above
+    weight: 5
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_landing_image:
+    label: above
+    weight: 4
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden:
-  field_editorial_access: true
-  field_landing_image: true
+hidden: {  }

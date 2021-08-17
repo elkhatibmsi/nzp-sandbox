@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.media_release.field_teaser_title
     - node.type.media_release
   module:
+    - entity_reference_revisions
     - layout_builder
     - nzp_layouts
     - text
@@ -167,6 +168,39 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
+          f9906d20-4684-4b00-9366-820aee18fcca:
+            uuid: f9906d20-4684-4b00-9366-820aee18fcca
+            region: one_col
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:media_release:field_subtitle'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          ec6b9ef8-c083-4847-b6a9-5b9fa49b16c3:
+            uuid: ec6b9ef8-c083-4847-b6a9-5b9fa49b16c3
+            region: one_col
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:media_release:field_content_block'
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: full
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layout_nzp_one_col
@@ -246,15 +280,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_landing_image:
-    type: entity_reference_entity_view
-    weight: 1
-    region: content
+  field_content_block:
     label: hidden
+    weight: 10
+    type: entity_reference_revisions_entity_view
     settings:
-      view_mode: teaser
-      link: false
+      view_mode: full
+      link: ''
     third_party_settings: {  }
+    region: one_col
   field_media_release_image:
     type: entity_reference_entity_view
     weight: 3
@@ -264,18 +298,25 @@ content:
       link: false
     third_party_settings: {  }
     region: one_col
+  field_subtitle:
+    label: hidden
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: one_col
   links:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_content_block: true
   field_editorial_access: true
   field_image: true
+  field_landing_image: true
   field_media_release_category: true
   field_obituary: true
   field_related_content: true
-  field_subtitle: true
   field_tags: true
   field_teaser_title: true

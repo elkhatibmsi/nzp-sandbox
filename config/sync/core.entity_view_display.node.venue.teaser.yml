@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.venue.field_venue_setting
     - node.type.venue
   module:
+    - options
     - text
     - user
 id: node.venue.teaser
@@ -29,16 +30,60 @@ content:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  field_combined_capacity:
+    label: inline
+    weight: 17
+    type: number_integer
+    settings:
+      prefix_suffix: true
+      thousand_separator: ''
+    third_party_settings: {  }
+    region: content
+  field_reception_capacity:
+    label: inline
+    weight: 16
+    type: number_integer
+    settings:
+      prefix_suffix: true
+      thousand_separator: ''
+    third_party_settings: {  }
+    region: content
+  field_seating_capacity:
+    label: inline
+    weight: 15
+    type: number_integer
+    settings:
+      prefix_suffix: true
+      thousand_separator: ''
+    third_party_settings: {  }
+    region: content
+  field_venue_availibility:
+    label: above
+    weight: 19
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_venue_media:
+    label: hidden
+    weight: 0
+    type: entity_reference_entity_view
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_venue_setting:
+    label: inline
+    weight: 18
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
-  field_combined_capacity: true
-  field_reception_capacity: true
-  field_seating_capacity: true
-  field_venue_availibility: true
   field_venue_gallery: true
-  field_venue_media: true
-  field_venue_setting: true

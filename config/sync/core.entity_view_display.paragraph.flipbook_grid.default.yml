@@ -9,33 +9,20 @@ dependencies:
     - paragraphs.paragraphs_type.flipbook_grid
   module:
     - entity_reference_revisions
-    - options
 id: paragraph.flipbook_grid.default
 targetEntityType: paragraph
 bundle: flipbook_grid
 mode: default
 content:
   field_flipbook_grid_item:
-    type: entity_reference_revisions_entity_view
+    label: hidden
     weight: 0
-    region: content
-    label: above
+    type: entity_reference_revisions_entity_view
     settings:
-      view_mode: default
+      view_mode: full
       link: ''
     third_party_settings: {  }
-  field_number_of_columns:
-    type: list_default
-    weight: 1
     region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  field_overlay_background:
-    type: list_default
-    weight: 2
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_number_of_columns: true
+  field_overlay_background: true

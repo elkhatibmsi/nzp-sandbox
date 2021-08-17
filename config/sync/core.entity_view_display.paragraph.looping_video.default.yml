@@ -11,12 +11,12 @@ bundle: looping_video
 mode: default
 content:
   field_video:
-    type: entity_reference_entity_view
+    label: hidden
     weight: 0
-    region: content
-    label: above
+    type: entity_reference_entity_view
     settings:
-      link: true
-      view_mode: default
+      view_mode: looping_video
+      link: false
     third_party_settings: {  }
+    region: content
 hidden: {  }

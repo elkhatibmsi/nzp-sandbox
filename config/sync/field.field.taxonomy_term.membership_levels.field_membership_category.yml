@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.taxonomy_term.field_membership_category
-    - taxonomy.vocabulary.membership_level_categories
     - taxonomy.vocabulary.membership_levels
 id: taxonomy_term.membership_levels.field_membership_category
 field_name: field_membership_category
@@ -20,7 +19,5 @@ settings:
   handler_settings:
     sort:
       field: _none
-    target_bundles:
-      membership_level_categories: membership_level_categories
   handler: 'default:taxonomy_term'
 field_type: entity_reference

@@ -18,7 +18,7 @@ source:
   key: migrate
   field_name: field_slideshow
 process:
-  id: item_id
+  revision_id: revision_id
   field_url: field_url
   field_slide_caption: field_text
   field_modal_content: field_modal_content

@@ -12,7 +12,7 @@ id: paragraph.faq.field_faq_item
 field_name: field_faq_item
 entity_type: paragraph
 bundle: faq
-label: field_faq_item
+label: 'Questions and Answers'
 description: ''
 required: false
 translatable: true
@@ -138,6 +138,9 @@ settings:
         enabled: false
       slideshow:
         weight: 87
+        enabled: false
+      slideshow_container:
+        weight: 89
         enabled: false
       sponsors:
         weight: 88

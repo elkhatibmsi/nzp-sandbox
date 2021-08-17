@@ -34,6 +34,15 @@ content:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  field_landing_image:
+    label: hidden
+    weight: 0
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -46,7 +55,6 @@ hidden:
   field_feature_one: true
   field_feature_three: true
   field_feature_two: true
-  field_landing_image: true
   field_promotion_three: true
   field_related_animal: true
   field_sidebar_section_content: true

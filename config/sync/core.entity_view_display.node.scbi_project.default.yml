@@ -18,6 +18,8 @@ dependencies:
     - field.field.node.scbi_project.field_tags
     - node.type.scbi_project
   module:
+    - entity_reference_revisions
+    - link
     - text
     - user
 id: node.scbi_project.default
@@ -32,20 +34,39 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_content_block:
+    label: hidden
+    weight: 2
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_publications:
+    label: above
+    weight: 1
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
-  field_content_block: true
   field_editorial_access: true
   field_image: true
   field_landing_image: true
   field_other_species: true
   field_other_staff: true
   field_parent_project: true
-  field_publications: true
   field_related_species: true
   field_scbi_staff: true
   field_species_work_with_filter: true

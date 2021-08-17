@@ -29,87 +29,111 @@ settings:
       image_only: image_only
       video: video
     target_bundles_drag_drop:
+      accordion:
+        enabled: false
+        weight: 26
       accordion_tabs:
         enabled: false
         weight: 2
       block_embed:
         enabled: false
-        weight: 26
+        weight: 27
       block_embed_no_title:
         enabled: false
-        weight: 27
+        weight: 28
       button_grid:
         enabled: false
-        weight: 28
+        weight: 29
       button_item:
         enabled: false
-        weight: 29
+        weight: 30
       callout:
         enabled: false
-        weight: 30
+        weight: 31
       card_grid:
         enabled: false
-        weight: 31
+        weight: 32
       card_item:
         enabled: false
-        weight: 32
+        weight: 33
       card_item_blank:
         enabled: false
-        weight: 33
+        weight: 34
       cell:
         enabled: false
-        weight: 34
+        weight: 35
+      class_session:
+        enabled: false
+        weight: 36
       collapsible_block:
         enabled: false
         weight: 11
       content_video:
         enabled: false
-        weight: 35
+        weight: 37
       entity_list:
         enabled: false
-        weight: 36
+        weight: 38
       faq:
         enabled: false
-        weight: 37
+        weight: 39
+      faq_item:
+        enabled: false
+        weight: 40
       flipbook_grid:
         enabled: false
-        weight: 38
+        weight: 41
       flipbook_grid_item:
         enabled: false
-        weight: 39
+        weight: 42
       fun_facts:
         enabled: false
         weight: 12
       grid:
         enabled: false
-        weight: 40
+        weight: 43
       horizontal_single_tab:
         enabled: false
-        weight: 41
+        weight: 44
       horizontal_tabs:
         enabled: false
-        weight: 42
+        weight: 45
+      hours:
+        enabled: false
+        weight: 46
       icon_card_item:
         enabled: false
-        weight: 43
+        weight: 47
       image:
         enabled: false
         weight: 13
+      image_collection:
+        enabled: false
+        weight: 48
       image_only:
         enabled: true
         weight: 14
       looping_video:
         enabled: false
-        weight: 44
+        weight: 49
       menu_tabs:
         enabled: false
         weight: 3
       modal_media_gallery:
         enabled: false
-        weight: 45
+        weight: 50
       multi_column_layout_text_:
         enabled: false
-        weight: 46
+        weight: 51
+      promotion_one:
+        enabled: false
+        weight: 52
+      promotion_three:
+        enabled: false
+        weight: 53
+      promotion_two:
+        enabled: false
+        weight: 54
       responsive_tab:
         enabled: false
         weight: 4
@@ -118,19 +142,25 @@ settings:
         weight: 17
       section:
         enabled: false
-        weight: 47
+        weight: 55
       section_heading:
         enabled: false
-        weight: 48
+        weight: 56
       single_image_with_caption:
         enabled: false
-        weight: 49
+        weight: 57
       slideshow:
         enabled: true
         weight: 5
+      slideshow_container:
+        enabled: false
+        weight: 58
+      sponsors:
+        enabled: false
+        weight: 59
       sticky_anchor_menu:
         enabled: false
-        weight: 50
+        weight: 60
       text:
         enabled: true
         weight: 6
@@ -142,16 +172,16 @@ settings:
         weight: 21
       thumbnail_slideshow:
         enabled: false
-        weight: 51
+        weight: 61
       time_slot:
         enabled: false
-        weight: 52
+        weight: 62
       two_column_grid:
         enabled: false
         weight: 24
       two_columns:
         enabled: false
-        weight: 53
+        weight: 63
       two_columns_40_60:
         enabled: false
         weight: 7
@@ -163,9 +193,9 @@ settings:
         weight: 25
       view_embed:
         enabled: false
-        weight: 54
+        weight: 64
       webcam_embed:
         enabled: false
-        weight: 55
+        weight: 65
   handler: 'default:paragraph'
 field_type: entity_reference_revisions

@@ -34,6 +34,9 @@ settings:
       text: text
       view_embed: view_embed
     target_bundles_drag_drop:
+      accordion:
+        enabled: false
+        weight: 48
       accordion_tabs:
         enabled: false
         weight: 2
@@ -45,25 +48,28 @@ settings:
         weight: 34
       button_grid:
         enabled: false
-        weight: 48
+        weight: 49
       button_item:
         enabled: false
-        weight: 49
+        weight: 50
       callout:
         enabled: false
-        weight: 50
+        weight: 51
       card_grid:
         enabled: false
-        weight: 51
+        weight: 52
       card_item:
         enabled: false
-        weight: 52
+        weight: 53
       card_item_blank:
         enabled: false
-        weight: 53
+        weight: 54
       cell:
         enabled: false
         weight: 4
+      class_session:
+        enabled: false
+        weight: 55
       collapsible_block:
         enabled: false
         weight: 5
@@ -76,6 +82,9 @@ settings:
       faq:
         enabled: false
         weight: 7
+      faq_item:
+        enabled: false
+        weight: 56
       flipbook_grid:
         enabled: false
         weight: 40
@@ -87,49 +96,73 @@ settings:
         weight: 26
       horizontal_single_tab:
         enabled: false
-        weight: 54
+        weight: 57
       horizontal_tabs:
         enabled: false
         weight: 43
+      hours:
+        enabled: false
+        weight: 58
       icon_card_item:
         enabled: false
-        weight: 55
+        weight: 59
       image:
         enabled: false
         weight: 8
+      image_collection:
+        enabled: false
+        weight: 60
       image_only:
         enabled: true
         weight: 9
       looping_video:
         enabled: false
         weight: 46
+      menu_tabs:
+        enabled: false
+        weight: 61
       modal_media_gallery:
         enabled: false
         weight: 47
       multi_column_layout_text_:
         enabled: false
-        weight: 56
+        weight: 62
+      promotion_one:
+        enabled: false
+        weight: 63
+      promotion_three:
+        enabled: false
+        weight: 64
+      promotion_two:
+        enabled: false
+        weight: 65
       section:
         enabled: false
         weight: 30
       section_heading:
         enabled: false
-        weight: 57
+        weight: 66
       single_image_with_caption:
         enabled: true
         weight: 11
       slideshow:
         enabled: true
         weight: 12
+      slideshow_container:
+        enabled: false
+        weight: 67
+      sponsors:
+        enabled: false
+        weight: 68
       sticky_anchor_menu:
         enabled: false
-        weight: 58
+        weight: 69
       text:
         enabled: true
         weight: 13
       thumbnail_slideshow:
         enabled: false
-        weight: 59
+        weight: 70
       time_slot:
         enabled: false
         weight: -50
@@ -138,7 +171,7 @@ settings:
         weight: 16
       two_columns:
         enabled: false
-        weight: 60
+        weight: 71
       two_columns_40_60:
         enabled: false
         weight: 14
@@ -150,6 +183,6 @@ settings:
         weight: 17
       webcam_embed:
         enabled: false
-        weight: 61
+        weight: 72
   handler: 'default:paragraph'
 field_type: entity_reference_revisions

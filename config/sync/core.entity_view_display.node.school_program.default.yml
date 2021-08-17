@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.school_program.field_site
     - node.type.school_program
   module:
+    - options
     - text
     - user
 id: node.school_program.default
@@ -28,17 +29,59 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_cost_text:
+    label: inline
+    weight: 3
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_cost_text2:
+    label: inline
+    weight: 4
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_grades:
+    label: inline
+    weight: 1
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_landing_image:
+    label: above
+    weight: 8
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_number_of_students:
+    label: inline
+    weight: 5
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_program_length:
+    label: inline
+    weight: 2
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
-  field_cost_text: true
-  field_cost_text2: true
   field_editorial_access: true
-  field_grades: true
-  field_landing_image: true
-  field_number_of_students: true
-  field_program_length: true
   field_site: true

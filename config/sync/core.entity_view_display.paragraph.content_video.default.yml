@@ -11,12 +11,12 @@ bundle: content_video
 mode: default
 content:
   field_video:
+    label: hidden
+    weight: 2
     type: entity_reference_entity_view
-    weight: 0
-    region: content
-    label: above
     settings:
-      link: true
       view_mode: default
+      link: false
     third_party_settings: {  }
+    region: content
 hidden: {  }

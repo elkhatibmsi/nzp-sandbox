@@ -26,7 +26,8 @@ process:
         target_id:
           -
             plugin: migration_lookup
-            migration: paragraph__slide
+            migration:
+              - paragraph__slide
             source: value
           -
             plugin: extract
@@ -35,7 +36,8 @@ process:
         target_revision_id:
           -
             plugin: migration_lookup
-            migration: paragraph__slide
+            migration:
+              - paragraph__slide
             source: value
           -
             plugin: extract

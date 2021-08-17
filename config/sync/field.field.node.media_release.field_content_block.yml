@@ -5,6 +5,24 @@ dependencies:
   config:
     - field.storage.node.field_content_block
     - node.type.media_release
+    - paragraphs.paragraphs_type.accordion_tabs
+    - paragraphs.paragraphs_type.block_embed_no_title
+    - paragraphs.paragraphs_type.button_grid
+    - paragraphs.paragraphs_type.callout
+    - paragraphs.paragraphs_type.card_grid
+    - paragraphs.paragraphs_type.content_video
+    - paragraphs.paragraphs_type.entity_list
+    - paragraphs.paragraphs_type.faq
+    - paragraphs.paragraphs_type.flipbook_grid
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.image_only
+    - paragraphs.paragraphs_type.looping_video
+    - paragraphs.paragraphs_type.modal_media_gallery
+    - paragraphs.paragraphs_type.section
+    - paragraphs.paragraphs_type.section_heading
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.two_columns
+    - paragraphs.paragraphs_type.view_embed
   module:
     - entity_reference_revisions
 id: node.media_release.field_content_block
@@ -40,6 +58,9 @@ settings:
       two_columns: two_columns
       view_embed: view_embed
     target_bundles_drag_drop:
+      accordion:
+        enabled: false
+        weight: 40
       accordion_tabs:
         enabled: true
         weight: 2
@@ -70,6 +91,9 @@ settings:
       cell:
         enabled: false
         weight: 11
+      class_session:
+        enabled: false
+        weight: 41
       collapsible_block:
         enabled: false
         weight: 12
@@ -82,6 +106,9 @@ settings:
       faq:
         enabled: true
         weight: 15
+      faq_item:
+        enabled: false
+        weight: 42
       flipbook_grid:
         enabled: true
         weight: 16
@@ -91,27 +118,48 @@ settings:
       grid:
         enabled: false
         weight: 18
+      horizontal_single_tab:
+        enabled: false
+        weight: 43
       horizontal_tabs:
         enabled: false
         weight: 19
+      hours:
+        enabled: false
+        weight: 44
       icon_card_item:
         enabled: false
         weight: 20
       image:
         enabled: true
         weight: 21
+      image_collection:
+        enabled: false
+        weight: 45
       image_only:
         enabled: true
         weight: 22
       looping_video:
         enabled: true
         weight: 23
+      menu_tabs:
+        enabled: false
+        weight: 46
       modal_media_gallery:
         enabled: true
         weight: 24
       multi_column_layout_text_:
         enabled: false
         weight: 25
+      promotion_one:
+        enabled: false
+        weight: 47
+      promotion_three:
+        enabled: false
+        weight: 48
+      promotion_two:
+        enabled: false
+        weight: 49
       section:
         enabled: true
         weight: 26
@@ -124,6 +172,12 @@ settings:
       slideshow:
         enabled: false
         weight: 29
+      slideshow_container:
+        enabled: false
+        weight: 50
+      sponsors:
+        enabled: false
+        weight: 51
       sticky_anchor_menu:
         enabled: false
         weight: 30

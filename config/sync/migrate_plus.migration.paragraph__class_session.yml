@@ -17,7 +17,7 @@ source:
   plugin: d7_field_collection_item
   field_name: field_class_session
 process:
-  id: item_id
+  revision_id: revision_id
   field_schedule_description: field_schedule_description
   field_dates: field_dates
   field_company_url: field_company_url

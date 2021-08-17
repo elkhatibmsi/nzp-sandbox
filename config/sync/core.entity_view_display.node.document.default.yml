@@ -22,6 +22,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_file:
+    label: hidden
+    weight: 1
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -29,4 +38,3 @@ content:
     region: content
 hidden:
   field_editorial_access: true
-  field_file: true
