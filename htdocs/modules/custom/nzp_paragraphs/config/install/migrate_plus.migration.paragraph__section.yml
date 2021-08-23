@@ -1,24 +1,32 @@
-id: paragraph__section
-label: 'Section Paragraph'
-migration_group: nzp_paragraphs
-migration_tags:
-  - Paragraphs
+uuid: c559692f-648e-40fe-ab95-1e42026daeb4
+langcode: en
+status: true
 dependencies:
   enforced:
     module:
       - nzp_paragraphs
+id: paragraph__section
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Paragraphs
+migration_group: nzp_paragraphs
+label: 'Section Paragraph'
 source:
   plugin: d7_paragraphs_item
   bundle: section
 process:
   id: item_id
-  field_content_block : 
-    - plugin: sub_process
+  field_content_block:
+    -
+      plugin: sub_process
       source: field_content_block
       process:
         target_id:
-          - plugin: migration_lookup
-            migration: 
+          -
+            plugin: migration_lookup
+            migration:
               - paragraph__callout
               - paragraph__content_video
               - paragraph__grid
@@ -27,12 +35,14 @@ process:
               - paragraph__single_image_with_caption
               - paragraph__text
             source: value
-          - plugin: extract
+          -
+            plugin: extract
             index:
               - 0
         target_revision_id:
-          - plugin: migration_lookup
-            migration: 
+          -
+            plugin: migration_lookup
+            migration:
               - paragraph__callout
               - paragraph__content_video
               - paragraph__grid
@@ -40,17 +50,16 @@ process:
               - paragraph__slideshow_image_only
               - paragraph__single_image_with_caption
               - paragraph__text
-
             source: value
-          - plugin: extract
+          -
+            plugin: extract
             index:
               - 1
 destination:
   plugin: 'entity_reference_revisions:paragraph'
   default_bundle: section
-
 migration_dependencies:
-  required: 
+  required:
     - paragraph__callout
     - paragraph__content_video
     - paragraph__grid
@@ -58,8 +67,4 @@ migration_dependencies:
     - paragraph__slideshow_image_only
     - paragraph__single_image_with_caption
     - paragraph__text
-
   optional: {  }
-
-
-  

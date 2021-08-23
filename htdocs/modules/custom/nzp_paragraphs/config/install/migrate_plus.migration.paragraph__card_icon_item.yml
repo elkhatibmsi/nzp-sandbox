@@ -1,3 +1,7 @@
+uuid: 4ee6322d-ac60-4aec-af43-3fcd8c42315b
+langcode: en
+status: true
+dependencies: {  }
 id: paragraph__card_icon_item
 class: null
 field_plugin_method: null
