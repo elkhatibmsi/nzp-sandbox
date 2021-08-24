@@ -28,11 +28,15 @@ process:
           -
             plugin: migration_lookup
             migration:
+              - paragraph__block_embed
+              - paragraph__block_embed_no_title
               - paragraph__callout
               - paragraph__card_grid
               - paragraph__single_image_with_caption
+              - paragraph__slideshow
               - paragraph__text
               - paragraph__webcam_embed
+              - paragraph__view_embed
             source: value
           -
             plugin: extract
@@ -42,11 +46,15 @@ process:
           -
             plugin: migration_lookup
             migration:
+              - paragraph__block_embed
+              - paragraph__block_embed_no_title
               - paragraph__callout
               - paragraph__card_grid
               - paragraph__single_image_with_caption
+              - paragraph__slideshow
               - paragraph__text
               - paragraph__webcam_embed
+              - paragraph__view_embed
             source: value
           -
             plugin: extract
@@ -57,9 +65,13 @@ destination:
   default_bundle: horizontal_single_tab
 migration_dependencies:
   required:
+    - paragraph__block_embed
+    - paragraph__block_embed_no_title
     - paragraph__callout
     - paragraph__card_grid
     - paragraph__single_image_with_caption
+    - paragraph__slideshow
     - paragraph__text
     - paragraph__webcam_embed
+    - paragraph__view_embed
   optional: {  }

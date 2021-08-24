@@ -31,9 +31,10 @@ process:
               - paragraph__content_video
               - paragraph__grid
               - paragraph__slide
-              - paragraph__slideshow_image_only
+              - paragraph__slideshow
               - paragraph__single_image_with_caption
               - paragraph__text
+              - paragraph__view_embed
             source: value
           -
             plugin: extract
@@ -47,9 +48,10 @@ process:
               - paragraph__content_video
               - paragraph__grid
               - paragraph__slide
-              - paragraph__slideshow_image_only
+              - paragraph__slideshow
               - paragraph__single_image_with_caption
               - paragraph__text
+              - paragraph__view_embed
             source: value
           -
             plugin: extract
@@ -64,7 +66,8 @@ migration_dependencies:
     - paragraph__content_video
     - paragraph__grid
     - paragraph__slide
-    - paragraph__slideshow_image_only
+    - paragraph__slideshow
     - paragraph__single_image_with_caption
     - paragraph__text
+    - paragraph__view_embed
   optional: {  }
