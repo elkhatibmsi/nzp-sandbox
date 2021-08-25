@@ -8,6 +8,57 @@ dependencies:
     - paragraphs.paragraphs_type.accordion
   module:
     - entity_reference_revisions
+    - layout_builder
+    - nzp_layouts
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_accordion
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          74133195-6fa5-4afe-8a0c-0f3280198961:
+            uuid: 74133195-6fa5-4afe-8a0c-0f3280198961
+            region: summary
+            configuration:
+              id: 'field_block:paragraph:accordion:field_accordion_tab_title'
+              label: 'Accordion Tab Title'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          adf0d307-2e42-4eb6-89f8-27c973f6a2ac:
+            uuid: adf0d307-2e42-4eb6-89f8-27c973f6a2ac
+            region: content
+            configuration:
+              id: 'field_block:paragraph:accordion:field_tab_content'
+              label: 'Tab Content'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
 id: paragraph.accordion.default
 targetEntityType: paragraph
 bundle: accordion

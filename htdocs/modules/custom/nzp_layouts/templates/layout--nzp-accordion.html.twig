@@ -1,12 +1,10 @@
 {% if content %}
-  <div {{ attributes }} >
     <details>
-    <summary class="accordion--summary">
+    <summary {{region_attributes.summary}}>
         {{ content.summary }}
       </summary>
-      <div class="accordion--content">
+      <div {{region_attributes.content}}>
         {{ content.content }}
       </div>
     </details>
-  </div>
 {% endif %}

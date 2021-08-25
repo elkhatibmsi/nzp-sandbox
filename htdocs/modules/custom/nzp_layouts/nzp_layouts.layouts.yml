@@ -41,7 +41,7 @@ layout_nzp_two_col:
 
 layout_accordion:
   label: 'Accordion'
-  template: templates/layout--accordion
+  template: templates/layout--nzp-accordion
   category: 'Components'
   default_region: content
   regions:
