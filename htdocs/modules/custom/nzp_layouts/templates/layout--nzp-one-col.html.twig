@@ -15,15 +15,13 @@
 #}
  
 {% if content %}
-<div class="{{settings.custom_classes }}" {{ region_attributes }}>
     <{{settings.html_region_elements.content}} {{ attributes.addClass(settings.container_classes) }} >
        {% if content.content %}         
         <div class="row">
-            <div class="col-md-12">
+            <div {{region_attributes.content.addClass("col-md-12")}} >
                 {{ content.content }}
             </div>
         </div>
         {% endif %}
     </{{settings.html_region_elements.content}}>
-    </div>
 {% endif %}

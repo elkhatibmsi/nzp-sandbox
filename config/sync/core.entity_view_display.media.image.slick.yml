@@ -11,7 +11,7 @@ dependencies:
     - field.field.media.image.field_notes
     - field.field.media.image.field_photographer
     - field.field.media.image.field_we_do_not_own
-    - image.style.media_library
+    - image.style.thumbnail
     - media.type.image
   module:
     - image
@@ -30,12 +30,12 @@ content:
   field_media_image:
     type: image
     weight: 0
-    label: visually_hidden
+    region: content
+    label: hidden
     settings:
-      image_style: media_library
+      image_style: thumbnail
       image_link: ''
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   field_dams_number: true
