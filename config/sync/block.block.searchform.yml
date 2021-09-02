@@ -1,0 +1,21 @@
+uuid: 0f3f2066-294a-4fe9-a6c3-480fa7fe51f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - theme_nzp
+id: searchform
+theme: theme_nzp
+region: header_utility
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }
