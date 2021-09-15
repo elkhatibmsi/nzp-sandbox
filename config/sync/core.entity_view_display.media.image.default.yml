@@ -13,6 +13,12 @@ dependencies:
     - media.type.image
   module:
     - image
+    - layout_builder
+    - nzp_layouts
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
 _core:
   default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
 id: media.image.default

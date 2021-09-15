@@ -30,4 +30,5 @@ permissions:
   - 'view any temporary_content bean'
   - 'view any webcam_ad bean'
   - 'view files'
+  - 'view media'
   - 'vote on polls'
