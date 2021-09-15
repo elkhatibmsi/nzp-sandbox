@@ -15,7 +15,7 @@
 #}
  
 {% if content %}
-    <{{settings.html_region_elements.content}} {{ attributes.addClass(settings.container_classes) }} >
+    <{{settings.html_region_elements.content}} {{ attributes.addClass(settings.container_classes).addClass(settings.custom_classes) }} >
        {% if content.content %}         
         <div class="row">
             <div {{region_attributes.content.addClass("col-md-12")}} >

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9ed59ac7dc93e154044aec3dcd9ace36",
+    "content-hash": "6a469489331af9a35d0c7dbbd4dfdbe6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4610,6 +4610,59 @@
             "homepage": "https://www.drupal.org/project/layout_builder_styles",
             "support": {
                 "source": "https://git.drupalcode.org/project/layout_builder_styles"
+            }
+        },
+        {
+            "name": "drupal/layout_paragraphs",
+            "version": "2.0.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/layout_paragraphs.git",
+                "reference": "2.0.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/layout_paragraphs-2.0.0-alpha4.zip",
+                "reference": "2.0.0-alpha4",
+                "shasum": "dedfafa5dbbebd2edd89f2e34f95654dc25f3850"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/paragraphs": "^1.6"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha4",
+                    "datestamp": "1626282275",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "itamair",
+                    "homepage": "https://www.drupal.org/user/1179076"
+                },
+                {
+                    "name": "justin2pin",
+                    "homepage": "https://www.drupal.org/user/278450"
+                }
+            ],
+            "description": "Layout Paragraphs",
+            "homepage": "https://www.drupal.org/project/layout_paragraphs",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/layout_paragraphs",
+                "issues": "https://www.drupal.org/project/issues/layout_paragraphs"
             }
         },
         {
@@ -14515,6 +14568,7 @@
         "drupal/captcha": 10,
         "drupal/conditional_fields": 15,
         "drupal/inline_entity_form": 5,
+        "drupal/layout_paragraphs": 15,
         "drupal/linkit": 10,
         "drupal/media_migration": 15,
         "drupal/micon": 10,
@@ -14524,5 +14578,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
