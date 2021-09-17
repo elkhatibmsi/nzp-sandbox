@@ -16,13 +16,14 @@ third_party_settings:
     enabled: true
     sections:
       -
-        layout_id: layout_grid
+        layout_id: layout_blank
         layout_settings:
           label: ''
+          custom_class: card-grid
           context_mapping: {  }
         components:
-          7a3e1959-386b-4f41-9097-9b36cc49c758:
-            uuid: 7a3e1959-386b-4f41-9097-9b36cc49c758
+          a38ab3a4-03ef-41ac-b7ae-bd7894a898e6:
+            uuid: a38ab3a4-03ef-41ac-b7ae-bd7894a898e6
             region: content
             configuration:
               id: 'field_block:paragraph:card_grid:field_card'
@@ -38,7 +39,23 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: card-grid--inner
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
             weight: 0
         third_party_settings: {  }
 id: paragraph.card_grid.default

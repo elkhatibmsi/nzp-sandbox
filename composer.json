@@ -40,6 +40,7 @@
         "drupal/google_tag": "^1.1",
         "drupal/imce": "^1.7",
         "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/layout_builder_component_attributes": "^1.2",
         "drupal/layout_builder_modal": "^1.1",
         "drupal/layout_builder_restrictions": "^2.4",
         "drupal/layout_builder_styles": "^1.0",

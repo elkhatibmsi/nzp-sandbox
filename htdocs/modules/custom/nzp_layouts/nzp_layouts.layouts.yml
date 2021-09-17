@@ -2,6 +2,7 @@ layout_blank:
   label: 'nzp blank container'
   path: templates
   template: layout--nzp-blank
+  class: '\Drupal\nzp_layouts\Plugin\Layout\nzpBlankLayout'
   category: 'Columns: 1'
   default_region: content
   icon_map:

@@ -41,18 +41,30 @@
     label_display == 'visually_hidden' ? 'visually-hidden',
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
 
-  {% if not label_hidden %}
-    {% if label_display == 'inline' %}
-      <label class="inline">{{ label }}</label>
-    {% else %}
-      <label>{{ label }}</label>
-    {% endif %}
+{% if label_hidden %}
+  {% if multiple %}
+    <div{{ attributes }}>
+      {% for item in items %}
+        <div{{ item.attributes }}>{{ item.content }}</div>
+      {% endfor %}
+    </div>
+  {% else %}
+    {% for item in items %}
+      <div{{ attributes }}>{{ item.content }}</div>
+    {% endfor %}
   {% endif %}
-
-  {% for item in items %}
-    {{ item.content }}
-  {% endfor %}
-
-</div>
+{% else %}
+  <div{{ attributes }}>
+    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+    {% if multiple %}
+      <div>
+    {% endif %}
+    {% for item in items %}
+      <div{{ item.attributes }}>{{ item.content }}</div>
+    {% endfor %}
+    {% if multiple %}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

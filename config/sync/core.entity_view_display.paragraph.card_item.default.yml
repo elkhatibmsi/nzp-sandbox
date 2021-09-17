@@ -19,38 +19,45 @@ third_party_settings:
         layout_id: layout_blank
         layout_settings:
           label: ''
+          custom_class: 'card-item card-item-2'
           context_mapping: {  }
         components:
           a684108b-2a9a-43b7-90c2-4c0b72f699fc:
             uuid: a684108b-2a9a-43b7-90c2-4c0b72f699fc
             region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:paragraph:card_item:field_card_item_text'
+              label: Text
+              provider: layout_builder
+              label_display: '0'
               formatter:
                 label: hidden
                 type: text_default
                 settings: {  }
                 third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 3
           9876c519-f725-4d84-aad8-b478d7be1f85:
             uuid: 9876c519-f725-4d84-aad8-b478d7be1f85
             region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:paragraph:card_item:field_card_item_image'
+              label: Image
+              provider: layout_builder
+              label_display: '0'
               formatter:
                 label: hidden
-                type: entity_reference_entity_view
+                type: media_thumbnail
                 settings:
-                  view_mode: default
-                  link: false
+                  image_style: large
+                  image_link: ''
                 third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 2
         third_party_settings: {  }
