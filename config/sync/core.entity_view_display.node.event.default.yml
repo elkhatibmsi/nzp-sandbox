@@ -29,8 +29,139 @@ dependencies:
     - node.type.event
   module:
     - entity_reference_revisions
+    - layout_builder
+    - nzp_layouts
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_nzp_one_col
+        layout_settings:
+          custom_classes: ''
+          region_classes:
+            content: col-md-12
+          container_classes: container
+          html_container_elements: div
+          html_region_elements:
+            content: div
+          context_mapping: {  }
+        components:
+          274b261d-c457-4c17-8ad8-9a81e65ffac9:
+            uuid: 274b261d-c457-4c17-8ad8-9a81e65ffac9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:event:field_event_components'
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: full
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 5
+          ea789cfd-0827-4f1e-b084-4ddb0547c1ef:
+            uuid: ea789cfd-0827-4f1e-b084-4ddb0547c1ef
+            region: content
+            configuration:
+              id: 'field_block:node:event:field_subtitle'
+              label: Subtitle
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_field_formatter
+                settings:
+                  link_to_entity: 0
+                  wrap_tag: h2
+                  wrap_class: page-sub-title
+                  wrap_attributes: ''
+                  override_link_label: ''
+                  token: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 3
+          d21339c9-a27a-4139-b39f-aabad745b766:
+            uuid: d21339c9-a27a-4139-b39f-aabad745b766
+            region: content
+            configuration:
+              id: 'field_block:node:event:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_field_formatter
+                settings:
+                  link_to_entity: 0
+                  wrap_tag: h1
+                  wrap_class: page-title
+                  wrap_attributes: ''
+                  override_link_label: ''
+                  token: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+          16ec4a7f-49b8-4bde-baad-c127b1ea2c1c:
+            uuid: 16ec4a7f-49b8-4bde-baad-c127b1ea2c1c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:event:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 4
+          5cbb1f13-048c-4036-92e5-7b2251b38eb5:
+            uuid: 5cbb1f13-048c-4036-92e5-7b2251b38eb5
+            region: content
+            configuration:
+              id: 'field_block:node:event:field_image'
+              label: 'Event Slideshow'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: visually_hidden
+                type: blazy
+                settings:
+                  style: ''
+                  background: false
+                  caption:
+                    title: '0'
+                    alt: '0'
+                  image_style: ''
+                  thumbnail_style: wide
+                  media_switch: ''
+                  ratio: ''
+                  grid: null
+                  grid_medium: null
+                  grid_small: null
+                  current_view_mode: _custom
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
 id: node.event.default
 targetEntityType: node
 bundle: event

@@ -8,10 +8,6 @@ use Drupal\Core\Plugin\PluginFormInterface;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Component\Uuid;
 
-/**
- * Credit goes to npinos at https://github.com/npinos/drupal8-layouts.
- */
-
 
 /**
  * Base class  for configuring Layout section properties.

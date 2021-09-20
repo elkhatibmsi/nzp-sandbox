@@ -1713,7 +1713,7 @@ h3 {
 
 img {
   max-width: 100%;
-  vertical-align: top; }
+  height: auto; }
 
 input[type="text"] {
   padding: 0.5em;
@@ -2008,6 +2008,45 @@ h1.page-title {
 
 .entity-view-display-layout-builder-form {
   padding: 2em; }
+
+.card-grid--inner > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 1em; }
+
+.card-item .card-item--link {
+  border-bottom: 4px solid #F18B21;
+  padding: 0.5em;
+  font-weight: bold; }
+
+.card-item .card-item--image {
+  overflow: hidden; }
+  .card-item .card-item--image img {
+    height: 200px;
+    object-fit: fill;
+    width: auto; }
+
+.card-item .card-item--text {
+  padding: 0.5em;
+  font-size: 0.9rem;
+  line-height: normal; }
+
+.slideshow {
+  position: relative;
+  max-height: 480px;
+  overflow: hidden; }
+  .slideshow .slideshow--image img {
+    min-width: 100%; }
+  .slideshow .slideshow--caption {
+    position: absolute;
+    font-size: 1.2em;
+    padding: 1em;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    background: #5c5d5d;
+    background: rgba(92, 93, 93, 0.75); }
 
 @media (min-width: 576px) {
   .is-collapsed-mobile {

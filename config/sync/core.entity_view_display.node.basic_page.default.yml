@@ -94,7 +94,7 @@ third_party_settings:
                 settings: {  }
                 third_party_settings: {  }
             additional: {  }
-            weight: -8
+            weight: -7
           3e3dbb64-73a6-4e2c-ac10-59328a0feaaa:
             uuid: 3e3dbb64-73a6-4e2c-ac10-59328a0feaaa
             region: content
@@ -113,7 +113,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: -7
+            weight: -6
           03c0a1e1-c090-42f1-9630-b20ce45f642d:
             uuid: 03c0a1e1-c090-42f1-9630-b20ce45f642d
             region: content
@@ -124,47 +124,20 @@ third_party_settings:
               label_display: '0'
               formatter:
                 label: hidden
-                type: string
+                type: text_field_formatter
                 settings:
-                  link_to_entity: false
+                  link_to_entity: 1
+                  wrap_tag: h1
+                  wrap_class: page-title
+                  wrap_attributes: ''
+                  override_link_label: ''
+                  token: ''
                 third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: -10
-          2d56e68a-67f1-4099-8a5b-55f17c2b9522:
-            uuid: 2d56e68a-67f1-4099-8a5b-55f17c2b9522
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:basic_page:field_tags'
-              formatter:
-                label: above
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
-            weight: -6
-          a09ee2ee-1cc8-4f0e-81ab-0625ef247400:
-            uuid: a09ee2ee-1cc8-4f0e-81ab-0625ef247400
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:basic_page:field_subtitle'
-              formatter:
-                label: hidden
-                type: string
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-            additional: {  }
-            weight: -5
+            weight: -8
         third_party_settings: {  }
       -
         layout_id: layout_threecol_section
@@ -182,7 +155,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: hidden
                 type: entity_reference_entity_view
                 settings:
                   view_mode: teaser
@@ -196,85 +169,95 @@ third_party_settings:
             uuid: d4f4c3b2-d38e-4970-b144-7064cdb89008
             region: third
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:basic_page:field_feature_three'
+              label: 'Feature Three'
+              provider: layout_builder
+              label_display: '0'
               formatter:
+                label: hidden
                 type: entity_reference_entity_view
-                label: above
                 settings:
                   view_mode: teaser
-                  link: false
                 third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 1
           8c824bff-b314-4db7-9f72-604f4d20392f:
             uuid: 8c824bff-b314-4db7-9f72-604f4d20392f
             region: second
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:basic_page:field_feature_two'
+              label: 'Feature Two'
+              provider: layout_builder
+              label_display: '0'
               formatter:
+                label: hidden
                 type: entity_reference_entity_view
-                label: above
                 settings:
                   view_mode: teaser
-                  link: false
                 third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 1
           b257b5ed-27b9-4a93-8084-e70709a8a44c:
             uuid: b257b5ed-27b9-4a93-8084-e70709a8a44c
             region: first
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:basic_page:field_promotion_one'
+              label: 'Promotion One'
+              provider: layout_builder
+              label_display: '0'
               formatter:
+                label: hidden
                 type: entity_reference_revisions_entity_view
-                label: above
                 settings:
                   view_mode: default
-                  link: ''
                 third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 1
           467c2e0e-756f-4e5f-96e1-472915ba87ec:
             uuid: 467c2e0e-756f-4e5f-96e1-472915ba87ec
             region: second
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:basic_page:field_promotion_three'
+              label: 'Promotion three'
+              provider: layout_builder
+              label_display: '0'
               formatter:
+                label: hidden
                 type: entity_reference_revisions_entity_view
-                label: above
                 settings:
                   view_mode: default
-                  link: ''
                 third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 0
           231948ce-ce96-4c6c-9ef0-3aa1297896aa:
             uuid: 231948ce-ce96-4c6c-9ef0-3aa1297896aa
             region: third
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:basic_page:field_promotion_two'
+              label: 'Promotion Two'
+              provider: layout_builder
+              label_display: '0'
               formatter:
+                label: hidden
                 type: entity_reference_revisions_entity_view
-                label: above
                 settings:
                   view_mode: default
-                  link: ''
                 third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 0
         third_party_settings: {  }

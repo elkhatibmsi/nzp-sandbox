@@ -23,6 +23,7 @@ third_party_settings:
         layout_id: layout_blank
         layout_settings:
           label: ''
+          custom_class: slideshow
           context_mapping: {  }
         components:
           31862acd-65d9-4545-bfcd-aede27ea3e43:
@@ -37,7 +38,7 @@ third_party_settings:
                 label: hidden
                 type: blazy_media
                 settings:
-                  background: true
+                  background: false
                   caption:
                     field_dams_number: '0'
                     field_image_alt_text: '0'
@@ -57,7 +58,23 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: slideshow--image
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
             weight: 0
           dce9e38e-c298-4057-8316-48bc288404e5:
             uuid: dce9e38e-c298-4057-8316-48bc288404e5
@@ -75,7 +92,23 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: slideshow--caption
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
             weight: 1
         third_party_settings: {  }
 id: paragraph.slideshow.default

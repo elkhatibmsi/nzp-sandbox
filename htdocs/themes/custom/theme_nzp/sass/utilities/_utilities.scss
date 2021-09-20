@@ -198,3 +198,10 @@
   justify-content: $justify-content;
   flex-wrap:$wrap;
 };
+
+
+@mixin opacity($color, $opacity: 0.3) {
+  background: $color;
+  background: rgba($color, $opacity);
+}
+

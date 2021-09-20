@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_item.field_card_item_image
+    - field.field.paragraph.card_item.field_card_item_link
     - field.field.paragraph.card_item.field_card_item_text
     - paragraphs.paragraphs_type.card_item
   module:
     - layout_builder
+    - link
     - nzp_layouts
     - text
 third_party_settings:
@@ -19,7 +21,7 @@ third_party_settings:
         layout_id: layout_blank
         layout_settings:
           label: ''
-          custom_class: 'card-item card-item-2'
+          custom_class: card-item
           context_mapping: {  }
         components:
           a684108b-2a9a-43b7-90c2-4c0b72f699fc:
@@ -38,8 +40,24 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
-            weight: 3
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: card-item--text
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+            weight: -8
           9876c519-f725-4d84-aad8-b478d7be1f85:
             uuid: 9876c519-f725-4d84-aad8-b478d7be1f85
             region: content
@@ -58,8 +76,63 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
-            weight: 2
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: card-item--image
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+            weight: -9
+          b24266ca-ee29-40fd-aed2-9df02d924efa:
+            uuid: b24266ca-ee29-40fd-aed2-9df02d924efa
+            region: content
+            configuration:
+              id: 'field_block:paragraph:card_item:field_card_item_link'
+              label: 'Card Item Link'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: link
+                settings:
+                  trim_length: null
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: card-item--link
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+            weight: -10
         third_party_settings: {  }
 id: paragraph.card_item.default
 targetEntityType: paragraph
@@ -74,6 +147,18 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
+    region: content
+  field_card_item_link:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_card_item_text:
     label: hidden

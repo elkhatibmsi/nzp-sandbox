@@ -8,22 +8,24 @@ namespace Drupal\nzp_layouts\Plugin\Layout;
  * @internal
  *   Plugin classes are internal.
  */
-class nzpTwoColLayouts extends nzpWrapperBase {
+class nzpTwoColLayouts extends nzpWrapperBase
+{
 
   /**
    * {@inheritdoc}
    */
-  protected function getContainerClasses() {
+  protected function getContainerClasses()
+  {
     return [
       'container' => 'container',
       'container-fuid' => 'full-width',
     ];
   }
-
   /**
-   *
+   * {@inheritdoc}
    */
-  protected function getRegionClasses() {
+  protected function getRegionClasses()
+  {
     return [
       'col' => 'col',
       'col-md-1' => 'col-md-1',
@@ -42,15 +44,14 @@ class nzpTwoColLayouts extends nzpWrapperBase {
   }
 
   /**
-   *
+   * {@inheritdoc}
    */
-  protected function getHtmlElements() {
+  protected function getHtmlElements()
+  {
     return [
       'div' => 'Div',
       'section' => 'Section',
       'aside' => 'Aside',
     ];
   }
-
-
 }
