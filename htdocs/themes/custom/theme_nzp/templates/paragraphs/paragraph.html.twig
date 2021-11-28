@@ -46,20 +46,10 @@
     not paragraph.isPublished() ? 'paragraph--unpublished'
   ]
 %}
-
-{% 
-set slides = content.field_image
-%}
-
-
 {% block paragraph %}
-  {{ kint(content) }}
   <div{{ attributes.addClass(classes) }}>
-
-
-{% for key, slide in slides if key|first != '#' %}
-<strong>{{ slide['#media'].vid.value }}</strong>
-{% endfor %}
-</div>
-
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
 {% endblock paragraph %}
